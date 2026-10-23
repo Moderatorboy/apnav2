@@ -3,12 +3,14 @@ import sys
 import json
 import time
 import asyncio
+import shutil
 import urllib.request
 from datetime import datetime, timezone
 
 import yt_dlp
 from telethon import TelegramClient, events
 from telethon.errors import FloodWaitError
+from telethon.tl.types import DocumentAttributeVideo
 
 try:
     from dotenv import load_dotenv
@@ -48,8 +50,8 @@ UPLOAD_GAP = 3                    # seconds between two uploads (flood se bachne
 
 BOLD_LABELS = True                # False karoge to saare labels plain text ho jayenge
 
-DATE_KEYS = ("date", "createdAt", "created_at", "publishedAt", "published_at",
-             "uploadedAt", "uploaded_at", "scheduledAt", "startTime", "timestamp")
+FFMPEG = shutil.which("ffmpeg")   # video ka cover/thumbnail banane ke liye (apt install ffmpeg -y)
+FFPROBE = shutil.which("ffprobe")
 
 
 # ================= Font helpers =================
@@ -137,43 +139,7 @@ def sanitize_title(title):
     return clean or "video"
 
 
-def parse_date(value):
-    """Kisi bhi format (YYYYMMDD / ISO / unix timestamp) ko YYYY-MM-DD me badalta hai."""
-    if value is None or value == "" or isinstance(value, bool):
-        return None
-    if isinstance(value, (int, float)):
-        value = float(value)
-        if value > 1e11:
-            value /= 1000.0
-        try:
-            return datetime.fromtimestamp(value).strftime("%Y-%m-%d")
-        except (OverflowError, OSError, ValueError):
-            return None
-    s = str(value).strip()
-    if len(s) == 8 and s.isdigit():
-        return f"{s[:4]}-{s[4:6]}-{s[6:]}"
-    if s.isdigit() and len(s) >= 10:
-        return parse_date(int(s))
-    try:
-        return datetime.fromisoformat(s.replace("Z", "+00:00")).strftime("%Y-%m-%d")
-    except ValueError:
-        return s[:10] if len(s) >= 10 and s[4] == "-" else None
-
-
-def get_video_date(lec, info):
-    for key in DATE_KEYS:
-        d = parse_date(lec.get(key))
-        if d:
-            return d
-    if info:
-        for key in ("upload_date", "release_date", "timestamp"):
-            d = parse_date(info.get(key))
-            if d:
-                return d
-    return "N/A"
-
-
-def build_caption(lec, batch_name, video_date, download_time):
+def build_caption(lec, batch_name):
     title = str(lec["title"])
     if len(title) > 300:
         title = title[:297] + "..."
@@ -182,8 +148,6 @@ def build_caption(lec, batch_name, video_date, download_time):
         f"➭ {label('Title')} » {title}\n"
         f"➭ {label('Type')} » {lec.get('type', 'wistia')}\n"
         f"➭ {label('Batch')} » {batch_name}\n"
-        f"➭ {label('Video Date')} » {video_date}\n"
-        f"➭ {label('Time')} » {download_time}\n"
         f"✨ {label('DOWNLOADED BY')} : CODExTRMS\n"
         f"━━━━━━━✦✗✦━━━━━━━"
     )
@@ -263,6 +227,35 @@ async def send_batch_intro(client, data, batch_name):
         except Exception as e:
             print(f"[Intro] Bhejna fail hua ({e}), videos ka kaam chalu rakhta hoon.\n")
             return
+
+
+# ================= Private channel support =================
+async def ensure_chat(client):
+    """Private channel (numeric ID) ho aur bot use pehchane nahi, to ek message ka wait karta hai."""
+    try:
+        await client.get_input_entity(CHAT_ID)
+        return
+    except Exception as e:
+        print(f"[Chat] Channel resolve nahi hua ({e}).")
+
+    if isinstance(CHAT_ID, str):
+        sys.exit("Error: TG_CHAT_ID (@username) galat hai ya channel ab private hai. "
+                 ".env me numeric ID daalo, jaise TG_CHAT_ID=-1001234567890")
+
+    print("[Chat] Bot ko channel me ADMIN banao, phir channel me koi bhi ek message bhejo. "
+          "Main wait kar raha hoon...")
+    seen = asyncio.Event()
+
+    async def _on_msg(event):
+        if event.chat_id == CHAT_ID:
+            seen.set()
+
+    client.add_event_handler(_on_msg, events.NewMessage())
+    try:
+        await seen.wait()
+    finally:
+        client.remove_event_handler(_on_msg)
+    print("[Chat] Channel mil gaya, aage badh raha hoon.\n")
 
 
 # ================= /update text =================
@@ -351,6 +344,56 @@ async def download_video(url, output_path):
     return await asyncio.get_running_loop().run_in_executor(None, _run_yt)
 
 
+# ================= Video cover (thumbnail) + metadata =================
+async def run_cmd(*args):
+    proc = await asyncio.create_subprocess_exec(
+        *args, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+    )
+    out, err = await proc.communicate()
+    return proc.returncode, out, err
+
+
+async def probe_video(path):
+    """(duration_sec, width, height) deta hai, fail hone par None."""
+    if not FFPROBE:
+        return None
+    try:
+        rc, out, _ = await run_cmd(
+            FFPROBE, "-v", "error", "-select_streams", "v:0",
+            "-show_entries", "stream=width,height:format=duration", "-of", "json", path,
+        )
+        if rc != 0:
+            return None
+        info = json.loads(out)
+        stream = info["streams"][0]
+        return int(float(info["format"]["duration"])), int(stream["width"]), int(stream["height"])
+    except Exception as e:
+        print(f"[Probe] metadata nahi mila: {e}")
+        return None
+
+
+async def make_thumbnail(path, duration):
+    """Video ke ek frame se cover (jpg) banata hai. ffmpeg na ho to None."""
+    if not FFMPEG:
+        return None
+    thumb = path + ".thumb.jpg"
+    ts = min(max((duration or 0) * 0.1, 1.0), 30.0)       # ~10% par, 1s se 30s ke beech
+    try:
+        rc, _, _ = await run_cmd(
+            FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ts:.2f}", "-i", path,
+            "-frames:v", "1",
+            "-vf", "scale='if(gt(iw,ih),320,-2)':'if(gt(iw,ih),-2,320)'",
+            "-q:v", "5", thumb,
+        )
+        if rc == 0 and os.path.exists(thumb) and os.path.getsize(thumb) > 0:
+            return thumb
+    except Exception as e:
+        print(f"[Thumb] cover nahi bana: {e}")
+    if os.path.exists(thumb):
+        os.remove(thumb)
+    return None
+
+
 # ================= Upload progress =================
 def get_progress_callback(title):
     last_print = 0
@@ -402,6 +445,12 @@ async def main():
             await asyncio.sleep(e.seconds + 2)
     print("Telegram Bot Connected Successfully!\n")
 
+    if not FFMPEG or not FFPROBE:
+        print("[Warning] ffmpeg/ffprobe nahi mila -> videos par cover nahi aayega. "
+              "Fix: apt install ffmpeg -y\n")
+
+    await ensure_chat(client)
+
     if not state.get("intro_sent"):
         await send_batch_intro(client, data, batch_name)
 
@@ -429,6 +478,15 @@ async def main():
             status["upload_pct"] = 0.0
             status["upload_size"] = ""
 
+            # Cover + video info (duration/size) taaki Telegram me proper video ban kar dikhe
+            meta = await probe_video(video_path)
+            thumb = await make_thumbnail(video_path, meta[0] if meta else 0)
+            attributes = None
+            if meta:
+                attributes = [DocumentAttributeVideo(
+                    duration=meta[0], w=meta[1], h=meta[2], supports_streaming=True
+                )]
+
             try:
                 attempt = 0
                 while True:
@@ -438,6 +496,8 @@ async def main():
                             CHAT_ID,
                             video_path,
                             caption=caption,
+                            thumb=thumb,
+                            attributes=attributes,
                             supports_streaming=True,
                             part_size_kb=512,
                             progress_callback=get_progress_callback(title),
@@ -462,6 +522,11 @@ async def main():
                         await asyncio.sleep(10 * attempt)
             finally:
                 status["uploading"] = None
+                if thumb and os.path.exists(thumb):
+                    try:
+                        os.remove(thumb)
+                    except OSError:
+                        pass
                 if os.path.exists(video_path):
                     try:
                         os.remove(video_path)       # disk free
@@ -518,9 +583,7 @@ async def main():
             os.remove(video_path)
             continue
 
-        download_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        video_date = get_video_date(lec, info)
-        caption = build_caption(lec, batch_name, video_date, download_time)
+        caption = build_caption(lec, batch_name)
 
         print(f"[Download Done] Index {lec['orderIdx']}: {title} ({size / MB:.1f}MB, queued for upload)")
         await upload_queue.put((lec, video_path, caption))
