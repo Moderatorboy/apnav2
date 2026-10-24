@@ -98,10 +98,20 @@ def label(text):
 # ================= State (resume) =================
 # progress_state.json:
 # {"files": {"Alpha+.json": {"uploaded": [...], "failed": [...], "intro_sent": true,
-#                            "msgs": {lecture_id: main_message_id}, "backup_failed": [...]}},
+#                            "msgs": {lecture_id: main_message_id}, "backup_failed": [...],
+#                            "summary_sent": false,
+#                            "stats": {"size": 0, "duration": 0, "upload_secs": 0.0}}},
 #  "legacy_uploaded": [...]}     <- purane (single data.json) version ki uploaded IDs
 def new_file_state():
-    return {"uploaded": [], "failed": [], "intro_sent": False, "msgs": {}, "backup_failed": []}
+    return {
+        "uploaded": [],
+        "failed": [],
+        "intro_sent": False,
+        "msgs": {},
+        "backup_failed": [],
+        "summary_sent": False,
+        "stats": {"size": 0, "duration": 0, "upload_secs": 0.0},
+    }
 
 
 def load_state():
@@ -143,10 +153,14 @@ def uploaded_ids(fname):
     return set(fstate(fname)["uploaded"]) | set(state["legacy_uploaded"])
 
 
-def mark_uploaded(fname, lec_id, msg_id):
+def mark_uploaded(fname, lec_id, msg_id, size=0, duration=0, upload_secs=0.0):
     fs = fstate(fname)
     if lec_id not in fs["uploaded"]:
         fs["uploaded"].append(lec_id)
+        st = fs.setdefault("stats", {})
+        st["size"] = st.get("size", 0) + size
+        st["duration"] = st.get("duration", 0) + duration
+        st["upload_secs"] = st.get("upload_secs", 0.0) + upload_secs
     fs["msgs"][str(lec_id)] = msg_id
     fs["failed"] = [f for f in fs["failed"] if f["id"] != lec_id]
     save_state()
@@ -177,9 +191,15 @@ def mark_backup_failed(fname, lec_id):
 status = {
     "started": time.time(),
     "downloading": None,
+    "download_pct": None,
+    "download_size": "",
+    "download_speed": "",
+    "download_eta": "",
     "uploading": None,
     "upload_pct": 0.0,
     "upload_size": "",
+    "upload_speed": "",
+    "upload_eta": "",
     "flood_until": 0.0,
     "done_this_run": 0,
     "current_file": None,
@@ -256,27 +276,32 @@ def build_caption(lec, batch_name):
     return caption[:1024]            # Telegram caption limit
 
 
-def build_summary(ctx, lec, size, duration, upload_secs, backup_ok):
+def build_batch_summary(ctx):
+    """Poori batch (ek JSON) khatam hone par bhejne wali ek summary."""
     total, done, _ = file_counts(ctx)
     o_total, o_done, _ = overall_counts()
-    title = str(lec["title"])
-    if len(title) > 300:
-        title = title[:297] + "..."
+    fs = fstate(ctx["fname"])
+    st = fs.get("stats", {})
     pct = (done / total * 100) if total else 100.0
+
     lines = [
-        f"📝 {bold('VIDEO SUMMARY')}",
+        f"📝 {bold('BATCH SUMMARY')}",
         "━━━━━━━✦✗✦━━━━━━━",
-        f"➭ {label('Index')} » {lec['orderIdx']}",
-        f"➭ {label('Title')} » {title}",
         f"➭ {label('Batch')} » {ctx['name']}",
-        f"➭ {label('Duration')} » {fmt_hms(duration) if duration else 'N/A'}",
-        f"➭ {label('Size')} » {fmt_size(size)}",
-        f"➭ {label('Upload Time')} » {fmt_duration(upload_secs)}",
+        f"➭ {label('Total Videos')} » {total}",
+        f"➭ {label('Uploaded')} » {done}/{total} ({pct:.1f}%)",
     ]
+    if st.get("duration"):
+        lines.append(f"➭ {label('Total Duration')} » {fmt_hms(st['duration'])}")
+    if st.get("size"):
+        lines.append(f"➭ {label('Total Size')} » {fmt_size(st['size'])}")
+    if st.get("upload_secs"):
+        lines.append(f"➭ {label('Upload Time')} » {fmt_duration(st['upload_secs'])}")
     if BACKUP_CHAT_ID is not None:
-        lines.append(f"➭ {label('Backup')} » {'Done ✅' if backup_ok else 'Failed ❌'}")
+        bf = len(fs["backup_failed"])
+        backup_txt = "All Done ✅" if bf == 0 else f"{bf} pending ❌"
+        lines.append(f"➭ {label('Backup')} » {backup_txt}")
     lines += [
-        f"➭ {label('Batch Progress')} » {done}/{total} ({pct:.1f}%)",
         f"➭ {label('Overall')} » {o_done}/{o_total}",
         f"✨ {label('DOWNLOADED BY')} : CODExTRMS",
     ]
@@ -403,6 +428,24 @@ async def send_batch_intro(client, ctx):
     print(f"[Intro] {ctx['name']}: image + details bhej diye aur pin kar diye.\n")
 
 
+async def send_batch_summary(client, ctx):
+    """Batch ki saari videos upload hone ke baad ek summary (main + backup channel)."""
+    text = build_batch_summary(ctx)
+    try:
+        await safe_call(lambda: client.send_message(CHAT_ID, text))
+    except Exception as e:
+        print(f"[Summary] main channel me nahi gayi: {e}")
+        return
+    if BACKUP_CHAT_ID is not None:
+        try:
+            await safe_call(lambda: client.send_message(BACKUP_CHAT_ID, text))
+        except Exception as e:
+            print(f"[Summary] backup channel me nahi gayi: {e}")
+    fstate(ctx["fname"])["summary_sent"] = True
+    save_state()
+    print(f"[Summary] {ctx['name']}: batch summary bhej di.\n")
+
+
 # ================= Private channel support =================
 async def ensure_chat(client, chat):
     """Private channel (numeric ID) ho aur bot use pehchane nahi, to ek message ka wait karta hai."""
@@ -434,8 +477,21 @@ async def ensure_chat(client, chat):
 
 # ================= /update text =================
 def progress_bar(pct, width=12):
+    pct = max(0.0, min(float(pct), 100.0))
     filled = int(round(width * pct / 100))
     return "█" * filled + "░" * (width - filled)
+
+
+def progress_lines(pct, size, speed, eta):
+    out = []
+    if pct is None:
+        out.append("   ⏳ Starting...")
+    else:
+        out.append(f"   {progress_bar(pct)} {pct:.1f}%")
+    extras = [x for x in (size, speed, f"ETA {eta}" if eta else "") if x]
+    if extras:
+        out.append("   " + " • ".join(extras))
+    return out
 
 
 def build_update_text():
@@ -472,9 +528,12 @@ def build_update_text():
 
     if status["downloading"]:
         lines.append(f"⬇️ {label('Downloading')} » {status['downloading']}")
+        lines += progress_lines(status["download_pct"], status["download_size"],
+                                status["download_speed"], status["download_eta"])
     if status["uploading"]:
-        lines.append(f"⬆️ {label('Uploading')} » {status['uploading']} "
-                     f"({status['upload_pct']:.1f}% {status['upload_size']})")
+        lines.append(f"⬆️ {label('Uploading')} » {status['uploading']}")
+        lines += progress_lines(status["upload_pct"], status["upload_size"],
+                                status["upload_speed"], status["upload_eta"])
     if status["flood_until"] > time.time():
         lines.append(f"⏳ {label('FloodWait')} » {fmt_duration(status['flood_until'] - time.time())} baki")
     if not status["downloading"] and not status["uploading"]:
@@ -498,6 +557,38 @@ def build_update_text():
 
 
 # ================= yt-dlp (async wrapper) =================
+def make_download_hook():
+    def hook(d):
+        s = d.get("status")
+        if s == "downloading":
+            done = d.get("downloaded_bytes") or 0
+            total = d.get("total_bytes") or d.get("total_bytes_estimate")
+            if total:
+                pct = done / total * 100
+                status["download_size"] = f"{done / MB:.0f}MB/{total / MB:.0f}MB"
+            elif d.get("fragment_count"):          # HLS/m3u8 me total bytes nahi hota
+                pct = (d.get("fragment_index") or 0) / d["fragment_count"] * 100
+                status["download_size"] = f"{done / MB:.0f}MB"
+            else:
+                pct = None
+                status["download_size"] = f"{done / MB:.0f}MB"
+            status["download_pct"] = pct
+            speed = d.get("speed")
+            status["download_speed"] = f"{speed / MB:.1f} MB/s" if speed else ""
+            eta = d.get("eta")
+            status["download_eta"] = fmt_duration(eta) if eta else ""
+        elif s == "finished":
+            status["download_pct"] = 100.0
+    return hook
+
+
+def reset_download_status():
+    status["download_pct"] = None
+    status["download_size"] = ""
+    status["download_speed"] = ""
+    status["download_eta"] = ""
+
+
 async def download_video(url, output_path):
     ydl_opts = {
         "format": "best",
@@ -509,6 +600,7 @@ async def download_video(url, output_path):
         "quiet": True,
         "no_warnings": True,
         "noprogress": True,
+        "progress_hooks": [make_download_hook()],
     }
 
     def _run_yt():
@@ -571,14 +663,18 @@ async def make_thumbnail(path, duration):
 # ================= Upload progress =================
 def get_progress_callback(title):
     last_print = 0
+    t0 = time.time()
 
     def progress(current, total):
         nonlocal last_print
         if not total:
             return
         percent = current / total * 100
+        speed = current / max(time.time() - t0, 0.001)
         status["upload_pct"] = percent
         status["upload_size"] = f"{current / MB:.0f}MB/{total / MB:.0f}MB"
+        status["upload_speed"] = f"{speed / MB:.1f} MB/s"
+        status["upload_eta"] = fmt_duration((total - current) / speed) if speed > 0 else ""
         if percent - last_print >= 5 or percent >= 100:
             last_print = percent
             sys.stdout.write(f"\r[Telegram Uploading] {title[:25]}... -> {percent:.1f}% "
@@ -684,29 +780,15 @@ async def main():
 
     upload_queue = asyncio.Queue(maxsize=QUEUE_SIZE)
 
-    async def post_upload(ctx, lec, msg, caption, size, meta, upload_secs):
-        """Video jaane ke baad: backup channel me copy + summary (main aur backup dono me)."""
-        fname, lid = ctx["fname"], lec["id"]
-        bmsg, backup_ok = None, False
-
-        if BACKUP_CHAT_ID is not None:
-            try:
-                bmsg = await safe_call(lambda: send_backup_media(client, msg, caption))
-                backup_ok = True
-            except Exception as e:
-                print(f"\n[Backup Failed] {lec['title']}: {e} (agli run me dobara try hoga)")
-                mark_backup_failed(fname, lid)
-
-        summary = build_summary(ctx, lec, size, meta[0] if meta else 0, upload_secs, backup_ok)
+    async def post_upload(ctx, lec, msg, caption):
+        """Video jaane ke baad sirf backup channel me copy (summary ab batch ke end par jayegi)."""
+        if BACKUP_CHAT_ID is None:
+            return
         try:
-            await safe_call(lambda: client.send_message(CHAT_ID, summary, reply_to=msg.id))
+            await safe_call(lambda: send_backup_media(client, msg, caption))
         except Exception as e:
-            print(f"\n[Summary] main channel me nahi gayi: {e}")
-        if bmsg is not None:
-            try:
-                await safe_call(lambda: client.send_message(BACKUP_CHAT_ID, summary, reply_to=bmsg.id))
-            except Exception as e:
-                print(f"\n[Summary] backup channel me nahi gayi: {e}")
+            print(f"\n[Backup Failed] {lec['title']}: {e} (agli run me dobara try hoga)")
+            mark_backup_failed(ctx["fname"], lec["id"])
 
     # Consumer: upload worker (download ke saath parallel chalta hai)
     async def upload_worker():
@@ -721,6 +803,8 @@ async def main():
             status["uploading"] = title
             status["upload_pct"] = 0.0
             status["upload_size"] = ""
+            status["upload_speed"] = ""
+            status["upload_eta"] = ""
             thumb = None
 
             try:
@@ -757,9 +841,10 @@ async def main():
                 if msg is not None:
                     upload_secs = time.time() - t0
                     print(f"\n[Upload Done] {title}")
-                    mark_uploaded(fname, lec_id, msg.id)
+                    mark_uploaded(fname, lec_id, msg.id, size,
+                                  meta[0] if meta else 0, upload_secs)
                     status["done_this_run"] += 1
-                    await post_upload(ctx, lec, msg, caption, size, meta, upload_secs)
+                    await post_upload(ctx, lec, msg, caption)
             finally:
                 status["uploading"] = None
                 if thumb and os.path.exists(thumb):
@@ -786,10 +871,15 @@ async def main():
         todo = [l for l in ctx["lectures"] if l["id"] not in done_ids]
 
         if not todo:
-            print(f"[Skip] {fname}: sab videos pehle hi upload ho chuki hain.")
+            t, d, _ = file_counts(ctx)
+            if d == t and not fs["summary_sent"]:
+                await upload_queue.join()
+                await send_batch_summary(client, ctx)
+            else:
+                print(f"[Skip] {fname}: sab videos pehle hi upload ho chuki hain.")
             continue
 
-        # Pichhli file ki saari videos (summary tak) khatam hone do, phir is batch ka intro
+        # Pichhli file ki saari videos khatam hone do, phir is batch ka intro
         await upload_queue.join()
         status["current_file"] = fname
         print(f"\n===== Batch: {ctx['name']} ({fname}) | {len(todo)} videos baki =====")
@@ -816,6 +906,7 @@ async def main():
             info, last_err = None, None
 
             for attempt in range(1, DOWNLOAD_RETRIES + 1):
+                reset_download_status()
                 try:
                     info = await download_video(url, video_path)
                     if os.path.exists(video_path) and os.path.getsize(video_path) > 0:
@@ -828,6 +919,7 @@ async def main():
                         await asyncio.sleep(5 * attempt)
 
             status["downloading"] = None
+            reset_download_status()
 
             if info is None:
                 mark_failed(fname, lec_id, title, last_err, "download")
@@ -842,6 +934,15 @@ async def main():
             caption = build_caption(lec, ctx["name"])
             print(f"[Download Done] Index {lec['orderIdx']}: {title} ({size / MB:.1f}MB, queued for upload)")
             await upload_queue.put((ctx, lec, video_path, caption))
+
+        # Is batch ki saari videos upload hone do, phir ek hi summary
+        await upload_queue.join()
+        t, d, f_list = file_counts(ctx)
+        if d == t and not fs["summary_sent"]:
+            await send_batch_summary(client, ctx)
+        elif f_list:
+            print(f"[Summary] {ctx['name']}: {len(f_list)} video fail hui, "
+                  "summary tab jayegi jab batch poora upload ho jaye.")
 
     await upload_queue.put(None)
     await uploader_task
