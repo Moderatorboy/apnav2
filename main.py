@@ -18,6 +18,7 @@ try:
 except ImportError:
     pass
 
+
 # ================= Configuration =================
 def env_required(name):
     val = os.getenv(name, "").strip()
@@ -26,20 +27,40 @@ def env_required(name):
     return val
 
 
+def parse_chat(raw):
+    raw = raw.strip()
+    return int(raw) if raw.lstrip("-").isdigit() else raw
+
+
 API_ID = int(env_required("TG_API_ID"))
 API_HASH = env_required("TG_API_HASH")
 BOT_TOKEN = env_required("TG_BOT_TOKEN")
-_chat = env_required("TG_CHAT_ID")                      # @username ya -100xxxxxxxxxx
-CHAT_ID = int(_chat) if _chat.lstrip("-").isdigit() else _chat
+CHAT_ID = parse_chat(env_required("TG_CHAT_ID"))          # main channel: @username ya -100xxxxxxxxxx
+
+_backup = os.getenv("TG_BACKUP_CHAT_ID", "").strip()      # optional backup channel
+BACKUP_CHAT_ID = parse_chat(_backup) if _backup else None
+CHATS = [CHAT_ID] + ([BACKUP_CHAT_ID] if BACKUP_CHAT_ID is not None else [])
 
 # Optional: /update sirf inhi user IDs ko reply dega (comma separated). Khali = sab ko.
 ALLOWED_USERS = {int(x) for x in os.getenv("TG_ALLOWED_USERS", "").replace(" ", "").split(",") if x.isdigit()}
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(BASE_DIR, "data.json")
 STATE_FILE = os.path.join(BASE_DIR, "progress_state.json")
 DOWNLOAD_DIR = os.path.join(BASE_DIR, "downloads")
 SESSION_NAME = os.path.join(BASE_DIR, "vps_uploader_bot")
+
+# JSON files isi order me process hongi (ek khatam, phir agli)
+DEFAULT_JSON_FILES = [
+    "Alpha+.json",
+    "Alpha+2.json",
+    "Alpha+3.json",
+    "Alpha+4.json",
+    "Alpha+5.json",
+    "Alpha+6.json",
+    "Alpha+7.json",
+    "Alpha7+java.json",
+]
+JSON_FILES = [x.strip() for x in os.getenv("JSON_FILES", "").split(",") if x.strip()] or DEFAULT_JSON_FILES
 
 MB = 1024 * 1024
 MAX_UPLOAD_BYTES = 2000 * MB      # Telegram MTProto limit (bot) = 2 GB
@@ -75,43 +96,66 @@ def label(text):
 
 
 # ================= State (resume) =================
+# progress_state.json:
+# {"files": {"Alpha+.json": {"uploaded": [...], "failed": [...], "intro_sent": true,
+#                            "msgs": {lecture_id: main_message_id}, "backup_failed": [...]}},
+#  "legacy_uploaded": [...]}     <- purane (single data.json) version ki uploaded IDs
+def new_file_state():
+    return {"uploaded": [], "failed": [], "intro_sent": False, "msgs": {}, "backup_failed": []}
+
+
 def load_state():
-    st = {"uploaded": [], "failed": [], "intro_sent": False}
+    st = {"files": {}, "legacy_uploaded": [], "_legacy_intro": False}
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 loaded = json.load(f)
-            st["uploaded"] = list(loaded.get("uploaded", []))
-            st["failed"] = list(loaded.get("failed", []))
-            st["intro_sent"] = bool(loaded.get("intro_sent", False))
         except Exception as e:
             # Chup-chap reset karne se sab dobara upload ho jata, isliye ruk jao
             sys.exit(f"Error: {STATE_FILE} read nahi hui ({e}). File check/fix karo, phir run karo.")
+        for fname, fs in (loaded.get("files") or {}).items():
+            merged = new_file_state()
+            merged.update(fs)
+            st["files"][fname] = merged
+        st["legacy_uploaded"] = list(loaded.get("legacy_uploaded", [])) + list(loaded.get("uploaded", []))
+        st["_legacy_intro"] = bool(loaded.get("intro_sent", False))
     return st
 
 
 state = load_state()
 
 
+def fstate(fname):
+    return state["files"].setdefault(fname, new_file_state())
+
+
 def save_state():
     tmp = STATE_FILE + ".tmp"
+    out = {"files": state["files"], "legacy_uploaded": state["legacy_uploaded"]}
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+        json.dump(out, f, indent=2, ensure_ascii=False)
         f.flush()
         os.fsync(f.fileno())
     os.replace(tmp, STATE_FILE)      # atomic: beech me kill hone par bhi file kharab nahi hogi
 
 
-def mark_uploaded(lec_id):
-    if lec_id not in state["uploaded"]:
-        state["uploaded"].append(lec_id)
-    state["failed"] = [f for f in state["failed"] if f["id"] != lec_id]
+def uploaded_ids(fname):
+    return set(fstate(fname)["uploaded"]) | set(state["legacy_uploaded"])
+
+
+def mark_uploaded(fname, lec_id, msg_id):
+    fs = fstate(fname)
+    if lec_id not in fs["uploaded"]:
+        fs["uploaded"].append(lec_id)
+    fs["msgs"][str(lec_id)] = msg_id
+    fs["failed"] = [f for f in fs["failed"] if f["id"] != lec_id]
     save_state()
 
 
-def mark_failed(lec_id, title, error, stage):
-    state["failed"] = [f for f in state["failed"] if f["id"] != lec_id]
-    state["failed"].append({
+def mark_failed(fname, lec_id, title, error, stage):
+    fs = fstate(fname)
+    fs["failed"] = [f for f in fs["failed"] if f["id"] != lec_id]
+    fs["failed"].append({
         "id": lec_id,
         "title": title,
         "error": str(error),
@@ -120,6 +164,13 @@ def mark_failed(lec_id, title, error, stage):
     })
     save_state()
     print(f"\n[FAILED] {title} -> {stage}: {error}")
+
+
+def mark_backup_failed(fname, lec_id):
+    fs = fstate(fname)
+    if lec_id not in fs["backup_failed"]:
+        fs["backup_failed"].append(lec_id)
+    save_state()
 
 
 # ================= Runtime status (/update ke liye) =================
@@ -131,7 +182,10 @@ status = {
     "upload_size": "",
     "flood_until": 0.0,
     "done_this_run": 0,
+    "current_file": None,
 }
+
+contexts = []     # har JSON file ka ek context: {"fname", "idx", "data", "name", "lectures"}
 
 
 def sanitize_title(title):
@@ -139,6 +193,54 @@ def sanitize_title(title):
     return clean or "video"
 
 
+def short_name(fname):
+    return fname[:-5] if fname.lower().endswith(".json") else fname
+
+
+def fmt_duration(sec):
+    sec = int(max(sec, 0))
+    h, rem = divmod(sec, 3600)
+    m, s = divmod(rem, 60)
+    if h:
+        return f"{h}h {m}m"
+    if m:
+        return f"{m}m {s}s"
+    return f"{s}s"
+
+
+def fmt_hms(sec):
+    sec = int(max(sec, 0))
+    h, rem = divmod(sec, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def fmt_size(num_bytes):
+    if num_bytes >= 1024 * MB:
+        return f"{num_bytes / (1024 * MB):.2f} GB"
+    return f"{num_bytes / MB:.1f} MB"
+
+
+# ================= Counts =================
+def file_counts(ctx):
+    """(total, done, failed_list) us JSON file ke liye."""
+    ids = {l["id"] for l in ctx["lectures"]}
+    done = ids & uploaded_ids(ctx["fname"])
+    failed = [f for f in fstate(ctx["fname"])["failed"] if f["id"] in ids and f["id"] not in done]
+    return len(ids), len(done), failed
+
+
+def overall_counts():
+    total = done = failed = 0
+    for ctx in contexts:
+        t, d, f = file_counts(ctx)
+        total += t
+        done += d
+        failed += len(f)
+    return total, done, failed
+
+
+# ================= Captions =================
 def build_caption(lec, batch_name):
     title = str(lec["title"])
     if len(title) > 300:
@@ -154,7 +256,33 @@ def build_caption(lec, batch_name):
     return caption[:1024]            # Telegram caption limit
 
 
-# ================= Batch intro (image + caption) =================
+def build_summary(ctx, lec, size, duration, upload_secs, backup_ok):
+    total, done, _ = file_counts(ctx)
+    o_total, o_done, _ = overall_counts()
+    title = str(lec["title"])
+    if len(title) > 300:
+        title = title[:297] + "..."
+    pct = (done / total * 100) if total else 100.0
+    lines = [
+        f"📝 {bold('VIDEO SUMMARY')}",
+        "━━━━━━━✦✗✦━━━━━━━",
+        f"➭ {label('Index')} » {lec['orderIdx']}",
+        f"➭ {label('Title')} » {title}",
+        f"➭ {label('Batch')} » {ctx['name']}",
+        f"➭ {label('Duration')} » {fmt_hms(duration) if duration else 'N/A'}",
+        f"➭ {label('Size')} » {fmt_size(size)}",
+        f"➭ {label('Upload Time')} » {fmt_duration(upload_secs)}",
+    ]
+    if BACKUP_CHAT_ID is not None:
+        lines.append(f"➭ {label('Backup')} » {'Done ✅' if backup_ok else 'Failed ❌'}")
+    lines += [
+        f"➭ {label('Batch Progress')} » {done}/{total} ({pct:.1f}%)",
+        f"➭ {label('Overall')} » {o_done}/{o_total}",
+        f"✨ {label('DOWNLOADED BY')} : CODExTRMS",
+    ]
+    return "\n".join(lines)
+
+
 def fmt_sync_time(value):
     if not value:
         return "N/A"
@@ -184,70 +312,116 @@ def build_batch_caption(data, batch_name):
     return caption[:1024]
 
 
+# ================= Telegram helpers =================
+async def safe_call(factory, retries=3):
+    """FloodWait par wait karke wahi call dobara karta hai (attempt count nahi hota).
+    Baaki errors par `retries` baar try karta hai."""
+    attempt = 0
+    while True:
+        try:
+            return await factory()
+        except FloodWaitError as e:
+            wait = e.seconds + 5
+            status["flood_until"] = time.time() + wait
+            print(f"\n[FloodWait] {wait} seconds sleep...")
+            await asyncio.sleep(wait)
+        except Exception as e:
+            attempt += 1
+            if attempt >= retries:
+                raise
+            print(f"\n[Retry] {e} -> {attempt}/{retries - 1}")
+            await asyncio.sleep(5 * attempt)
+
+
+def first_msg(res):
+    return res[0] if isinstance(res, (list, tuple)) else res
+
+
+async def send_backup_media(client, main_msg, caption):
+    """Main channel me gayi file ko backup channel me bhejta hai (dobara upload nahi hota)."""
+    try:
+        return first_msg(await client.send_file(BACKUP_CHAT_ID, main_msg.media, caption=caption))
+    except FloodWaitError:
+        raise
+    except Exception as e:
+        print(f"[Backup] direct send nahi hua ({e}), forward try kar raha hoon...")
+        return first_msg(await client.forward_messages(BACKUP_CHAT_ID, main_msg, drop_author=True))
+
+
 def download_image(url, path):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp, open(path, "wb") as f:
         f.write(resp.read())
 
 
-async def send_batch_intro(client, data, batch_name):
-    """Sabse pehle batch ki image + details bhejta hai (sirf ek baar, resume par dobara nahi)."""
-    caption = build_batch_caption(data, batch_name)
-    image = data.get("image")
-    while True:
+async def pin_quietly(client, chat, msg):
+    try:
+        await safe_call(lambda: client.pin_message(chat, msg, notify=False))
+    except Exception as e:
+        print(f"[Pin] pin nahi hua ({e}). Bot ko channel me 'Pin Messages' permission do.")
+
+
+async def send_batch_intro(client, ctx):
+    """Batch ki image + details bhejta hai, phir PIN karta hai (har JSON ke liye sirf ek baar)."""
+    caption = build_batch_caption(ctx["data"], ctx["name"])
+    image = ctx["data"].get("image")
+    msg = None
+
+    if image:
         try:
-            if image:
-                try:
-                    await client.send_file(CHAT_ID, image, caption=caption)
-                except FloodWaitError:
-                    raise
-                except Exception as e:
-                    print(f"[Intro] URL se direct image nahi gayi ({e}), download karke bhej raha hoon...")
-                    path = os.path.join(DOWNLOAD_DIR, "batch_cover.jpg")
-                    try:
-                        await asyncio.get_running_loop().run_in_executor(None, download_image, image, path)
-                        await client.send_file(CHAT_ID, path, caption=caption)
-                    except FloodWaitError:
-                        raise
-                    except Exception as e2:
-                        print(f"[Intro] Image fail ({e2}), sirf text bhej raha hoon...")
-                        await client.send_message(CHAT_ID, caption)
-                    finally:
-                        if os.path.exists(path):
-                            os.remove(path)
-            else:
-                await client.send_message(CHAT_ID, caption)
-            state["intro_sent"] = True
-            save_state()
-            print("[Intro] Batch image + details bhej diye.\n")
-            return
-        except FloodWaitError as e:
-            print(f"[FloodWait on intro] {e.seconds}s ruk raha hoon...")
-            await asyncio.sleep(e.seconds + 2)
+            msg = first_msg(await safe_call(lambda: client.send_file(CHAT_ID, image, caption=caption)))
         except Exception as e:
-            print(f"[Intro] Bhejna fail hua ({e}), videos ka kaam chalu rakhta hoon.\n")
-            return
+            print(f"[Intro] URL se direct image nahi gayi ({e}), download karke bhej raha hoon...")
+            path = os.path.join(DOWNLOAD_DIR, "batch_cover.jpg")
+            try:
+                await asyncio.get_running_loop().run_in_executor(None, download_image, image, path)
+                msg = first_msg(await safe_call(lambda: client.send_file(CHAT_ID, path, caption=caption)))
+            except Exception as e2:
+                print(f"[Intro] Image fail ({e2}), sirf text bhej raha hoon...")
+            finally:
+                if os.path.exists(path):
+                    os.remove(path)
+
+    if msg is None:
+        msg = first_msg(await safe_call(lambda: client.send_message(CHAT_ID, caption)))
+
+    fs = fstate(ctx["fname"])
+    fs["intro_sent"] = True
+    save_state()
+    await pin_quietly(client, CHAT_ID, msg)
+
+    if BACKUP_CHAT_ID is not None:
+        try:
+            if getattr(msg, "media", None):
+                bmsg = first_msg(await safe_call(
+                    lambda: client.send_file(BACKUP_CHAT_ID, msg.media, caption=caption)))
+            else:
+                bmsg = first_msg(await safe_call(lambda: client.send_message(BACKUP_CHAT_ID, caption)))
+            await pin_quietly(client, BACKUP_CHAT_ID, bmsg)
+        except Exception as e:
+            print(f"[Intro] Backup channel me intro nahi gaya ({e})")
+    print(f"[Intro] {ctx['name']}: image + details bhej diye aur pin kar diye.\n")
 
 
 # ================= Private channel support =================
-async def ensure_chat(client):
+async def ensure_chat(client, chat):
     """Private channel (numeric ID) ho aur bot use pehchane nahi, to ek message ka wait karta hai."""
     try:
-        await client.get_input_entity(CHAT_ID)
+        await client.get_input_entity(chat)
         return
     except Exception as e:
-        print(f"[Chat] Channel resolve nahi hua ({e}).")
+        print(f"[Chat] {chat} resolve nahi hua ({e}).")
 
-    if isinstance(CHAT_ID, str):
-        sys.exit("Error: TG_CHAT_ID (@username) galat hai ya channel ab private hai. "
-                 ".env me numeric ID daalo, jaise TG_CHAT_ID=-1001234567890")
+    if isinstance(chat, str):
+        sys.exit(f"Error: {chat} galat hai ya channel ab private hai. "
+                 ".env me numeric ID daalo, jaise -1001234567890")
 
-    print("[Chat] Bot ko channel me ADMIN banao, phir channel me koi bhi ek message bhejo. "
+    print(f"[Chat] Bot ko channel {chat} me ADMIN banao, phir us channel me koi bhi ek message bhejo. "
           "Main wait kar raha hoon...")
     seen = asyncio.Event()
 
     async def _on_msg(event):
-        if event.chat_id == CHAT_ID:
+        if event.chat_id == chat:
             seen.set()
 
     client.add_event_handler(_on_msg, events.NewMessage())
@@ -264,23 +438,8 @@ def progress_bar(pct, width=12):
     return "█" * filled + "░" * (width - filled)
 
 
-def fmt_duration(sec):
-    sec = int(max(sec, 0))
-    h, rem = divmod(sec, 3600)
-    m, s = divmod(rem, 60)
-    if h:
-        return f"{h}h {m}m"
-    if m:
-        return f"{m}m {s}s"
-    return f"{s}s"
-
-
-def build_update_text(lectures, batch_name):
-    total = len(lectures)
-    ids = {l["id"] for l in lectures}
-    uploaded = len(ids & set(state["uploaded"]))
-    failed_list = [f for f in state["failed"] if f["id"] in ids]
-    failed = len(failed_list)
+def build_update_text():
+    total, uploaded, failed = overall_counts()
     remaining = total - uploaded
     pending = max(remaining - failed, 0)
     pct = (uploaded / total * 100) if total else 100.0
@@ -288,13 +447,28 @@ def build_update_text(lectures, batch_name):
     lines = [
         f"📊 {bold('UPLOAD STATUS')}",
         "━━━━━━━✦✗✦━━━━━━━",
-        f"➭ {label('Batch')} » {batch_name}",
-        f"➭ {label('Total')} » {total}",
+        f"➭ {label('Total')} » {total} videos ({len(contexts)} batches)",
         f"➭ {label('Uploaded')} » {uploaded} ({pct:.1f}%)",
         f"➭ {label('Remaining')} » {remaining} (Pending {pending} + Failed {failed})",
         f"{progress_bar(pct)} {pct:.1f}%",
         "",
+        f"📚 {bold('BATCHES')}",
     ]
+
+    all_failed = []
+    for ctx in contexts:
+        t, d, f_list = file_counts(ctx)
+        if t and d == t:
+            mark = "✅"
+        elif ctx["fname"] == status["current_file"]:
+            mark = "▶️"
+        elif d:
+            mark = "🔸"
+        else:
+            mark = "⏳"
+        lines.append(f"{mark} {short_name(ctx['fname'])} — {d}/{t}")
+        all_failed += [(ctx, f) for f in f_list]
+    lines.append("")
 
     if status["downloading"]:
         lines.append(f"⬇️ {label('Downloading')} » {status['downloading']}")
@@ -310,13 +484,13 @@ def build_update_text(lectures, batch_name):
         per_video = (time.time() - status["started"]) / status["done_this_run"]
         lines.append(f"🕒 {label('ETA')} » ~{fmt_duration(per_video * pending)}")
 
-    if failed_list:
+    if all_failed:
         lines.append("")
-        lines.append(f"❌ {bold('FAILED')} ({failed})")
-        for f in failed_list[:15]:
-            lines.append(f"• {f['title']} — Failed [{f.get('stage', '?')}]")
-        if failed > 15:
-            lines.append(f"... +{failed - 15} more")
+        lines.append(f"❌ {bold('FAILED')} ({len(all_failed)})")
+        for ctx, f in all_failed[:15]:
+            lines.append(f"• {f['title']} ({short_name(ctx['fname'])}) — Failed [{f.get('stage', '?')}]")
+        if len(all_failed) > 15:
+            lines.append(f"... +{len(all_failed) - 15} more")
 
     lines.append("")
     lines.append(f"✨ {label('DOWNLOADED BY')} : CODExTRMS")
@@ -414,26 +588,70 @@ def get_progress_callback(title):
     return progress
 
 
+# ================= JSON loading =================
+def load_contexts():
+    names = list(JSON_FILES)
+    if not any(os.path.exists(os.path.join(BASE_DIR, n)) for n in names):
+        if os.path.exists(os.path.join(BASE_DIR, "data.json")):
+            print("[Info] Alpha JSON files nahi mili, data.json use kar raha hoon.")
+            names = ["data.json"]
+
+    legacy = set(state["legacy_uploaded"])
+    ctxs = []
+    for fname in names:
+        path = os.path.join(BASE_DIR, fname)
+        if not os.path.exists(path):
+            print(f"[Skip] {fname} nahi mila (upload karna bhool gaye?)")
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            sys.exit(f"Error: {fname} padh nahi paya ({e})")
+
+        lectures = data.get("lectures", [])
+        if not lectures:
+            print(f"[Warning] {fname} me 'lectures' nahi mila (keys: {list(data.keys())[:10]})")
+        for i, lec in enumerate(lectures):
+            lec.setdefault("orderIdx", i)            # JSON ka orderIdx hi Index banega
+            lec.setdefault("title", f"Lecture {lec['orderIdx']}")
+        lectures.sort(key=lambda l: l["orderIdx"])
+
+        ctx = {
+            "fname": fname,
+            "idx": len(ctxs),
+            "data": data,
+            "name": data.get("name") or short_name(fname),
+            "lectures": lectures,
+        }
+        ctxs.append(ctx)
+
+        fs = fstate(fname)
+        ids = {l["id"] for l in lectures}
+        if state["_legacy_intro"] and (legacy & ids) and not fs["intro_sent"]:
+            fs["intro_sent"] = True          # purane version me is batch ka intro ja chuka tha
+    save_state()
+    return ctxs
+
+
 # ================= Main pipeline =================
 async def main():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
-    if not os.path.exists(DATA_FILE):
-        print(f"Error: {DATA_FILE} nahi mila!")
+    contexts.extend(load_contexts())
+    if not contexts:
+        print("Error: koi JSON file nahi mili! Files VPS par isi folder me rakho:")
+        for n in JSON_FILES:
+            print(f"  - {n}")
         return
 
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    batch_name = data.get("name", "Complete AI/ML Batch")
-    lectures = data.get("lectures", [])
-    for i, lec in enumerate(lectures):
-        lec.setdefault("orderIdx", i)            # data.json ka orderIdx hi Index banega
-        lec.setdefault("title", f"Lecture {lec['orderIdx']}")
-    lectures.sort(key=lambda l: l["orderIdx"])
-
-    print(f"Total Lectures in JSON: {len(lectures)}")
-    print(f"Already Uploaded: {len(state['uploaded'])}, Failed (retry hoga): {len(state['failed'])}")
+    o_total, o_done, o_failed = overall_counts()
+    print("JSON order:")
+    for ctx in contexts:
+        t, d, _ = file_counts(ctx)
+        print(f"  {ctx['idx'] + 1}. {ctx['fname']} -> {ctx['name']} ({d}/{t} uploaded)")
+    print(f"Total: {o_total}, Uploaded: {o_done}, Failed (retry hoga): {o_failed}")
+    print(f"Backup channel: {'ON' if BACKUP_CHAT_ID is not None else 'OFF'}\n")
 
     client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
     while True:
@@ -449,10 +667,8 @@ async def main():
         print("[Warning] ffmpeg/ffprobe nahi mila -> videos par cover nahi aayega. "
               "Fix: apt install ffmpeg -y\n")
 
-    await ensure_chat(client)
-
-    if not state.get("intro_sent"):
-        await send_batch_intro(client, data, batch_name)
+    for chat in CHATS:
+        await ensure_chat(client, chat)
 
     # /update command
     @client.on(events.NewMessage(pattern=r"(?i)^/update(@\w+)?\s*$"))
@@ -460,9 +676,37 @@ async def main():
         from_channel_admin = event.is_channel and not event.is_group
         if ALLOWED_USERS and event.sender_id not in ALLOWED_USERS and not from_channel_admin:
             return
-        await event.respond(build_update_text(lectures, batch_name))
+        await event.respond(build_update_text())
+
+    # Pichhli baar jo videos backup channel me nahi gayi thi unhe ab bhej do
+    if BACKUP_CHAT_ID is not None:
+        await retry_backups(client)
 
     upload_queue = asyncio.Queue(maxsize=QUEUE_SIZE)
+
+    async def post_upload(ctx, lec, msg, caption, size, meta, upload_secs):
+        """Video jaane ke baad: backup channel me copy + summary (main aur backup dono me)."""
+        fname, lid = ctx["fname"], lec["id"]
+        bmsg, backup_ok = None, False
+
+        if BACKUP_CHAT_ID is not None:
+            try:
+                bmsg = await safe_call(lambda: send_backup_media(client, msg, caption))
+                backup_ok = True
+            except Exception as e:
+                print(f"\n[Backup Failed] {lec['title']}: {e} (agli run me dobara try hoga)")
+                mark_backup_failed(fname, lid)
+
+        summary = build_summary(ctx, lec, size, meta[0] if meta else 0, upload_secs, backup_ok)
+        try:
+            await safe_call(lambda: client.send_message(CHAT_ID, summary, reply_to=msg.id))
+        except Exception as e:
+            print(f"\n[Summary] main channel me nahi gayi: {e}")
+        if bmsg is not None:
+            try:
+                await safe_call(lambda: client.send_message(BACKUP_CHAT_ID, summary, reply_to=bmsg.id))
+            except Exception as e:
+                print(f"\n[Summary] backup channel me nahi gayi: {e}")
 
     # Consumer: upload worker (download ke saath parallel chalta hai)
     async def upload_worker():
@@ -472,27 +716,29 @@ async def main():
                 upload_queue.task_done()
                 break
 
-            lec, video_path, caption = task
-            title, lec_id = lec["title"], lec["id"]
+            ctx, lec, video_path, caption = task
+            fname, title, lec_id = ctx["fname"], lec["title"], lec["id"]
             status["uploading"] = title
             status["upload_pct"] = 0.0
             status["upload_size"] = ""
-
-            # Cover + video info (duration/size) taaki Telegram me proper video ban kar dikhe
-            meta = await probe_video(video_path)
-            thumb = await make_thumbnail(video_path, meta[0] if meta else 0)
-            attributes = None
-            if meta:
-                attributes = [DocumentAttributeVideo(
-                    duration=meta[0], w=meta[1], h=meta[2], supports_streaming=True
-                )]
+            thumb = None
 
             try:
-                attempt = 0
-                while True:
-                    try:
-                        print(f"\n[Starting Upload] Index {lec['orderIdx']}: {title}")
-                        await client.send_file(
+                size = os.path.getsize(video_path)
+                # Cover + video info (duration/size) taaki Telegram me proper video ban kar dikhe
+                meta = await probe_video(video_path)
+                thumb = await make_thumbnail(video_path, meta[0] if meta else 0)
+                attributes = None
+                if meta:
+                    attributes = [DocumentAttributeVideo(
+                        duration=meta[0], w=meta[1], h=meta[2], supports_streaming=True
+                    )]
+
+                print(f"\n[Starting Upload] {short_name(fname)} | Index {lec['orderIdx']}: {title}")
+                t0 = time.time()
+                try:
+                    msg = first_msg(await safe_call(
+                        lambda: client.send_file(
                             CHAT_ID,
                             video_path,
                             caption=caption,
@@ -501,25 +747,19 @@ async def main():
                             supports_streaming=True,
                             part_size_kb=512,
                             progress_callback=get_progress_callback(title),
-                        )
-                        print(f"\n[Upload Done] {title}")
-                        mark_uploaded(lec_id)
-                        status["done_this_run"] += 1
-                        break
+                        ),
+                        retries=UPLOAD_RETRIES,
+                    ))
+                except Exception as e:
+                    mark_failed(fname, lec_id, title, e, "telegram_upload")
+                    msg = None
 
-                    except FloodWaitError as e:
-                        wait = e.seconds + 5
-                        status["flood_until"] = time.time() + wait
-                        print(f"\n[FloodWait] {wait} seconds sleep... (attempt count nahi hoga)")
-                        await asyncio.sleep(wait)
-
-                    except Exception as e:
-                        attempt += 1
-                        if attempt >= UPLOAD_RETRIES:
-                            mark_failed(lec_id, title, e, "telegram_upload")
-                            break
-                        print(f"\n[Upload Error] {title}: {e} -> retry {attempt}/{UPLOAD_RETRIES - 1}")
-                        await asyncio.sleep(10 * attempt)
+                if msg is not None:
+                    upload_secs = time.time() - t0
+                    print(f"\n[Upload Done] {title}")
+                    mark_uploaded(fname, lec_id, msg.id)
+                    status["done_this_run"] += 1
+                    await post_upload(ctx, lec, msg, caption, size, meta, upload_secs)
             finally:
                 status["uploading"] = None
                 if thumb and os.path.exists(thumb):
@@ -538,71 +778,106 @@ async def main():
 
     uploader_task = asyncio.create_task(upload_worker())
 
-    # Producer: ek-ek karke download, queue me daalta hai
-    uploaded_set = set(state["uploaded"])
-    for lec in lectures:
-        lec_id = lec["id"]
-        title = lec["title"]
+    # Producer: JSON files ek ke baad ek, har file ki videos ek-ek karke download
+    for ctx in contexts:
+        fname = ctx["fname"]
+        fs = fstate(fname)
+        done_ids = uploaded_ids(fname)
+        todo = [l for l in ctx["lectures"] if l["id"] not in done_ids]
 
-        if lec_id in uploaded_set:
+        if not todo:
+            print(f"[Skip] {fname}: sab videos pehle hi upload ho chuki hain.")
             continue
 
-        url = lec.get("link")
-        if not url:
-            mark_failed(lec_id, title, "link missing in data.json", "download")
-            continue
+        # Pichhli file ki saari videos (summary tak) khatam hone do, phir is batch ka intro
+        await upload_queue.join()
+        status["current_file"] = fname
+        print(f"\n===== Batch: {ctx['name']} ({fname}) | {len(todo)} videos baki =====")
 
-        filename = f"{lec['orderIdx']:03d}_{sanitize_title(title)}.mp4"
-        video_path = os.path.join(DOWNLOAD_DIR, filename)
-
-        print(f"\n[Download Start] Index {lec['orderIdx']}: {title}")
-        status["downloading"] = title
-        info, last_err = None, None
-
-        for attempt in range(1, DOWNLOAD_RETRIES + 1):
+        if not fs["intro_sent"]:
             try:
-                info = await download_video(url, video_path)
-                if os.path.exists(video_path) and os.path.getsize(video_path) > 0:
-                    break
-                raise Exception("File empty or not created")
+                await send_batch_intro(client, ctx)
             except Exception as e:
-                info, last_err = None, e
-                print(f"[Download Error] {title}: {e} (try {attempt}/{DOWNLOAD_RETRIES})")
-                if attempt < DOWNLOAD_RETRIES:
-                    await asyncio.sleep(5 * attempt)
+                print(f"[Intro] Bhejna fail hua ({e}), videos ka kaam chalu rakhta hoon.\n")
 
-        status["downloading"] = None
+        for lec in todo:
+            lec_id, title = lec["id"], lec["title"]
 
-        if info is None:
-            mark_failed(lec_id, title, last_err, "download")
-            continue
+            url = lec.get("link")
+            if not url:
+                mark_failed(fname, lec_id, title, "link missing in JSON", "download")
+                continue
 
-        size = os.path.getsize(video_path)
-        if size > MAX_UPLOAD_BYTES:
-            mark_failed(lec_id, title, f"File {size / MB:.0f}MB > 2GB Telegram limit", "size_limit")
-            os.remove(video_path)
-            continue
+            filename = f"{ctx['idx']:02d}_{lec['orderIdx']:03d}_{sanitize_title(title)}.mp4"
+            video_path = os.path.join(DOWNLOAD_DIR, filename)
 
-        caption = build_caption(lec, batch_name)
+            print(f"\n[Download Start] {short_name(fname)} | Index {lec['orderIdx']}: {title}")
+            status["downloading"] = title
+            info, last_err = None, None
 
-        print(f"[Download Done] Index {lec['orderIdx']}: {title} ({size / MB:.1f}MB, queued for upload)")
-        await upload_queue.put((lec, video_path, caption))
+            for attempt in range(1, DOWNLOAD_RETRIES + 1):
+                try:
+                    info = await download_video(url, video_path)
+                    if os.path.exists(video_path) and os.path.getsize(video_path) > 0:
+                        break
+                    raise Exception("File empty or not created")
+                except Exception as e:
+                    info, last_err = None, e
+                    print(f"[Download Error] {title}: {e} (try {attempt}/{DOWNLOAD_RETRIES})")
+                    if attempt < DOWNLOAD_RETRIES:
+                        await asyncio.sleep(5 * attempt)
+
+            status["downloading"] = None
+
+            if info is None:
+                mark_failed(fname, lec_id, title, last_err, "download")
+                continue
+
+            size = os.path.getsize(video_path)
+            if size > MAX_UPLOAD_BYTES:
+                mark_failed(fname, lec_id, title, f"File {size / MB:.0f}MB > 2GB Telegram limit", "size_limit")
+                os.remove(video_path)
+                continue
+
+            caption = build_caption(lec, ctx["name"])
+            print(f"[Download Done] Index {lec['orderIdx']}: {title} ({size / MB:.1f}MB, queued for upload)")
+            await upload_queue.put((ctx, lec, video_path, caption))
 
     await upload_queue.put(None)
     await uploader_task
+    status["current_file"] = None
 
-    ids = {l["id"] for l in lectures}
-    failed_list = [f for f in state["failed"] if f["id"] in ids]
+    o_total, o_done, o_failed = overall_counts()
     print("\n" + "=" * 40)
-    print(f"Uploaded: {len(ids & set(state['uploaded']))}/{len(lectures)}")
-    if failed_list:
-        print(f"Failed: {len(failed_list)} (dobara run karoge to inhe retry kiya jayega)")
-        for f in failed_list:
-            print(f"  - {f['title']} — Failed [{f.get('stage')}]: {f.get('error')}")
+    print(f"Uploaded: {o_done}/{o_total}")
+    if o_failed:
+        print(f"Failed: {o_failed} (dobara run karoge to inhe retry kiya jayega)")
+        for ctx in contexts:
+            for f in file_counts(ctx)[2]:
+                print(f"  - {f['title']} ({short_name(ctx['fname'])}) — Failed [{f.get('stage')}]: {f.get('error')}")
     else:
         print("Sabhi videos successfully process ho gayi hain!")
 
     await client.disconnect()
+
+
+async def retry_backups(client):
+    for ctx in contexts:
+        fs = fstate(ctx["fname"])
+        for lid in list(fs["backup_failed"]):
+            msg_id = fs["msgs"].get(str(lid))
+            if not msg_id:
+                continue
+            try:
+                msg = await client.get_messages(CHAT_ID, ids=msg_id)
+                if not msg:
+                    continue
+                await safe_call(lambda: send_backup_media(client, msg, msg.message or ""))
+                fs["backup_failed"].remove(lid)
+                save_state()
+                print(f"[Backup Retry] {ctx['fname']} id {lid}: backup channel me bhej diya")
+            except Exception as e:
+                print(f"[Backup Retry] {ctx['fname']} id {lid} fail: {e}")
 
 
 if __name__ == "__main__":
