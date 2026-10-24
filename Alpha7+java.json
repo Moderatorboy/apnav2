@@ -1,0 +1,4921 @@
+{
+  "id": "alpha-plus-7-java",
+  "name": "Alpha Plus Batch 7.0 (Java)",
+  "image": "https://lwfiles.mycourse.app/62a6cd5e1e9e2fbf212d608d-public/c56dc46c2834c93c7e9cf5f730950271.jpg",
+  "videoCount": 554,
+  "pdfCount": 79,
+  "isPopular": false,
+  "originalPrice": 0,
+  "startDate": "N/A",
+  "lastSyncedAt": "2026-06-19T04:15:44.025Z",
+  "lectures": [
+    {
+      "id": "alpha-plus-7-java::6987d7c8b9ef0fcdb10963d5",
+      "title": "Orientation Session (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/8dc7210b450bfff8271005fcdae9d7f15b3968e3.m3u8",
+      "sourceId": "r5pjbutqw3",
+      "type": "wistia",
+      "orderIdx": 0
+    },
+    {
+      "id": "alpha-plus-7-java::698ae36f657b279710045b76",
+      "title": "Live Session (Notes & Recordings)",
+      "link": "https://embed-ssl.wistia.com/deliveries/da7fc5aeceae9e273c45d3c3a1d520d2b4f88087.m3u8",
+      "sourceId": "5zv74s6mvt",
+      "type": "wistia",
+      "orderIdx": 1
+    },
+    {
+      "id": "alpha-plus-7-java::698de08a26d175d58b0be5d7",
+      "title": "LinkedIn Mentorship Session by Aman Sir",
+      "link": "https://embed-ssl.wistia.com/deliveries/fa5413d970042ae7f536acb70b9447203dc4ac00.m3u8",
+      "sourceId": "y1dn4vfmf6",
+      "type": "wistia",
+      "orderIdx": 2
+    },
+    {
+      "id": "alpha-plus-7-java::6991cee679740b50a9020bd6",
+      "title": "Practice Session 1 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/502dd27118882d97cab56c7963fb9fe2c98c6a12.m3u8",
+      "sourceId": "unr5a4fiuz",
+      "type": "wistia",
+      "orderIdx": 3
+    },
+    {
+      "id": "alpha-plus-7-java::69941a5020460f86ef0936f9",
+      "title": "Practice Session 2 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/0c75fadd5917f9f75b3da283b2ce9c4bbb7edaf8.m3u8",
+      "sourceId": "udcne84vl7",
+      "type": "wistia",
+      "orderIdx": 4
+    },
+    {
+      "id": "alpha-plus-7-java::6995eebe24a5dd0bad071995",
+      "title": "Practice Session 3 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/c19959bd74c6ee41f27c2cd8ae0922c4474fb477.m3u8",
+      "sourceId": "c70l9vl430",
+      "type": "wistia",
+      "orderIdx": 5
+    },
+    {
+      "id": "alpha-plus-7-java::69999baf2197cd96780eb205",
+      "title": "Practice Session 4 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a5c9fd721049f76f816e62a27ddd194bebecc30e.m3u8",
+      "sourceId": "4429vrvnc9",
+      "type": "wistia",
+      "orderIdx": 6
+    },
+    {
+      "id": "alpha-plus-7-java::699ed64192c62b36550af0a5",
+      "title": "Practice Session 5 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/7fe62f4d375374b6cb27204c0da7ec8c41b983d1.m3u8",
+      "sourceId": "bc8bybbqdw",
+      "type": "wistia",
+      "orderIdx": 7
+    },
+    {
+      "id": "alpha-plus-7-java::699ed659d10a2d71e6083916",
+      "title": "Practice Session 6 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a4af79115c9e55f63ab0964178278e2bd24f0923.m3u8",
+      "sourceId": "wmk251t8t2",
+      "type": "wistia",
+      "orderIdx": 8
+    },
+    {
+      "id": "alpha-plus-7-java::69a05868cefb28bc000e94f5",
+      "title": "Practice Session 7 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/fab167398e4ffa4d3b8be1b04f9ab00a798424da.m3u8",
+      "sourceId": "ogqqf56xjo",
+      "type": "wistia",
+      "orderIdx": 9
+    },
+    {
+      "id": "alpha-plus-7-java::69a549f1c2526382e006a738",
+      "title": "Practice Session 8 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f427f9631fb0ed3d7013612d0d6595d5ffc3133a.m3u8",
+      "sourceId": "53qut90k3m",
+      "type": "wistia",
+      "orderIdx": 10
+    },
+    {
+      "id": "alpha-plus-7-java::69a7005d13daa7ca4c008e15",
+      "title": "Practice Session 9 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2e17ddda7654c5f2315b60b882fb95da67e6273e.m3u8",
+      "sourceId": "voq9t4h73i",
+      "type": "wistia",
+      "orderIdx": 11
+    },
+    {
+      "id": "alpha-plus-7-java::69ac3550853d082c5d01f485",
+      "title": "Practice Session 10 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a188d2a46f6732418fae35c5c4b8649b72c1b0eb.m3u8",
+      "sourceId": "u0ubwg85dq",
+      "type": "wistia",
+      "orderIdx": 12
+    },
+    {
+      "id": "alpha-plus-7-java::69ac3550853d082c5d01f486",
+      "title": "Practice Session 11 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/e4d6763ec8573f59dfd9c294898d273f634db3c7.m3u8",
+      "sourceId": "8oltycn9mt",
+      "type": "wistia",
+      "orderIdx": 13
+    },
+    {
+      "id": "alpha-plus-7-java::69aebae58c8aa67b7c0ad465",
+      "title": "Practice Session 12 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/649f712f4935b7e2eb4beca3b44af5b45d0b85b5.m3u8",
+      "sourceId": "gcmm62e8i1",
+      "type": "wistia",
+      "orderIdx": 14
+    },
+    {
+      "id": "alpha-plus-7-java::69b44e606baa04575d0bed46",
+      "title": "Practice Session 13 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f3aa9d0373f5facef8b0951da58667334834f208.m3u8",
+      "sourceId": "8300y5n452",
+      "type": "wistia",
+      "orderIdx": 15
+    },
+    {
+      "id": "alpha-plus-7-java::69b44e606baa04575d0bed47",
+      "title": "Practice Session 14 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/6344aa25897e1b5aea4def671671dcaebbb64b9c.m3u8",
+      "sourceId": "dmds1zz1j7",
+      "type": "wistia",
+      "orderIdx": 16
+    },
+    {
+      "id": "alpha-plus-7-java::69b993a01b7e46b13206d4b3",
+      "title": "Practice Session 15 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f3aa9d0373f5facef8b0951da58667334834f208.m3u8",
+      "sourceId": "8300y5n452",
+      "type": "wistia",
+      "orderIdx": 17
+    },
+    {
+      "id": "alpha-plus-7-java::69b993a01b7e46b13206d4b4",
+      "title": "Practice Session 16 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/af59d711fea074caac6eda3292f29b6fe1c3e02e.m3u8",
+      "sourceId": "5ycxbr8g6k",
+      "type": "wistia",
+      "orderIdx": 18
+    },
+    {
+      "id": "alpha-plus-7-java::69b993a01b7e46b13206d4b5",
+      "title": "Practice Session 17 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/68cf1649c67bcd8a5ce90851f45e77d0bda2c33c.m3u8",
+      "sourceId": "zd6avv4nmp",
+      "type": "wistia",
+      "orderIdx": 19
+    },
+    {
+      "id": "alpha-plus-7-java::69c2a07e45d926ab590c7bc8",
+      "title": "Practice Session 18 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2bfcb607139b7b228208e0eead91b8b22c156fa8.m3u8",
+      "sourceId": "m7coqm6hxr",
+      "type": "wistia",
+      "orderIdx": 20
+    },
+    {
+      "id": "alpha-plus-7-java::69c2a07e45d926ab590c7bc9",
+      "title": "Practice Session 19 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/846927ecc6beba76112cc34aaa37ec190cc3aff6.m3u8",
+      "sourceId": "p0dbqg25mw",
+      "type": "wistia",
+      "orderIdx": 21
+    },
+    {
+      "id": "alpha-plus-7-java::69c38fe092f87b080607f889",
+      "title": "Practice Session 20 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/e061120e10cc1c271c4e17d43ecfe0878ef88417.m3u8",
+      "sourceId": "y4oqs2jo9n",
+      "type": "wistia",
+      "orderIdx": 22
+    },
+    {
+      "id": "alpha-plus-7-java::69c38fe092f87b080607f88a",
+      "title": "Practice Session 21 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/34c8c1549fe6d3d4fab48594035eca7639c65a37.m3u8",
+      "sourceId": "atpo99h7ux",
+      "type": "wistia",
+      "orderIdx": 23
+    },
+    {
+      "id": "alpha-plus-7-java::69caa5da112a834424066fb4",
+      "title": "Practice Session 22 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/bdca89f1ac5edd7f7ed35b3701d5bfe594872305.m3u8",
+      "sourceId": "hmze3ewjip",
+      "type": "wistia",
+      "orderIdx": 24
+    },
+    {
+      "id": "alpha-plus-7-java::69caa5da112a834424066fb5",
+      "title": "Practice Session 23 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f8075011bc02de7308d2a1b96dfa04d85cc0841d.m3u8",
+      "sourceId": "rraobfbmyl",
+      "type": "wistia",
+      "orderIdx": 25
+    },
+    {
+      "id": "alpha-plus-7-java::69caa5da112a834424066fb6",
+      "title": "Practice Session 24 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ab50974907af4cc475adff30d15248206098b6c6.m3u8",
+      "sourceId": "ud5gmc7ktz",
+      "type": "wistia",
+      "orderIdx": 26
+    },
+    {
+      "id": "alpha-plus-7-java::69d5173b466c6ff92e083be6",
+      "title": "Practice Session 25 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/e6ec8945ad34a3941d0038a65ab4c7ad1d517b61.m3u8",
+      "sourceId": "qcrfziybt2",
+      "type": "wistia",
+      "orderIdx": 27
+    },
+    {
+      "id": "alpha-plus-7-java::69d5173b466c6ff92e083be7",
+      "title": "Practice Session 26 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/8734cb3b0c27b2b1619bd0f12a51ec834df9f90b.m3u8",
+      "sourceId": "2vra0fqigy",
+      "type": "wistia",
+      "orderIdx": 28
+    },
+    {
+      "id": "alpha-plus-7-java::69d5173b466c6ff92e083be8",
+      "title": "Practice Session 27 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/fc4dbddacf1daf841931865ec6a906e97b23d20f.m3u8",
+      "sourceId": "hpq338b0if",
+      "type": "wistia",
+      "orderIdx": 29
+    },
+    {
+      "id": "alpha-plus-7-java::69d5173b466c6ff92e083be9",
+      "title": "Practice Session 28 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/5ecb7962c5f11dcc278da826843c9da5a9901628.m3u8",
+      "sourceId": "hqnvjxksnv",
+      "type": "wistia",
+      "orderIdx": 30
+    },
+    {
+      "id": "alpha-plus-7-java::69d7b7a4d84d1bc7830e0d63",
+      "title": "Practice Session 29 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/3bd124ae7ab5b6e2993b39894e3e38629b2b3896.m3u8",
+      "sourceId": "i6hw3de0qh",
+      "type": "wistia",
+      "orderIdx": 31
+    },
+    {
+      "id": "alpha-plus-7-java::69e23267eecd2753f900e6b3",
+      "title": "Practice Session 30 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/df449d7e2657bb456edd02b411fe1e6496bef36b.m3u8",
+      "sourceId": "fnpngvchdx",
+      "type": "wistia",
+      "orderIdx": 32
+    },
+    {
+      "id": "alpha-plus-7-java::69e23267eecd2753f900e6b4",
+      "title": "Practice Session 31 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/785ead1ae65d8aacc743cb024c6e596cdb41cce2.m3u8",
+      "sourceId": "ptfdtfenms",
+      "type": "wistia",
+      "orderIdx": 33
+    },
+    {
+      "id": "alpha-plus-7-java::69e5c698b9c7c910ad08d106",
+      "title": "Practice Session 32 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/c0a93356bc7a7c8cfdce9b4f02d8feb291a7109b.m3u8",
+      "sourceId": "b4ejlskevz",
+      "type": "wistia",
+      "orderIdx": 34
+    },
+    {
+      "id": "alpha-plus-7-java::69e79bf4f048073bfa04d257",
+      "title": "Practice Session 33 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/149fbe8970d6208a7b0fbbe6e245e7252700b501.m3u8",
+      "sourceId": "lkm1i6opgv",
+      "type": "wistia",
+      "orderIdx": 35
+    },
+    {
+      "id": "alpha-plus-7-java::69ea46f9e81a91d6aa0921c3",
+      "title": "Practice Session 34 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/fef1fcc78f5a7ef8b8e554f475bf1bf8dc43fe8e.m3u8",
+      "sourceId": "f81oblutl7",
+      "type": "wistia",
+      "orderIdx": 36
+    },
+    {
+      "id": "alpha-plus-7-java::69eca5c7396e89d0140dfd23",
+      "title": "Practice Session 35 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/b1e8569657f0d197a19db2c11a748f06d9067854.m3u8",
+      "sourceId": "zag9k3769s",
+      "type": "wistia",
+      "orderIdx": 37
+    },
+    {
+      "id": "alpha-plus-7-java::69ef8d8f398d13d8d900e735",
+      "title": "Practice Session 36 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f197163d9992aa3513e1e6b333d5e75e06e755a7.m3u8",
+      "sourceId": "1rmse4wzbv",
+      "type": "wistia",
+      "orderIdx": 38
+    },
+    {
+      "id": "alpha-plus-7-java::69f61a35784652d54c07ed95",
+      "title": "Practice Session 37 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ed90795710fa3e88e8ad086325a1d5e5213efe91.m3u8",
+      "sourceId": "wmmmmzk0g8",
+      "type": "wistia",
+      "orderIdx": 39
+    },
+    {
+      "id": "alpha-plus-7-java::69f61a35784652d54c07ed96",
+      "title": "Practice Session 38 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/3c3d27dd0d80d5ad80b60884a8877444c104d348.m3u8",
+      "sourceId": "v4z4guh3xl",
+      "type": "wistia",
+      "orderIdx": 40
+    },
+    {
+      "id": "alpha-plus-7-java::69f75c654a2c30e66a067663",
+      "title": "Practice Session 39 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/df65a2e6ff8ca29c3985ff4a46f3cd5bfd0d2ce5.m3u8",
+      "sourceId": "8ymodyilny",
+      "type": "wistia",
+      "orderIdx": 41
+    },
+    {
+      "id": "alpha-plus-7-java::69fa006a660344691a0752c3",
+      "title": "Practice Session 40 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f875e5d08fe0d2917a6c7bdd39390649c5e0a777.m3u8",
+      "sourceId": "aw2qxipfhj",
+      "type": "wistia",
+      "orderIdx": 42
+    },
+    {
+      "id": "alpha-plus-7-java::69fc440f48f60951f401d7d6",
+      "title": "Practice Session 41 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/179d0e91502f96536212cad4458d201957bee64d.m3u8",
+      "sourceId": "pm3e7nxq1b",
+      "type": "wistia",
+      "orderIdx": 43
+    },
+    {
+      "id": "alpha-plus-7-java::69ff4c096e92fc65500db665",
+      "title": "Practice Session 42 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/89153584b7d2507bdf5c40be536b99100f7f7b02.m3u8",
+      "sourceId": "9kyv83t78o",
+      "type": "wistia",
+      "orderIdx": 44
+    },
+    {
+      "id": "alpha-plus-7-java::6a00c4cbf13a18f8040a4d79",
+      "title": "Practice Session 43 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/c3fbb0d4e21a61ef74019b76bac10894c8a8a4d3.m3u8",
+      "sourceId": "7p0nrrt8hi",
+      "type": "wistia",
+      "orderIdx": 45
+    },
+    {
+      "id": "alpha-plus-7-java::6a049da152fc9ce43b074e53",
+      "title": "Practice Session 44 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/122e15eac6b9221810691b271594b8c6488713f8.m3u8",
+      "sourceId": "ini9f99k4v",
+      "type": "wistia",
+      "orderIdx": 46
+    },
+    {
+      "id": "alpha-plus-7-java::6a0c8a84c32d89ec370ef847",
+      "title": "Practice Session 45 (Recording)",
+      "link": "https://embed-ssl.wistia.com/deliveries/cd9750797b3f8ea17cb88f13dfb9c63f9bce4f4a.m3u8",
+      "sourceId": "mgo1zb0x27",
+      "type": "wistia",
+      "orderIdx": 47
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6a4",
+      "title": "Path to Placement",
+      "link": "https://embed-ssl.wistia.com/deliveries/9efd31098827c085c6870ce43558f9b228b1b163.m3u8",
+      "sourceId": "xuzb9xio1t",
+      "type": "wistia",
+      "orderIdx": 48
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6a5",
+      "title": "What will you learn?",
+      "link": "https://embed-ssl.wistia.com/deliveries/bdf4a637adf45239d78bcdceff77d1d1ccb02f62.m3u8",
+      "sourceId": "cv5z9skt18",
+      "type": "wistia",
+      "orderIdx": 49
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6a6",
+      "title": "Prerequisites",
+      "link": "https://embed-ssl.wistia.com/deliveries/f7e785d8b18d434943852e298a0799ffece2a28e.m3u8",
+      "sourceId": "l4cgrlbf60",
+      "type": "wistia",
+      "orderIdx": 50
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6a7",
+      "title": "What to Install? (on your laptop/computer)",
+      "link": "https://embed-ssl.wistia.com/deliveries/95abd837dae5e1d563d5cb3e0add70babb799b28.m3u8",
+      "sourceId": "au23x1utq4",
+      "type": "wistia",
+      "orderIdx": 51
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6a9",
+      "title": "What are Flowcharts?",
+      "link": "https://embed-ssl.wistia.com/deliveries/8e8a13152b4497a2f44955319c798de257ad8f0c.m3u8",
+      "sourceId": "mqmoqg93er",
+      "type": "wistia",
+      "orderIdx": 52
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6aa",
+      "title": "Flowchart Components",
+      "link": "https://embed-ssl.wistia.com/deliveries/b6db84cc293418429cacd6e143558df910e6e5a0.m3u8",
+      "sourceId": "d3c9uzve18",
+      "type": "wistia",
+      "orderIdx": 53
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6ab",
+      "title": "Sum of 2 Numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/73627ce514fbc289a5a56a057c2cd28ccc3c5ebd.m3u8",
+      "sourceId": "kyi4sxcsv8",
+      "type": "wistia",
+      "orderIdx": 54
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6ac",
+      "title": "Calculate Simple Interest",
+      "link": "https://embed-ssl.wistia.com/deliveries/b464488c702e04ed583c5a7fb4b5626cbef45791.m3u8",
+      "sourceId": "i7imncqf0f",
+      "type": "wistia",
+      "orderIdx": 55
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6ad",
+      "title": "Max of 3 Numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/897b5ec10279b063e9fc3ab7716d75869b7da8d4.m3u8",
+      "sourceId": "j3gfbsw1fv",
+      "type": "wistia",
+      "orderIdx": 56
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6ae",
+      "title": "Find if a Number is Prime or not",
+      "link": "https://embed-ssl.wistia.com/deliveries/2a05eef0018259cc7dba581f3376df614a92ab58.m3u8",
+      "sourceId": "m40g1utp4g",
+      "type": "wistia",
+      "orderIdx": 57
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6af",
+      "title": "Sum of first N natural numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/aa072ffea92b5c2626f1fe006495c87851c9d6e9.m3u8",
+      "sourceId": "bi58ynt8gr",
+      "type": "wistia",
+      "orderIdx": 58
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6b2",
+      "title": "Creating a Java File",
+      "link": "https://embed-ssl.wistia.com/deliveries/958d99865cbdc421f5f8775e30dda34e80a7f2bd.m3u8",
+      "sourceId": "8m3rmku0xo",
+      "type": "wistia",
+      "orderIdx": 59
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6b3",
+      "title": "Boilerplate Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/1f5c46d1e44af4e1f3ea6362e4c5de348e7260ed.m3u8",
+      "sourceId": "1htiwpm9eh",
+      "type": "wistia",
+      "orderIdx": 60
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6b4",
+      "title": "Output in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/ddbe789d8e72c60b6a001a4234bfb4e5eb089df7.m3u8",
+      "sourceId": "7aguoe0qbu",
+      "type": "wistia",
+      "orderIdx": 61
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6b5",
+      "title": "Print a Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/0a655e04c389e884dc7943eecf8e7fddf401be1e.m3u8",
+      "sourceId": "pkump2rrze",
+      "type": "wistia",
+      "orderIdx": 62
+    },
+    {
+      "id": "alpha-plus-7-java::69874ccd2621f63cf909b6b6",
+      "title": "Variables in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/d5669236c21deecd020ff8161691b88d796ff709.m3u8",
+      "sourceId": "6s3f80w608",
+      "type": "wistia",
+      "orderIdx": 63
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6b7",
+      "title": "Data Types in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/631a54b3e330d2674ad214df4f59427a7baf03b8.m3u8",
+      "sourceId": "cp81h30jrp",
+      "type": "wistia",
+      "orderIdx": 64
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6b8",
+      "title": "Sum of a & b",
+      "link": "https://embed-ssl.wistia.com/deliveries/a7c4c8707d6e7aa2980835bc187f4bddb8521882.m3u8",
+      "sourceId": "y1ggbsz245",
+      "type": "wistia",
+      "orderIdx": 65
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6b9",
+      "title": "Comments in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/1f11b4b94e5719c40723c766c06fce9c0c52f322.m3u8",
+      "sourceId": "aiawdxajt6",
+      "type": "wistia",
+      "orderIdx": 66
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ba",
+      "title": "Input in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/1c8b2d3520a1954fe7d25e2ad04704582295bd2e.m3u8",
+      "sourceId": "tz0rl3seid",
+      "type": "wistia",
+      "orderIdx": 67
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6bb",
+      "title": "Sum of a & b (Input from User)",
+      "link": "https://embed-ssl.wistia.com/deliveries/0479c71455a3184fbfdc865c6935bf45e0d77105.m3u8",
+      "sourceId": "epx38voeds",
+      "type": "wistia",
+      "orderIdx": 68
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6bc",
+      "title": "Product of a & b",
+      "link": "https://embed-ssl.wistia.com/deliveries/76f05bacbbb57d99c467f05d358310004a165ffb.m3u8",
+      "sourceId": "cws13xn297",
+      "type": "wistia",
+      "orderIdx": 69
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6bd",
+      "title": "Area of a Circle",
+      "link": "https://embed-ssl.wistia.com/deliveries/2e247611ec7a42c6fcfe7e80c95cf595d60ef2c5.m3u8",
+      "sourceId": "e8ljot0wzq",
+      "type": "wistia",
+      "orderIdx": 70
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6be",
+      "title": "Type Conversion",
+      "link": "https://embed-ssl.wistia.com/deliveries/92b49a09810e55c77a026b4325cdfcc7557ee59a.m3u8",
+      "sourceId": "pogczpszvy",
+      "type": "wistia",
+      "orderIdx": 71
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6bf",
+      "title": "Type Casting",
+      "link": "https://embed-ssl.wistia.com/deliveries/230f9e30a982884bfdd18d87ecaa6a82c47585fe.m3u8",
+      "sourceId": "sup9x6x7mf",
+      "type": "wistia",
+      "orderIdx": 72
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c0",
+      "title": "Type Promotion in Expression",
+      "link": "https://embed-ssl.wistia.com/deliveries/b0ff4c12eb10276ae9fc5f046a057c024f348b98.m3u8",
+      "sourceId": "cpq5ju6ssc",
+      "type": "wistia",
+      "orderIdx": 73
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c1",
+      "title": "How does Java code run?",
+      "link": "https://embed-ssl.wistia.com/deliveries/277b06e7df27cf5caf58f615bc2e936e801affd0.m3u8",
+      "sourceId": "h5pk1t6pf4",
+      "type": "wistia",
+      "orderIdx": 74
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c4",
+      "title": "Types of Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/b694d4fff5981b354f7e54c88b52cc542b979a77.m3u8",
+      "sourceId": "reom4d9rsz",
+      "type": "wistia",
+      "orderIdx": 75
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c5",
+      "title": "Arithmetic Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/4e4334196b7e65710d294b7052109ff4d34fcd1c.m3u8",
+      "sourceId": "5al3le0zps",
+      "type": "wistia",
+      "orderIdx": 76
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c6",
+      "title": "Unary Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/a77a2f10c54625181b8dcdff937ed462fa4c89cd.m3u8",
+      "sourceId": "k8sq4jee9z",
+      "type": "wistia",
+      "orderIdx": 77
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c7",
+      "title": "Relational Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/c3e96a9d2fa7e6241e518cba0a09aeded0214a58.m3u8",
+      "sourceId": "y8jozrlvde",
+      "type": "wistia",
+      "orderIdx": 78
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c8",
+      "title": "Logical Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/33f1cddbaf801bdb6676c6150408c4fd9f170e3f.m3u8",
+      "sourceId": "3d55tk2loq",
+      "type": "wistia",
+      "orderIdx": 79
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6c9",
+      "title": "Assignment Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/33f31ee6910d67edd78ac15ee30d350fc92c2102.m3u8",
+      "sourceId": "c75teso0j5",
+      "type": "wistia",
+      "orderIdx": 80
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6cd",
+      "title": "if else",
+      "link": "https://embed-ssl.wistia.com/deliveries/5e525ac21b2287cd1cbbdedd3e7a03922a8c431f.m3u8",
+      "sourceId": "xelobnt8ck",
+      "type": "wistia",
+      "orderIdx": 81
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ce",
+      "title": "Print the largest of 2 numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/9bc764433f4bf6a24466c15a66f1cf75b5cbd4dd.m3u8",
+      "sourceId": "n8kna1apb4",
+      "type": "wistia",
+      "orderIdx": 82
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6cf",
+      "title": "Print if number is Odd or Even",
+      "link": "https://embed-ssl.wistia.com/deliveries/8459f22be754ac7456d4e8faba7f683ad9e43e06.m3u8",
+      "sourceId": "oytaq3wvqd",
+      "type": "wistia",
+      "orderIdx": 83
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d0",
+      "title": "else if",
+      "link": "https://embed-ssl.wistia.com/deliveries/3ba8b2125e1152e79d647e83ad217ec6095e0d23.m3u8",
+      "sourceId": "9b4kwg7c5h",
+      "type": "wistia",
+      "orderIdx": 84
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d1",
+      "title": "Income Tax Calculator",
+      "link": "https://embed-ssl.wistia.com/deliveries/69a32b4424cb051a677409876487f03f614414c1.m3u8",
+      "sourceId": "134zvl89o4",
+      "type": "wistia",
+      "orderIdx": 85
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d2",
+      "title": "Print the largest of 3 numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/b80a7dfc8e1b47ba7df9c1a480678e1a29397989.m3u8",
+      "sourceId": "qxek4svbky",
+      "type": "wistia",
+      "orderIdx": 86
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d3",
+      "title": "Ternary Operator",
+      "link": "https://embed-ssl.wistia.com/deliveries/dcfe6ecdd7d3b2f9cbaca197d616fe9f24ec9248.m3u8",
+      "sourceId": "v4siweuu3m",
+      "type": "wistia",
+      "orderIdx": 87
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d4",
+      "title": "Check if a student will Pass or Fail",
+      "link": "https://embed-ssl.wistia.com/deliveries/3b4068feec95377eb92fe36b431dcca487651009.m3u8",
+      "sourceId": "x1djge2lzy",
+      "type": "wistia",
+      "orderIdx": 88
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d5",
+      "title": "Switch statement",
+      "link": "https://embed-ssl.wistia.com/deliveries/3a543afc6ed02ba6b22d89c87c534fd004d37b5a.m3u8",
+      "sourceId": "fvpya51mud",
+      "type": "wistia",
+      "orderIdx": 89
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d6",
+      "title": "Calculator",
+      "link": "https://embed-ssl.wistia.com/deliveries/aafbdd9f7240ee853a68dddf85e62e0dfc7f26b5.m3u8",
+      "sourceId": "7qe0hqxgsc",
+      "type": "wistia",
+      "orderIdx": 90
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6d9",
+      "title": "Loops Basics",
+      "link": "https://embed-ssl.wistia.com/deliveries/307a3660b9a60d93e79a09b27d1b5e63d025ccc3.m3u8",
+      "sourceId": "patiz896ql",
+      "type": "wistia",
+      "orderIdx": 91
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6da",
+      "title": "while Loop",
+      "link": "https://embed-ssl.wistia.com/deliveries/e58ec18a2e0619bbd684757420d33b48306bcc4e.m3u8",
+      "sourceId": "o3wvc7z40d",
+      "type": "wistia",
+      "orderIdx": 92
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6db",
+      "title": "Print numbers from 1 to 10",
+      "link": "https://embed-ssl.wistia.com/deliveries/7d1e021d421240b5b0d31dfc13164bfa0fd159f0.m3u8",
+      "sourceId": "uia5bqv19j",
+      "type": "wistia",
+      "orderIdx": 93
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6dc",
+      "title": "Print numbers from 1 to n",
+      "link": "https://embed-ssl.wistia.com/deliveries/7fc4b84dfb85b009f9ec241d276e99d2f1c7fef7.m3u8",
+      "sourceId": "49ce69g4og",
+      "type": "wistia",
+      "orderIdx": 94
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6dd",
+      "title": "Sum of first N natural numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/3063a73ea881784df502019bf868e439bfc5af3b.m3u8",
+      "sourceId": "abqynd0wnl",
+      "type": "wistia",
+      "orderIdx": 95
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6de",
+      "title": "for Loop",
+      "link": "https://embed-ssl.wistia.com/deliveries/4e43d6b3981e0872b23b196e780d8dbe98230f62.m3u8",
+      "sourceId": "1hq1n32ksu",
+      "type": "wistia",
+      "orderIdx": 96
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6df",
+      "title": "Print Square pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/e757cb4a7fbd48975355246323e235d0c800a405.m3u8",
+      "sourceId": "20vmwi0hd3",
+      "type": "wistia",
+      "orderIdx": 97
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e0",
+      "title": "Print reverse of a number",
+      "link": "https://embed-ssl.wistia.com/deliveries/2f3ef28e6dc8e0bb9f33e9b6c0ef1808ba3eff61.m3u8",
+      "sourceId": "s777t2sgrb",
+      "type": "wistia",
+      "orderIdx": 98
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e1",
+      "title": "Reverse the given number",
+      "link": "https://embed-ssl.wistia.com/deliveries/23fd4568a84a4803e350eb6ed83c91fde453c522.m3u8",
+      "sourceId": "2x7ji0yq1u",
+      "type": "wistia",
+      "orderIdx": 99
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e2",
+      "title": "do while Loop",
+      "link": "https://embed-ssl.wistia.com/deliveries/3d1dac5368da8bde8579b8b425f683376980d696.m3u8",
+      "sourceId": "pjaajd3mhr",
+      "type": "wistia",
+      "orderIdx": 100
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e3",
+      "title": "Break statement",
+      "link": "https://embed-ssl.wistia.com/deliveries/cc5c9bcf79561f2444ae90ccfe077d19e3ef2730.m3u8",
+      "sourceId": "7ixnwhysep",
+      "type": "wistia",
+      "orderIdx": 101
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e4",
+      "title": "Question - break keyword",
+      "link": "https://embed-ssl.wistia.com/deliveries/e9e7d546471fa77a03a61e4c537d5860df69be5a.m3u8",
+      "sourceId": "ygjjha2tpr",
+      "type": "wistia",
+      "orderIdx": 102
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e5",
+      "title": "Continue statement",
+      "link": "https://embed-ssl.wistia.com/deliveries/5dd83832a564a487c68255e220082c05a5938906.m3u8",
+      "sourceId": "09zmb9wyko",
+      "type": "wistia",
+      "orderIdx": 103
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e6",
+      "title": "Question - continue keyword",
+      "link": "https://embed-ssl.wistia.com/deliveries/9ce254063704730f99e252cb3dba38821554419b.m3u8",
+      "sourceId": "a2q04l3br3",
+      "type": "wistia",
+      "orderIdx": 104
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6e7",
+      "title": "Check if a number is Prime or not",
+      "link": "https://embed-ssl.wistia.com/deliveries/2158c9a0fe004de02841ad49f47333d92cf7ea26.m3u8",
+      "sourceId": "aka2266cy1",
+      "type": "wistia",
+      "orderIdx": 105
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ea",
+      "title": "Intro to Nested Loops (Star Pattern)",
+      "link": "https://embed-ssl.wistia.com/deliveries/4ec824da6ccaec94c40c663ce3110262382a5338.m3u8",
+      "sourceId": "86c3r29yj9",
+      "type": "wistia",
+      "orderIdx": 106
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6eb",
+      "title": "Inverted Star Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/7ecd3dd738d016dd6190cc0fbd194be155b7e8c4.m3u8",
+      "sourceId": "zzbiuk1siz",
+      "type": "wistia",
+      "orderIdx": 107
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ec",
+      "title": "Half Pyramid Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/2d5d00e6b65be2905dc28cbb00ae223088ad042d.m3u8",
+      "sourceId": "wut18bxwce",
+      "type": "wistia",
+      "orderIdx": 108
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ed",
+      "title": "Character Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/8af32c8788eb787c1d0e41e07c855e8a5db5d93b.m3u8",
+      "sourceId": "x0nidy2ruw",
+      "type": "wistia",
+      "orderIdx": 109
+    },
+    {
+      "id": "alpha-plus-7-java::69874cce2621f63cf909b6ee",
+      "title": "Special Note",
+      "link": "https://embed-ssl.wistia.com/deliveries/e5d1bcce28d345ae84d1e155ca2163086d850292.m3u8",
+      "sourceId": "q37p2sqmdt",
+      "type": "wistia",
+      "orderIdx": 110
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038614",
+      "title": "Introduction to Functions",
+      "link": "https://embed-ssl.wistia.com/deliveries/4440a14ecefcbbd2049b845595068c68e14c77e6.m3u8",
+      "sourceId": "427fwnme12",
+      "type": "wistia",
+      "orderIdx": 111
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038615",
+      "title": "Syntax - Function Code Demo",
+      "link": "https://embed-ssl.wistia.com/deliveries/44bac4ba6eff1fad8bbdd002e7796ec0da308353.m3u8",
+      "sourceId": "y47kmjc8hh",
+      "type": "wistia",
+      "orderIdx": 112
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038616",
+      "title": "Syntax with Parameters",
+      "link": "https://embed-ssl.wistia.com/deliveries/b6437bd205143b54a248f800fd7db3ec3c953126.m3u8",
+      "sourceId": "otcc1a2c0a",
+      "type": "wistia",
+      "orderIdx": 113
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038617",
+      "title": "Parameters v/s Arguments",
+      "link": "https://embed-ssl.wistia.com/deliveries/5182c56a3a96c78e2da906339b0217f2e609aead.m3u8",
+      "sourceId": "u55u9tgkrq",
+      "type": "wistia",
+      "orderIdx": 114
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038618",
+      "title": "What happens in memory? (Call Stack)",
+      "link": "https://embed-ssl.wistia.com/deliveries/364380f03d4ac44fd8ca5fa852e13d94a30663d8.m3u8",
+      "sourceId": "gn90nx913w",
+      "type": "wistia",
+      "orderIdx": 115
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038619",
+      "title": "Call by Value (in Java)",
+      "link": "https://embed-ssl.wistia.com/deliveries/43d4a5086347a329a3f72c3776224d89fa265a5c.m3u8",
+      "sourceId": "gkbmw36uqn",
+      "type": "wistia",
+      "orderIdx": 116
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861a",
+      "title": "Product of a & b",
+      "link": "https://embed-ssl.wistia.com/deliveries/1e2c299bcfd40b8d328c1a9a9940b17185e728aa.m3u8",
+      "sourceId": "owyk91pwuf",
+      "type": "wistia",
+      "orderIdx": 117
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861b",
+      "title": "Find Factorial",
+      "link": "https://embed-ssl.wistia.com/deliveries/e34b4e8e4bf9c1adc17db2a617fc7707b1d0010d.m3u8",
+      "sourceId": "1v8gapehya",
+      "type": "wistia",
+      "orderIdx": 118
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861c",
+      "title": "Find Binomial Coefficient",
+      "link": "https://embed-ssl.wistia.com/deliveries/9dbaa1ae1061f08247785b2b8ab4a7c487bc713d.m3u8",
+      "sourceId": "okx53wlj9l",
+      "type": "wistia",
+      "orderIdx": 119
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861d",
+      "title": "Inbuilt v/s User defined Methods",
+      "link": "https://embed-ssl.wistia.com/deliveries/d05125f8fee5dc4d5f3ff26f8ba8fdfc6ba157b5.m3u8",
+      "sourceId": "67p79q80u7",
+      "type": "wistia",
+      "orderIdx": 120
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861e",
+      "title": "Function Overloading",
+      "link": "https://embed-ssl.wistia.com/deliveries/e82550d808ae163e3201318d8a951db4f039303a.m3u8",
+      "sourceId": "pfwna0ldyh",
+      "type": "wistia",
+      "orderIdx": 121
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303861f",
+      "title": "Overloading using Parameters",
+      "link": "https://embed-ssl.wistia.com/deliveries/226156af2ff77caf26f3124ca759fa1f3c3c76f9.m3u8",
+      "sourceId": "45nqj0b6ot",
+      "type": "wistia",
+      "orderIdx": 122
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038620",
+      "title": "Overloading using Data Types",
+      "link": "https://embed-ssl.wistia.com/deliveries/929c0f8c20374f060aaec240cd3cf259bb44cadf.m3u8",
+      "sourceId": "3et5h9ywdk",
+      "type": "wistia",
+      "orderIdx": 123
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038621",
+      "title": "Check if a number is Prime or not",
+      "link": "https://embed-ssl.wistia.com/deliveries/fb0673129fc0c4046d4c60a243dc8742a4958bab.m3u8",
+      "sourceId": "q4en1pju54",
+      "type": "wistia",
+      "orderIdx": 124
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038622",
+      "title": "Check Prime (Optimized)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a58c2f0dcf02e27afd987cd99afb5b09ce74c9fd.m3u8",
+      "sourceId": "lwpf5gaxh2",
+      "type": "wistia",
+      "orderIdx": 125
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038623",
+      "title": "Primes in Range",
+      "link": "https://embed-ssl.wistia.com/deliveries/0ebb0d576077f33a134c794419580274dda3bd0a.m3u8",
+      "sourceId": "vvemh4p8nu",
+      "type": "wistia",
+      "orderIdx": 126
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038624",
+      "title": "Binary to Decimal",
+      "link": "https://embed-ssl.wistia.com/deliveries/d5185ed88ad6c2315d120de3389fc24654939ee1.m3u8",
+      "sourceId": "anhtby677z",
+      "type": "wistia",
+      "orderIdx": 127
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038625",
+      "title": "Code - Binary to Decimal",
+      "link": "https://embed-ssl.wistia.com/deliveries/6c90aee64f0174025503649730ac4eb823c88a0b.m3u8",
+      "sourceId": "w6bm8n6znf",
+      "type": "wistia",
+      "orderIdx": 128
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038626",
+      "title": "Decimal to Binary",
+      "link": "https://embed-ssl.wistia.com/deliveries/31f8dbc495860d7a7a315007d1419316f97cc458.m3u8",
+      "sourceId": "tescgz3p60",
+      "type": "wistia",
+      "orderIdx": 129
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038627",
+      "title": "Code - Decimal to Binary",
+      "link": "https://embed-ssl.wistia.com/deliveries/a8199c0a459a99e61f918e4e4865829af0c48bf8.m3u8",
+      "sourceId": "ay2nuoh8lv",
+      "type": "wistia",
+      "orderIdx": 130
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038628",
+      "title": "Method Scope",
+      "link": "https://embed-ssl.wistia.com/deliveries/e6e56a8039885def33b38668553c48c96be960af.m3u8",
+      "sourceId": "zzfxsuy64n",
+      "type": "wistia",
+      "orderIdx": 131
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038629",
+      "title": "Block Scope",
+      "link": "https://embed-ssl.wistia.com/deliveries/2a58de6f6e927c95fb648d17c510c5c83d22ab20.m3u8",
+      "sourceId": "s0lyb9rk8z",
+      "type": "wistia",
+      "orderIdx": 132
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303862c",
+      "title": "Hollow Rectangle Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/bb7b71212499586bcfedcc69c8ff7933e51682b8.m3u8",
+      "sourceId": "0vtzqe25f3",
+      "type": "wistia",
+      "orderIdx": 133
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303862d",
+      "title": "Dry Run - Hollow Rectangle Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/989face68fac9f2a1c5684ee9016aa49081aa3ed.m3u8",
+      "sourceId": "kcdm8hu41c",
+      "type": "wistia",
+      "orderIdx": 134
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303862e",
+      "title": "Inverted & Rotated Half Pyramid",
+      "link": "https://embed-ssl.wistia.com/deliveries/3b01e9926ab62eb3f28451332e2397ccdb86e92a.m3u8",
+      "sourceId": "ti61ws8vou",
+      "type": "wistia",
+      "orderIdx": 135
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303862f",
+      "title": "Inverted Half Pyramid Pattern with Numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/31a5c3ec1dfcf3d7186b463a32a9c6e7006f45f9.m3u8",
+      "sourceId": "6mo5di7lu4",
+      "type": "wistia",
+      "orderIdx": 136
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038630",
+      "title": "Floyd's Triangle Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/a6b968032d2bd0a83a9c32a321996136a11b8390.m3u8",
+      "sourceId": "oo5xcymn1x",
+      "type": "wistia",
+      "orderIdx": 137
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038631",
+      "title": "0-1 Triangle Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/f5bde05c9db54f4731a56b3829a7c8cb3281d0a8.m3u8",
+      "sourceId": "tfdn9os4ar",
+      "type": "wistia",
+      "orderIdx": 138
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038632",
+      "title": "Butterfly Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/02e841b2d963bca2b880ee0a13bba124728c9913.m3u8",
+      "sourceId": "53pbsjftb5",
+      "type": "wistia",
+      "orderIdx": 139
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038633",
+      "title": "Butterfly Pattern Code (explanation continued as well)",
+      "link": "https://embed-ssl.wistia.com/deliveries/b3bf2da50104b06a43bd3476e12ac5dd1515b516.m3u8",
+      "sourceId": "ugtotbbd98",
+      "type": "wistia",
+      "orderIdx": 140
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038634",
+      "title": "Solid Rhombus Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/b2382f91d7b8e62fc839e0b6fcebf9025e46519f.m3u8",
+      "sourceId": "w7lthcz7we",
+      "type": "wistia",
+      "orderIdx": 141
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038635",
+      "title": "Hollow Rhombus Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/5d983185e9a95f00636874895a6a6b6d2d1fbb70.m3u8",
+      "sourceId": "mgrx47twr3",
+      "type": "wistia",
+      "orderIdx": 142
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038636",
+      "title": "Diamond Pattern",
+      "link": "https://embed-ssl.wistia.com/deliveries/ce15e24cf9afdec448a0ba868ff3d8ba0f9f2ff3.m3u8",
+      "sourceId": "z0lbhai43v",
+      "type": "wistia",
+      "orderIdx": 143
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038637",
+      "title": "Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/b47c392dea31cd3cf61539f860faca07b3450db0.m3u8",
+      "sourceId": "xtk8zzn1ze",
+      "type": "wistia",
+      "orderIdx": 144
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038638",
+      "title": "Arrays - Creation",
+      "link": "https://embed-ssl.wistia.com/deliveries/9375ffcf3086337ca8260946f15a7a7a385a360c.m3u8",
+      "sourceId": "di8xibo5im",
+      "type": "wistia",
+      "orderIdx": 145
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038639",
+      "title": "Arrays - Input, Output & Update",
+      "link": "https://embed-ssl.wistia.com/deliveries/26dbc584423b8e7ef20c794694402fe1eb19ebb6.m3u8",
+      "sourceId": "5zjweu16xb",
+      "type": "wistia",
+      "orderIdx": 146
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303863a",
+      "title": "Arrays as Function Arguments",
+      "link": "https://embed-ssl.wistia.com/deliveries/5af1f25fed0fd934001c1edc4039086379bec8e8.m3u8",
+      "sourceId": "e6pk7o2l3t",
+      "type": "wistia",
+      "orderIdx": 147
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303863c",
+      "title": "Linear Search",
+      "link": "https://embed-ssl.wistia.com/deliveries/2b3c768edfc03e3716fff334a6c6f04388fa9576.m3u8",
+      "sourceId": "r2x2xat649",
+      "type": "wistia",
+      "orderIdx": 148
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303863d",
+      "title": "Largest in Array",
+      "link": "https://embed-ssl.wistia.com/deliveries/d6d54e138c7ba73e1790fb1931cd21930fb4ff59.m3u8",
+      "sourceId": "6i9vj73dds",
+      "type": "wistia",
+      "orderIdx": 149
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303863e",
+      "title": "Binary Search",
+      "link": "https://embed-ssl.wistia.com/deliveries/a336d21d0df2087d9f550d6df462198e77abad53.m3u8",
+      "sourceId": "sxj18boh7u",
+      "type": "wistia",
+      "orderIdx": 150
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c303863f",
+      "title": "Binary Search Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/f982392aa09408b413e4f820c46672ee5ef57d56.m3u8",
+      "sourceId": "uusffgr23j",
+      "type": "wistia",
+      "orderIdx": 151
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038640",
+      "title": "Reverse an Array",
+      "link": "https://embed-ssl.wistia.com/deliveries/785b518d6f70c96d64f2422fcd13bf9ac6b16e65.m3u8",
+      "sourceId": "ssayeq0oid",
+      "type": "wistia",
+      "orderIdx": 152
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038641",
+      "title": "Pairs in Array",
+      "link": "https://embed-ssl.wistia.com/deliveries/e7985b9126404e1f6218b2ac2776f99364615c35.m3u8",
+      "sourceId": "ln3nl6svm0",
+      "type": "wistia",
+      "orderIdx": 153
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038642",
+      "title": "Print Subarrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/065c8d5d557f1b394e63e76bc5fb50a97fd86782.m3u8",
+      "sourceId": "69yx8blznb",
+      "type": "wistia",
+      "orderIdx": 154
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038643",
+      "title": "Max Subarray Sum - I (Brute Force)",
+      "link": "https://embed-ssl.wistia.com/deliveries/c478654cd2b9b73628ffef1dc5afd4d2d2c39ba3.m3u8",
+      "sourceId": "6nrxoa8q6u",
+      "type": "wistia",
+      "orderIdx": 155
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038644",
+      "title": "Max Subarray Sum - II (Prefix Sum)",
+      "link": "https://embed-ssl.wistia.com/deliveries/6aa14197d5f28dda1b9ac65dff58ccf161be8724.m3u8",
+      "sourceId": "h2aokby4b9",
+      "type": "wistia",
+      "orderIdx": 156
+    },
+    {
+      "id": "alpha-plus-7-java::6993293b64a3f9d7c3038645",
+      "title": "Max Subarray Sum - III (Kadane's Algorithm)",
+      "link": "https://embed-ssl.wistia.com/deliveries/94a68640b92fd15608d2abec7089ec1627aac613.m3u8",
+      "sourceId": "mmczvo374m",
+      "type": "wistia",
+      "orderIdx": 157
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038646",
+      "title": "Trapping Rainwater",
+      "link": "https://embed-ssl.wistia.com/deliveries/7572e52186eb59c45f645d5d6603561e8d8056ba.m3u8",
+      "sourceId": "ysd8ib7qi0",
+      "type": "wistia",
+      "orderIdx": 158
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038647",
+      "title": "Trapping Rainwater - Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/3ab85fad182530e902c729352967b368b33faf35.m3u8",
+      "sourceId": "ncmeg9a3v5",
+      "type": "wistia",
+      "orderIdx": 159
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038648",
+      "title": "Best Time to Buy & Sell Stock",
+      "link": "https://embed-ssl.wistia.com/deliveries/83f5fdce053f270c741c16f4bde4dc0445c9730a.m3u8",
+      "sourceId": "xkc4pfkopq",
+      "type": "wistia",
+      "orderIdx": 160
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303864b",
+      "title": "What is sorting?",
+      "link": "https://embed-ssl.wistia.com/deliveries/620283278366c24fc59322a8a855b51c8b574f0e.m3u8",
+      "sourceId": "w5g8czgv44",
+      "type": "wistia",
+      "orderIdx": 161
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303864c",
+      "title": "Bubble Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/b4cc47e5a2ace5c68737a96fc529804b81994ca2.m3u8",
+      "sourceId": "9pkl16ybly",
+      "type": "wistia",
+      "orderIdx": 162
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303864d",
+      "title": "Bubble Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/3fa87eb86a3a696a40353595e8f40a9a49fb2150.m3u8",
+      "sourceId": "v55mo46aal",
+      "type": "wistia",
+      "orderIdx": 163
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303864e",
+      "title": "Selection Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/6333c42523110309e1f0b6235e4b312213001c6c.m3u8",
+      "sourceId": "xix1w0xif7",
+      "type": "wistia",
+      "orderIdx": 164
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303864f",
+      "title": "Selection Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/1cfd1e10602c19249216051b802635ba89c8ce80.m3u8",
+      "sourceId": "pu55yz8o8q",
+      "type": "wistia",
+      "orderIdx": 165
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038650",
+      "title": "Insertion Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/067577d1013f87a998108763b1b22679ba17a319.m3u8",
+      "sourceId": "pwlrtkxvcx",
+      "type": "wistia",
+      "orderIdx": 166
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038651",
+      "title": "Insertion Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/f8fd6a25c40b7e904dcb34b24ba9cbcd651317c3.m3u8",
+      "sourceId": "q0m7jhgw0v",
+      "type": "wistia",
+      "orderIdx": 167
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038652",
+      "title": "Inbuilt Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/51a26b679ad47e6cabd7fd4cec7b1f74cc2a6b97.m3u8",
+      "sourceId": "8i5z9r4dsg",
+      "type": "wistia",
+      "orderIdx": 168
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038653",
+      "title": "Counting Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/a5e8f70b4f2bb4cff115a58a9de556452fb41cc1.m3u8",
+      "sourceId": "rbhlcdys7d",
+      "type": "wistia",
+      "orderIdx": 169
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038654",
+      "title": "Counting Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/bbbd52f3db106b69669aa036e3e9018e16134e47.m3u8",
+      "sourceId": "oiipxqwbpw",
+      "type": "wistia",
+      "orderIdx": 170
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038657",
+      "title": "Introduction to 2D Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/88d843db1762289f3b9c6ef9bd62c17b27baffe6.m3u8",
+      "sourceId": "on3mu3ztgv",
+      "type": "wistia",
+      "orderIdx": 171
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038658",
+      "title": "Real life examples",
+      "link": "https://embed-ssl.wistia.com/deliveries/b38efae71d3f7eb42884e524efed8a6e50b7e4e2.m3u8",
+      "sourceId": "k542setq8e",
+      "type": "wistia",
+      "orderIdx": 172
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038659",
+      "title": "Representation of 2D Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/a0f5460905d37ef85fa30600a37fac84c45f6949.m3u8",
+      "sourceId": "bo8ct6s3oz",
+      "type": "wistia",
+      "orderIdx": 173
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865a",
+      "title": "Creation of 2D Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/a1e77997a7fdc8e80d13b323893fc0d1f3fc82f4.m3u8",
+      "sourceId": "la1saphcla",
+      "type": "wistia",
+      "orderIdx": 174
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865b",
+      "title": "2D Arrays in Memory",
+      "link": "https://embed-ssl.wistia.com/deliveries/4d1c9a3feedaf5dbd88c09b40b6046d28266650c.m3u8",
+      "sourceId": "d9ug9wxgqx",
+      "type": "wistia",
+      "orderIdx": 175
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865c",
+      "title": "Spiral Matrix",
+      "link": "https://embed-ssl.wistia.com/deliveries/d7a9fbdbbd0892fe14e851a6167f475a6dcd1a90.m3u8",
+      "sourceId": "o5eikpmn1o",
+      "type": "wistia",
+      "orderIdx": 176
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865d",
+      "title": "Spiral Matrix Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/de878539c9cfb82207fd631fd497b39154ae1c15.m3u8",
+      "sourceId": "z8yi9q0kba",
+      "type": "wistia",
+      "orderIdx": 177
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865e",
+      "title": "Diagonal Sum",
+      "link": "https://embed-ssl.wistia.com/deliveries/d874c56bbcd54a17808798a81377714d6dbbe020.m3u8",
+      "sourceId": "c15evky2zc",
+      "type": "wistia",
+      "orderIdx": 178
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303865f",
+      "title": "Search in Sorted Matrix",
+      "link": "https://embed-ssl.wistia.com/deliveries/fe19ab1ffe88d1c1ee791226366281746d5f30c0.m3u8",
+      "sourceId": "l6z18dplhy",
+      "type": "wistia",
+      "orderIdx": 179
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038660",
+      "title": "Search in Sorted Matrix Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/3ed132798b461d869c75b2f92aa4da90f2fb988d.m3u8",
+      "sourceId": "n0q1gvvhys",
+      "type": "wistia",
+      "orderIdx": 180
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038663",
+      "title": "What are Strings?",
+      "link": "https://embed-ssl.wistia.com/deliveries/4a1a9c9eeb47cd00dbd8633c0b942ebfd880148b.m3u8",
+      "sourceId": "b4pxn8l6ax",
+      "type": "wistia",
+      "orderIdx": 181
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038664",
+      "title": "Input/Output",
+      "link": "https://embed-ssl.wistia.com/deliveries/160540742cf78147349c14a5ebecaf55d680dcd5.m3u8",
+      "sourceId": "tnrhmkdsa0",
+      "type": "wistia",
+      "orderIdx": 182
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038665",
+      "title": "String Length",
+      "link": "https://embed-ssl.wistia.com/deliveries/630bafbbe3dd33bfd0e96e7edc553c8e2b8f9a5b.m3u8",
+      "sourceId": "1pw2sg7qyo",
+      "type": "wistia",
+      "orderIdx": 183
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038666",
+      "title": "String Concatenate",
+      "link": "https://embed-ssl.wistia.com/deliveries/1a124f72c8dc47047a17cb9740decbb441207106.m3u8",
+      "sourceId": "z5v2ul9ceg",
+      "type": "wistia",
+      "orderIdx": 184
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038667",
+      "title": "String charAt Method",
+      "link": "https://embed-ssl.wistia.com/deliveries/58b06f36bfc2e7733988fdc9fe8c6bb4860b9a22.m3u8",
+      "sourceId": "suc3f20qmp",
+      "type": "wistia",
+      "orderIdx": 185
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038668",
+      "title": "Check if a String is Palindrome",
+      "link": "https://embed-ssl.wistia.com/deliveries/0a5abf20ae8e0f36f23cee5d9b285413c93de9fb.m3u8",
+      "sourceId": "giji813y48",
+      "type": "wistia",
+      "orderIdx": 186
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038669",
+      "title": "Question - Shortest Path",
+      "link": "https://embed-ssl.wistia.com/deliveries/702ff758b040fa5dccf90a4176835289e602f118.m3u8",
+      "sourceId": "xld05wwfvj",
+      "type": "wistia",
+      "orderIdx": 187
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866a",
+      "title": "String Functions - compare",
+      "link": "https://embed-ssl.wistia.com/deliveries/acc052f4ce409ffeba4169f8888b7752b723139e.m3u8",
+      "sourceId": "y3qg97bql5",
+      "type": "wistia",
+      "orderIdx": 188
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866b",
+      "title": "String Functions - substring",
+      "link": "https://embed-ssl.wistia.com/deliveries/45bfd0f7d8901b8990354543773be68c058764d3.m3u8",
+      "sourceId": "d70rtvueoy",
+      "type": "wistia",
+      "orderIdx": 189
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866c",
+      "title": "Print Largest String",
+      "link": "https://embed-ssl.wistia.com/deliveries/f339d0bc143f218343153059a4d3b8e53b7177dc.m3u8",
+      "sourceId": "rcovx1fx6p",
+      "type": "wistia",
+      "orderIdx": 190
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866d",
+      "title": "Why Strings are Immutable?",
+      "link": "https://embed-ssl.wistia.com/deliveries/561f7296996749a9bbcaba13cc8e668331af3f57.m3u8",
+      "sourceId": "kyotb6cdd3",
+      "type": "wistia",
+      "orderIdx": 191
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866e",
+      "title": "StringBuilder",
+      "link": "https://embed-ssl.wistia.com/deliveries/8875888a8979acba9cfd89d2dc7d580984661f15.m3u8",
+      "sourceId": "e2u2dbd3tg",
+      "type": "wistia",
+      "orderIdx": 192
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c303866f",
+      "title": "Convert Letters to Uppercase",
+      "link": "https://embed-ssl.wistia.com/deliveries/e3525484a6b0105e24b840b8e87bba2a5125874c.m3u8",
+      "sourceId": "lzdb51x1vp",
+      "type": "wistia",
+      "orderIdx": 193
+    },
+    {
+      "id": "alpha-plus-7-java::6993293c64a3f9d7c3038670",
+      "title": "String Compression",
+      "link": "https://embed-ssl.wistia.com/deliveries/2c09644d79180ed429ae08a297a9613e278e0899.m3u8",
+      "sourceId": "mq7jhmtzuv",
+      "type": "wistia",
+      "orderIdx": 194
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc6310bba0d19016fd4",
+      "title": "Introduction to Bit Manipulation",
+      "link": "https://embed-ssl.wistia.com/deliveries/3f6016995fff2bf8fab179e0304d28df66f0e002.m3u8",
+      "sourceId": "9v36o7mkxw",
+      "type": "wistia",
+      "orderIdx": 195
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fd5",
+      "title": "Binary Number System",
+      "link": "https://embed-ssl.wistia.com/deliveries/c5f5f0fa5951ed32fadf450b0813951aa73a478c.m3u8",
+      "sourceId": "f9d8qxe82w",
+      "type": "wistia",
+      "orderIdx": 196
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fd6",
+      "title": "Bitwise Operators",
+      "link": "https://embed-ssl.wistia.com/deliveries/46a6f042adc23213b99c44c1e5ba3ab6b3d5d4c0.m3u8",
+      "sourceId": "nip4s6vhi0",
+      "type": "wistia",
+      "orderIdx": 197
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fd7",
+      "title": "Binary AND",
+      "link": "https://embed-ssl.wistia.com/deliveries/f508a165ceb108219fcf7aa906251ba1d5535dd6.m3u8",
+      "sourceId": "ss9yzuauy8",
+      "type": "wistia",
+      "orderIdx": 198
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fd8",
+      "title": "Binary OR",
+      "link": "https://embed-ssl.wistia.com/deliveries/43986e8cc051c94192fbce0a80ff86daab8ff354.m3u8",
+      "sourceId": "jb65a1s8jt",
+      "type": "wistia",
+      "orderIdx": 199
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fd9",
+      "title": "Binary XOR",
+      "link": "https://embed-ssl.wistia.com/deliveries/e0db92d29843a0467c571022d238f65515f316b9.m3u8",
+      "sourceId": "xfvke2io86",
+      "type": "wistia",
+      "orderIdx": 200
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fda",
+      "title": "Binary 1's Complement",
+      "link": "https://embed-ssl.wistia.com/deliveries/81a63a1f6924583a9d84fb184a24f7a77e2dd69a.m3u8",
+      "sourceId": "2b41y4c1s7",
+      "type": "wistia",
+      "orderIdx": 201
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fdb",
+      "title": "Binary Left Shift",
+      "link": "https://embed-ssl.wistia.com/deliveries/cd57dda96756a703b5d64948118f6a6d9904a05e.m3u8",
+      "sourceId": "jz0dmy0ksb",
+      "type": "wistia",
+      "orderIdx": 202
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fdc",
+      "title": "Binary Right Shift",
+      "link": "https://embed-ssl.wistia.com/deliveries/0ae0a9676ed29be5f3ddc05ff796661e790b4263.m3u8",
+      "sourceId": "xci2cmuq1s",
+      "type": "wistia",
+      "orderIdx": 203
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fdd",
+      "title": "Check if Odd or Even",
+      "link": "https://embed-ssl.wistia.com/deliveries/2f4559940e406417ed9ed999849a9ad6c424233d.m3u8",
+      "sourceId": "5x0mbksbwt",
+      "type": "wistia",
+      "orderIdx": 204
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fde",
+      "title": "Get ith Bit",
+      "link": "https://embed-ssl.wistia.com/deliveries/d79b1559afab9d2f8c4204be748613b54eb715e3.m3u8",
+      "sourceId": "i7ocrvta54",
+      "type": "wistia",
+      "orderIdx": 205
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fdf",
+      "title": "Set ith Bit",
+      "link": "https://embed-ssl.wistia.com/deliveries/e0b3f68b1db047b3b1256a777dc78d99a4c025bf.m3u8",
+      "sourceId": "cr5u69itp5",
+      "type": "wistia",
+      "orderIdx": 206
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe0",
+      "title": "Clear ith Bit",
+      "link": "https://embed-ssl.wistia.com/deliveries/3287f5f044d51e18a6eedaffd4fdd64f7b9b9a80.m3u8",
+      "sourceId": "3gaaw5pd75",
+      "type": "wistia",
+      "orderIdx": 207
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe1",
+      "title": "Update ith bit",
+      "link": "https://embed-ssl.wistia.com/deliveries/ec7535fdb5c09ab89f493d4c4dd1520759d4b1c8.m3u8",
+      "sourceId": "b0obyv2h0a",
+      "type": "wistia",
+      "orderIdx": 208
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe2",
+      "title": "Clear last i bits",
+      "link": "https://embed-ssl.wistia.com/deliveries/9dbd90b820654f58229b77eeff1279ad5de5fcd4.m3u8",
+      "sourceId": "z3y8p4r0xi",
+      "type": "wistia",
+      "orderIdx": 209
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe3",
+      "title": "Clear range of bits",
+      "link": "https://embed-ssl.wistia.com/deliveries/25549ca4b2efe1d0e2f40fc0834a6d84baba1b48.m3u8",
+      "sourceId": "9qbs5d1u8r",
+      "type": "wistia",
+      "orderIdx": 210
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe4",
+      "title": "Check if a number is power of 2 or not",
+      "link": "https://embed-ssl.wistia.com/deliveries/3815d229c4fcd17fd46f2d9b01aa90c217d9ebd1.m3u8",
+      "sourceId": "djio9998tg",
+      "type": "wistia",
+      "orderIdx": 211
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe5",
+      "title": "Count set bits in a number",
+      "link": "https://embed-ssl.wistia.com/deliveries/ea7f4e75ee7d5ac3a9c205db063b12d647b5f16c.m3u8",
+      "sourceId": "0lneui6hg9",
+      "type": "wistia",
+      "orderIdx": 212
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe6",
+      "title": "Fast Exponentiation",
+      "link": "https://embed-ssl.wistia.com/deliveries/eb90c345dea8a28eecc28bc8191efbdcf87b90bc.m3u8",
+      "sourceId": "uz8ev0dob4",
+      "type": "wistia",
+      "orderIdx": 213
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fe7",
+      "title": "Fast Exponentiation Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/83873e47d322d414f978577ac5f10dbcf964ca46.m3u8",
+      "sourceId": "v71ttu0da6",
+      "type": "wistia",
+      "orderIdx": 214
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fea",
+      "title": "Classes & Objects",
+      "link": "https://embed-ssl.wistia.com/deliveries/daf926191141e4c7ce745caf5c32e5419e4ba3e3.m3u8",
+      "sourceId": "mmxakcbnxx",
+      "type": "wistia",
+      "orderIdx": 215
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016feb",
+      "title": "Access Modifiers",
+      "link": "https://embed-ssl.wistia.com/deliveries/1bc6d2c03156cb0e5f078d76df25c45170ec4223.m3u8",
+      "sourceId": "94zad5y2vk",
+      "type": "wistia",
+      "orderIdx": 216
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fec",
+      "title": "Getters & Setters",
+      "link": "https://embed-ssl.wistia.com/deliveries/0a213edd82f6346ec4f28e0340d426991b1a6d49.m3u8",
+      "sourceId": "7j62mj58fp",
+      "type": "wistia",
+      "orderIdx": 217
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fed",
+      "title": "Encapsulation",
+      "link": "https://embed-ssl.wistia.com/deliveries/ba4a0dcea021b573c2dfa6c19caedd773ee52165.m3u8",
+      "sourceId": "zvpnyex5ej",
+      "type": "wistia",
+      "orderIdx": 218
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fee",
+      "title": "Constructors",
+      "link": "https://embed-ssl.wistia.com/deliveries/9a957639942f90169cc351fd767eb639fe925f63.m3u8",
+      "sourceId": "cfkbsovkxk",
+      "type": "wistia",
+      "orderIdx": 219
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fef",
+      "title": "Type of Constructors",
+      "link": "https://embed-ssl.wistia.com/deliveries/d2c1124a42a43d09ccf6cef1ac1ef19485142c4d.m3u8",
+      "sourceId": "amh7yx0vnq",
+      "type": "wistia",
+      "orderIdx": 220
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff0",
+      "title": "Copy Constructor",
+      "link": "https://embed-ssl.wistia.com/deliveries/98dcac61377d9e1e04d8207b68756c6e4217f99c.m3u8",
+      "sourceId": "fbjrbey8w2",
+      "type": "wistia",
+      "orderIdx": 221
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff1",
+      "title": "Shallow & Deep Copy",
+      "link": "https://embed-ssl.wistia.com/deliveries/451e929adddbb099afe055e48381b900d210c6a6.m3u8",
+      "sourceId": "10elqo51u6",
+      "type": "wistia",
+      "orderIdx": 222
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff2",
+      "title": "Destructors",
+      "link": "https://embed-ssl.wistia.com/deliveries/722927c4705e8f0115e83357a5a2a886467f45ed.m3u8",
+      "sourceId": "ppwcynbyny",
+      "type": "wistia",
+      "orderIdx": 223
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff3",
+      "title": "Inheritance",
+      "link": "https://embed-ssl.wistia.com/deliveries/510c448567669cbab367ce0e8d37545d64ccbf98.m3u8",
+      "sourceId": "tg8i6sqiac",
+      "type": "wistia",
+      "orderIdx": 224
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff4",
+      "title": "Single level Inheritance",
+      "link": "https://embed-ssl.wistia.com/deliveries/04b5c3fb5329ae4680319dd24b4ebb52ec0dfbc5.m3u8",
+      "sourceId": "1xhb4i4qey",
+      "type": "wistia",
+      "orderIdx": 225
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff5",
+      "title": "Multi level Inheritance",
+      "link": "https://embed-ssl.wistia.com/deliveries/d24e7ad4619822c808ecdb2edad9a836e56bf5dd.m3u8",
+      "sourceId": "jsbombv1m5",
+      "type": "wistia",
+      "orderIdx": 226
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff6",
+      "title": "Hierarchial Inheritance",
+      "link": "https://embed-ssl.wistia.com/deliveries/2b51c51d7dc469709516be136a46f1a96cdc8020.m3u8",
+      "sourceId": "tbzkze5u3e",
+      "type": "wistia",
+      "orderIdx": 227
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff7",
+      "title": "Hybrid Inheritance",
+      "link": "https://embed-ssl.wistia.com/deliveries/06870d64254c9d564ee80160170dba95b57eba13.m3u8",
+      "sourceId": "gjk5ddvid7",
+      "type": "wistia",
+      "orderIdx": 228
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff8",
+      "title": "Polymorphism",
+      "link": "https://embed-ssl.wistia.com/deliveries/e58444fe22b0c7f0777bde0b19fc18f8cfedb57e.m3u8",
+      "sourceId": "4zbde6k85s",
+      "type": "wistia",
+      "orderIdx": 229
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ff9",
+      "title": "Method Overloading",
+      "link": "https://embed-ssl.wistia.com/deliveries/17a3de447c0177344e899a208f6d31cd4149cd48.m3u8",
+      "sourceId": "q69mhts2q4",
+      "type": "wistia",
+      "orderIdx": 230
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ffa",
+      "title": "Method Overriding",
+      "link": "https://embed-ssl.wistia.com/deliveries/242d8cc1a16ba1144fd3cdfd1e0871493609cd63.m3u8",
+      "sourceId": "0vc6ubqwrr",
+      "type": "wistia",
+      "orderIdx": 231
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ffb",
+      "title": "Packages in Java",
+      "link": "https://embed-ssl.wistia.com/deliveries/d74ea424dba517f12c2b3bb4b424cfe0077f8295.m3u8",
+      "sourceId": "hhcue5w8bf",
+      "type": "wistia",
+      "orderIdx": 232
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ffc",
+      "title": "Abstraction",
+      "link": "https://embed-ssl.wistia.com/deliveries/7a979f4c9c33fff8b226d81fe5fc3865977713b2.m3u8",
+      "sourceId": "vlam6psdmg",
+      "type": "wistia",
+      "orderIdx": 233
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ffd",
+      "title": "Abstract Classes",
+      "link": "https://embed-ssl.wistia.com/deliveries/2f955193f96b56356281b8fd99c74383caf2b3c3.m3u8",
+      "sourceId": "hqjauqcm2p",
+      "type": "wistia",
+      "orderIdx": 234
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016ffe",
+      "title": "Interfaces",
+      "link": "https://embed-ssl.wistia.com/deliveries/3694e72e2c057e5f48f16f0b8a59a42a97392da7.m3u8",
+      "sourceId": "u7q79c0bcq",
+      "type": "wistia",
+      "orderIdx": 235
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19016fff",
+      "title": "Static keyword",
+      "link": "https://embed-ssl.wistia.com/deliveries/afb42729ceb646af12a2fb3bc774453c2a6eb3f7.m3u8",
+      "sourceId": "jj38uxdxti",
+      "type": "wistia",
+      "orderIdx": 236
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017000",
+      "title": "Super keyword",
+      "link": "https://embed-ssl.wistia.com/deliveries/38fdd07efec49c7bb7103e97b103cb8ffcb48747.m3u8",
+      "sourceId": "hff99jsj35",
+      "type": "wistia",
+      "orderIdx": 237
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017001",
+      "title": "Solved Questions Practice",
+      "link": "https://embed-ssl.wistia.com/deliveries/00b234df690939e86cac7fa3e46e9a5411a4c49d.m3u8",
+      "sourceId": "09u4vawhqe",
+      "type": "wistia",
+      "orderIdx": 238
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017004",
+      "title": "What is Recursion?",
+      "link": "https://embed-ssl.wistia.com/deliveries/c811514d7c35a520e768cdf077298f334b43abe4.m3u8",
+      "sourceId": "n7yiew84kz",
+      "type": "wistia",
+      "orderIdx": 239
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017005",
+      "title": "Print numbers in decreasing order",
+      "link": "https://embed-ssl.wistia.com/deliveries/0a512f304c6f1c62f9374244a794d04727c3d1fe.m3u8",
+      "sourceId": "adsl4106e2",
+      "type": "wistia",
+      "orderIdx": 240
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017006",
+      "title": "Stack overflow",
+      "link": "https://embed-ssl.wistia.com/deliveries/d41f9c9f1800259199fb8252e44b58ec6c51069d.m3u8",
+      "sourceId": "bhnydiye5e",
+      "type": "wistia",
+      "orderIdx": 241
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017007",
+      "title": "Print numbers in increasing order",
+      "link": "https://embed-ssl.wistia.com/deliveries/6b9e9e4826bff0d20a8bb0d84ac3239a6bf3d126.m3u8",
+      "sourceId": "xkm01shwht",
+      "type": "wistia",
+      "orderIdx": 242
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017008",
+      "title": "Find Factorial of N",
+      "link": "https://embed-ssl.wistia.com/deliveries/4e4724da0276e23011fc907527d77c1f79a03388.m3u8",
+      "sourceId": "c3p93xcdnh",
+      "type": "wistia",
+      "orderIdx": 243
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017009",
+      "title": "Print sum of N natural numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/240a07a01e5b509a9816150bf24f0df269e7c5be.m3u8",
+      "sourceId": "ciws43b2ai",
+      "type": "wistia",
+      "orderIdx": 244
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700a",
+      "title": "Print Nth Fibonacci number",
+      "link": "https://embed-ssl.wistia.com/deliveries/3a87857714dd982593268712e989fa40fdf57b74.m3u8",
+      "sourceId": "2dpf1l67rt",
+      "type": "wistia",
+      "orderIdx": 245
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700b",
+      "title": "Check if array is sorted or not",
+      "link": "https://embed-ssl.wistia.com/deliveries/eb8dbaec77ae2cb3c061dc40b5145b314d8433af.m3u8",
+      "sourceId": "edcg3p8hwk",
+      "type": "wistia",
+      "orderIdx": 246
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700c",
+      "title": "First Occurrence",
+      "link": "https://embed-ssl.wistia.com/deliveries/946dde7aa3786da3f23f8419eb357ab3e3e6c2e2.m3u8",
+      "sourceId": "ap67srqaud",
+      "type": "wistia",
+      "orderIdx": 247
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700d",
+      "title": "Last Occurrence",
+      "link": "https://embed-ssl.wistia.com/deliveries/479dd1b3fe13882a0528ea8671474a751e235571.m3u8",
+      "sourceId": "vrbrp1y029",
+      "type": "wistia",
+      "orderIdx": 248
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700e",
+      "title": "Print x to the power n",
+      "link": "https://embed-ssl.wistia.com/deliveries/9c1e458c30179a42300aa80fe4b9e6fdd21084f6.m3u8",
+      "sourceId": "y852al0i5b",
+      "type": "wistia",
+      "orderIdx": 249
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901700f",
+      "title": "Print x to the power n (Optimized)",
+      "link": "https://embed-ssl.wistia.com/deliveries/b02f5bdbd6aab86db0d45bc743d1403a4438f111.m3u8",
+      "sourceId": "utpysm3fxv",
+      "type": "wistia",
+      "orderIdx": 250
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017010",
+      "title": "Tiling Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/a63f9171b1af6f9b56632b910973e715c4546c0a.m3u8",
+      "sourceId": "ofoswsossu",
+      "type": "wistia",
+      "orderIdx": 251
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017011",
+      "title": "Tiling Problem Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/7d60e5595dc946a23f21f933bcc98640602de7dd.m3u8",
+      "sourceId": "7f0a9wu2mt",
+      "type": "wistia",
+      "orderIdx": 252
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017012",
+      "title": "Remove Duplicates in a String",
+      "link": "https://embed-ssl.wistia.com/deliveries/ce29e0f0fd5eb26aa03f15240d503894ca7c7f78.m3u8",
+      "sourceId": "1jnrjlw2or",
+      "type": "wistia",
+      "orderIdx": 253
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017013",
+      "title": "Friends Pairing Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/e770c17f5d2c6f63ef12e789e2e6c92db21e8f90.m3u8",
+      "sourceId": "2mcmxr8cen",
+      "type": "wistia",
+      "orderIdx": 254
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017014",
+      "title": "Binary Strings Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/4f75516016f00e93b9b85ae63179fdcea422c478.m3u8",
+      "sourceId": "j2dlknovwq",
+      "type": "wistia",
+      "orderIdx": 255
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017015",
+      "title": "Binary Strings Problem Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/cdb3394c3ae818772e5c781b575770bcead14e94.m3u8",
+      "sourceId": "beieaybiyb",
+      "type": "wistia",
+      "orderIdx": 256
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017016",
+      "title": "Stack Analysis - Binary Strings",
+      "link": "https://embed-ssl.wistia.com/deliveries/eac6f62efd47c845060f5702bd8532d2bb6b692d.m3u8",
+      "sourceId": "aprgszmnvn",
+      "type": "wistia",
+      "orderIdx": 257
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017019",
+      "title": "What is Divide & Conquer?",
+      "link": "https://embed-ssl.wistia.com/deliveries/38bbcf74d4762746d981df9fccef6e8ebf5969fa.m3u8",
+      "sourceId": "8edc9o7p58",
+      "type": "wistia",
+      "orderIdx": 258
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701a",
+      "title": "Merge Sort (Basic + Space Optimized)",
+      "link": "https://embed-ssl.wistia.com/deliveries/dc72a194fac140ca5a88821e28b11760eb58c1a2.m3u8",
+      "sourceId": "sd34rvji0z",
+      "type": "wistia",
+      "orderIdx": 259
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701b",
+      "title": "Merge Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/0f77c7e64d31bf54f66a11404e0aad0f643e874a.m3u8",
+      "sourceId": "gdn3d4b7uq",
+      "type": "wistia",
+      "orderIdx": 260
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701c",
+      "title": "Quick Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/651afafa767da543d1a3cb1dc3da4cd58d06df0b.m3u8",
+      "sourceId": "ybmpav8eed",
+      "type": "wistia",
+      "orderIdx": 261
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701d",
+      "title": "Quick Sort Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/6efbffe0d11d527e69edf232e2948f258f173ab2.m3u8",
+      "sourceId": "mw21zj9dwb",
+      "type": "wistia",
+      "orderIdx": 262
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701e",
+      "title": "Worst Case in Quick Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/bfe791ef1e1f8c1bf8c40c2cc2d6c11976882fbe.m3u8",
+      "sourceId": "59iyo9y8g9",
+      "type": "wistia",
+      "orderIdx": 263
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d1901701f",
+      "title": "Sorted & Rotated Array Search",
+      "link": "https://embed-ssl.wistia.com/deliveries/01acdd1e53c62bbb3497871cfd1a8f6cb2a3c5f1.m3u8",
+      "sourceId": "9pgc0kwrlc",
+      "type": "wistia",
+      "orderIdx": 264
+    },
+    {
+      "id": "alpha-plus-7-java::69a59fc7310bba0d19017020",
+      "title": "Sorted & Rotated Array Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/781fc0ca054052d4c02c4936288dace826bd0937.m3u8",
+      "sourceId": "2tu7jelcs1",
+      "type": "wistia",
+      "orderIdx": 265
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1024",
+      "title": "Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/567d090dc34cc1a6e822c14853d7ad37212431ad.m3u8",
+      "sourceId": "1soxzew1pd",
+      "type": "wistia",
+      "orderIdx": 266
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1025",
+      "title": "What is Time Complexity?",
+      "link": "https://embed-ssl.wistia.com/deliveries/99faf5d4f31bd935bf55ff13007c57ca12b48944.m3u8",
+      "sourceId": "htodmkzs9m",
+      "type": "wistia",
+      "orderIdx": 267
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1026",
+      "title": "Constant Time Complexity",
+      "link": "https://embed-ssl.wistia.com/deliveries/8c7d1b474496ae67827aaf71112d76325c3dc975.m3u8",
+      "sourceId": "92pg83iekb",
+      "type": "wistia",
+      "orderIdx": 268
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1027",
+      "title": "Big O Notation",
+      "link": "https://embed-ssl.wistia.com/deliveries/036f92f04adf786f0e847f25f268fb72963bf518.m3u8",
+      "sourceId": "ou1gumnqbp",
+      "type": "wistia",
+      "orderIdx": 269
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1028",
+      "title": "Big Omega & Theta Notation",
+      "link": "https://embed-ssl.wistia.com/deliveries/6229fdb772b991b20d79fa94f2c3976babea6e1a.m3u8",
+      "sourceId": "zxxixlfuvh",
+      "type": "wistia",
+      "orderIdx": 270
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1029",
+      "title": "Common Complexities",
+      "link": "https://embed-ssl.wistia.com/deliveries/7695de05260922b73c05995493c84d926bcfaa2b.m3u8",
+      "sourceId": "8nnp7epq4i",
+      "type": "wistia",
+      "orderIdx": 271
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102a",
+      "title": "Space Complexity",
+      "link": "https://embed-ssl.wistia.com/deliveries/ae4393d2d65bf9384732ac4454c493b30105d7dd.m3u8",
+      "sourceId": "kcuy8dk58e",
+      "type": "wistia",
+      "orderIdx": 272
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102b",
+      "title": "Simple Loop Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/fbc223960b250cd7097cf7987b4877d2ee058092.m3u8",
+      "sourceId": "159soo7ba6",
+      "type": "wistia",
+      "orderIdx": 273
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102c",
+      "title": "Nested Loop 1 Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/a721384f880c5f85c33b8da943960e4ddfbba8b4.m3u8",
+      "sourceId": "oy0oqqb1x3",
+      "type": "wistia",
+      "orderIdx": 274
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102d",
+      "title": "Nested Loop 2 Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/365a05c8f598503780b021881240678bf687d511.m3u8",
+      "sourceId": "umksglv57v",
+      "type": "wistia",
+      "orderIdx": 275
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102e",
+      "title": "Nested Loop 3 Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/e574779287adf970e47792f9916f295e9e7114cb.m3u8",
+      "sourceId": "138n68ytjm",
+      "type": "wistia",
+      "orderIdx": 276
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b102f",
+      "title": "Bubble Sort Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/e9513cccb9c2bae2f0d30cb7a5f04b5e22f6e058.m3u8",
+      "sourceId": "7msauqcalp",
+      "type": "wistia",
+      "orderIdx": 277
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1030",
+      "title": "Binary Search Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/33796c4f158ae9272ace230829b29483274c9525.m3u8",
+      "sourceId": "vjolnmhq51",
+      "type": "wistia",
+      "orderIdx": 278
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1031",
+      "title": "Recursive Complexity Analysis (Factorial)",
+      "link": "https://embed-ssl.wistia.com/deliveries/bdb2f51bacd826f698a4885e7fbb92ae5cf88f4b.m3u8",
+      "sourceId": "d8ca7vm2yf",
+      "type": "wistia",
+      "orderIdx": 279
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1032",
+      "title": "Sum of N numbers Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/c91b7c307adf2c3fe6905835da9b7c1d7bd121cc.m3u8",
+      "sourceId": "pszqp7j3vr",
+      "type": "wistia",
+      "orderIdx": 280
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1033",
+      "title": "Fibonacci Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/565e0908ca30ec5072443ab7cd7ecfd4ff4fb165.m3u8",
+      "sourceId": "wv4q5pxhrr",
+      "type": "wistia",
+      "orderIdx": 281
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1034",
+      "title": "Merge Sort Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/2a55f53bbfbad6bb9593e8d7b31b6bf11daaa945.m3u8",
+      "sourceId": "gvdh0j790y",
+      "type": "wistia",
+      "orderIdx": 282
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1035",
+      "title": "Recurrence Relation - Merge Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/2187f0490612e8b39b28aa9da46abb512425f79b.m3u8",
+      "sourceId": "smvz60nomh",
+      "type": "wistia",
+      "orderIdx": 283
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1036",
+      "title": "Power Function I - Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/49e3fffc542341ef84ddcc74aa9bce297da78e88.m3u8",
+      "sourceId": "se4p1c75u5",
+      "type": "wistia",
+      "orderIdx": 284
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1037",
+      "title": "Power Function II - Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/2c065bdc0c280333c80efba7cd2f540fb947c2fb.m3u8",
+      "sourceId": "35oariq0pz",
+      "type": "wistia",
+      "orderIdx": 285
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1038",
+      "title": "Power Function III - Analysis",
+      "link": "https://embed-ssl.wistia.com/deliveries/f2342cbc219917d568ecbee44be8e0e091613e02.m3u8",
+      "sourceId": "0dvn7eqrmw",
+      "type": "wistia",
+      "orderIdx": 286
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1039",
+      "title": "How to approach Coding Questions?",
+      "link": "https://embed-ssl.wistia.com/deliveries/f485c0f03359e4ca33b85812236663a24b579ddf.m3u8",
+      "sourceId": "yzkndz26oq",
+      "type": "wistia",
+      "orderIdx": 287
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b103d",
+      "title": "Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/da0407f73e936307d1a4c112d1f15bc639bcb6be.m3u8",
+      "sourceId": "pjwf4d5md0",
+      "type": "wistia",
+      "orderIdx": 288
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b103e",
+      "title": "Types of Backtracking",
+      "link": "https://embed-ssl.wistia.com/deliveries/d2c752f59318a7dcf013d72247f33926d0638723.m3u8",
+      "sourceId": "aak5txjusu",
+      "type": "wistia",
+      "orderIdx": 289
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b103f",
+      "title": "Backtracking on Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/519ef28d99c83cd11d568df2fe660185814930f8.m3u8",
+      "sourceId": "ovfux4c2st",
+      "type": "wistia",
+      "orderIdx": 290
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1040",
+      "title": "Find Subsets",
+      "link": "https://embed-ssl.wistia.com/deliveries/bd2c656fc7ed2bddb78738ba271375b0e9c5b20c.m3u8",
+      "sourceId": "a729nxoj8i",
+      "type": "wistia",
+      "orderIdx": 291
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1041",
+      "title": "Find Subsets Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/176d7a005f3bcd7d950103a2e68d0aaa1959798d.m3u8",
+      "sourceId": "inv4m9aqcf",
+      "type": "wistia",
+      "orderIdx": 292
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1042",
+      "title": "Find Permutations",
+      "link": "https://embed-ssl.wistia.com/deliveries/9d02ef906138820913eb7f2e0f1f3589742b95dd.m3u8",
+      "sourceId": "70lxagjbcr",
+      "type": "wistia",
+      "orderIdx": 293
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1043",
+      "title": "Find Permutations Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/10ee6cc4d8f8dde7408db024f2b590d24bc0b30b.m3u8",
+      "sourceId": "kkwb9euv6k",
+      "type": "wistia",
+      "orderIdx": 294
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1044",
+      "title": "N Queens - all ways",
+      "link": "https://embed-ssl.wistia.com/deliveries/25982c66d0fb4890636e0b72837445ca527e6409.m3u8",
+      "sourceId": "qk8t8l1or7",
+      "type": "wistia",
+      "orderIdx": 295
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1045",
+      "title": "N Queens - Time Complexity",
+      "link": "https://embed-ssl.wistia.com/deliveries/243c0ff3a244af386f8df9fbfb38d3baa7ec487a.m3u8",
+      "sourceId": "ot6m2bvjan",
+      "type": "wistia",
+      "orderIdx": 296
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1046",
+      "title": "N Queens - count ways",
+      "link": "https://embed-ssl.wistia.com/deliveries/d412ad11fad17cf22d92bd8142b2f87f15e36918.m3u8",
+      "sourceId": "zix7jyb5i3",
+      "type": "wistia",
+      "orderIdx": 297
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1047",
+      "title": "N Queens - print one solution",
+      "link": "https://embed-ssl.wistia.com/deliveries/fcecc4bb77f12e828bc0e7c2941b4257894a0ff6.m3u8",
+      "sourceId": "eojembh46o",
+      "type": "wistia",
+      "orderIdx": 298
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1048",
+      "title": "Grid Ways",
+      "link": "https://embed-ssl.wistia.com/deliveries/f900662a2666c7d243740a952e23269914b48c6c.m3u8",
+      "sourceId": "wmbipl3tgr",
+      "type": "wistia",
+      "orderIdx": 299
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1049",
+      "title": "Grid Ways Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/2acb9f5fa7066ea94fca26c995660541f2ef9674.m3u8",
+      "sourceId": "ozwtg9dnry",
+      "type": "wistia",
+      "orderIdx": 300
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b104a",
+      "title": "Grid Ways Trick",
+      "link": "https://embed-ssl.wistia.com/deliveries/c8c6259c8934b6b308c9494707781429ac2e6250.m3u8",
+      "sourceId": "l20wm6or0r",
+      "type": "wistia",
+      "orderIdx": 301
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b104b",
+      "title": "Sudoku",
+      "link": "https://embed-ssl.wistia.com/deliveries/edc84a127fe2b204261289d8d0021fd9111e828b.m3u8",
+      "sourceId": "gxdzgpcci9",
+      "type": "wistia",
+      "orderIdx": 302
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b104c",
+      "title": "Sudoku Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/6d331d9a67153eeb10615b5f9777ae0622aae1ff.m3u8",
+      "sourceId": "y7bcc9gnas",
+      "type": "wistia",
+      "orderIdx": 303
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b104f",
+      "title": "Introduction to ArrayList",
+      "link": "https://embed-ssl.wistia.com/deliveries/8348f777e27938853641da84060fa208fe834f1f.m3u8",
+      "sourceId": "29w5plqwow",
+      "type": "wistia",
+      "orderIdx": 304
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1050",
+      "title": "Operations on ArrayList",
+      "link": "https://embed-ssl.wistia.com/deliveries/1fe128be73cb1175a03c328c4891927cd3926e0e.m3u8",
+      "sourceId": "lxc4hq9lqc",
+      "type": "wistia",
+      "orderIdx": 305
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1051",
+      "title": "Size of ArrayList",
+      "link": "https://embed-ssl.wistia.com/deliveries/2a233795f4d5b195fa0e4adf43f532d9fb73f790.m3u8",
+      "sourceId": "hiucehyz3u",
+      "type": "wistia",
+      "orderIdx": 306
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1052",
+      "title": "Print Reverse",
+      "link": "https://embed-ssl.wistia.com/deliveries/7959b5abb337cdbce7b620206ea7b5a94bc9892a.m3u8",
+      "sourceId": "21dg331zn1",
+      "type": "wistia",
+      "orderIdx": 307
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1053",
+      "title": "Find Maximum",
+      "link": "https://embed-ssl.wistia.com/deliveries/4938138d421ca4d4423ef1309dcd67a8efa0c81f.m3u8",
+      "sourceId": "yd8pzoijly",
+      "type": "wistia",
+      "orderIdx": 308
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1054",
+      "title": "Swap 2 Numbers",
+      "link": "https://embed-ssl.wistia.com/deliveries/baa31e08dd7c2c17165343e4c805a7418cd2f0cb.m3u8",
+      "sourceId": "l08p8lymoh",
+      "type": "wistia",
+      "orderIdx": 309
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1055",
+      "title": "Sorting an ArrayList",
+      "link": "https://embed-ssl.wistia.com/deliveries/ccb01993aae513d9334d707dc3936e20c7f027dd.m3u8",
+      "sourceId": "5o8qgfhyct",
+      "type": "wistia",
+      "orderIdx": 310
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1056",
+      "title": "ArrayList (Implementation in Java)",
+      "link": "https://embed-ssl.wistia.com/deliveries/d1fa24e49391b1099bdc0ed3261b8b33a9ec6465.m3u8",
+      "sourceId": "ol9l91bnua",
+      "type": "wistia",
+      "orderIdx": 311
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1057",
+      "title": "Multi-dimensional ArrayLists",
+      "link": "https://embed-ssl.wistia.com/deliveries/89cde4d4bcec508ece71100154cc9f43bfaf9d1e.m3u8",
+      "sourceId": "w974u7hv0r",
+      "type": "wistia",
+      "orderIdx": 312
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1058",
+      "title": "Container with Most Water (Brute Force)",
+      "link": "https://embed-ssl.wistia.com/deliveries/8f608cdd0bf4ccbe2d5663f7d83c2e3053222783.m3u8",
+      "sourceId": "2wx9gqnrbx",
+      "type": "wistia",
+      "orderIdx": 313
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1059",
+      "title": "Container with Most Water (2 Pointer Approach)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f04273d083a9201dc4965685934fd16d04397f45.m3u8",
+      "sourceId": "bgtzwdw2mr",
+      "type": "wistia",
+      "orderIdx": 314
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b105a",
+      "title": "Container wMW v/s Trapping Rainwater",
+      "link": "https://embed-ssl.wistia.com/deliveries/fbe4c98b1282def066c7489599fc7bb8b3fac2f3.m3u8",
+      "sourceId": "s2xfmkozf0",
+      "type": "wistia",
+      "orderIdx": 315
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b105b",
+      "title": "Pair Sum - 1 (Brute Force)",
+      "link": "https://embed-ssl.wistia.com/deliveries/be5d7e0e3ce7bcf3c620246310d513288c6a901e.m3u8",
+      "sourceId": "ua0qoptt5d",
+      "type": "wistia",
+      "orderIdx": 316
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b105c",
+      "title": "Pair Sum - 1 (2 Pointer Approach)",
+      "link": "https://embed-ssl.wistia.com/deliveries/9451f684b751e1b983a827dbcc8b827d435cc971.m3u8",
+      "sourceId": "jr43iqw1ik",
+      "type": "wistia",
+      "orderIdx": 317
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b105d",
+      "title": "Pair Sum - 2 ",
+      "link": "https://embed-ssl.wistia.com/deliveries/7a435a439f2a0ac57fe733b183d254cf2d99948e.m3u8",
+      "sourceId": "7jn34usetx",
+      "type": "wistia",
+      "orderIdx": 318
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b105e",
+      "title": "Pair Sum - 2 (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/9c83c5e065f1374ec54de50bb13a0fb08defa34b.m3u8",
+      "sourceId": "y20b27yo45",
+      "type": "wistia",
+      "orderIdx": 319
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1061",
+      "title": "Introduction to Linked List",
+      "link": "https://embed-ssl.wistia.com/deliveries/d42d60f29eb1e957c5aaba59fdd7de485f6d8154.m3u8",
+      "sourceId": "rdncq9xts2",
+      "type": "wistia",
+      "orderIdx": 320
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1062",
+      "title": "Head & Tail in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/a07b53e1e3d6341fba82308ba1c0414f2c271f5e.m3u8",
+      "sourceId": "awbfpf5d19",
+      "type": "wistia",
+      "orderIdx": 321
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1063",
+      "title": "Add First in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/7a3a9919afd7f90488b7ee4d789c62ac5b627817.m3u8",
+      "sourceId": "350nsrcxsd",
+      "type": "wistia",
+      "orderIdx": 322
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1064",
+      "title": "Add Last in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/9f76978e114c7f8adc01d6883ad32b542e8c0c19.m3u8",
+      "sourceId": "t4yzk9l1mw",
+      "type": "wistia",
+      "orderIdx": 323
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1065",
+      "title": "Print a LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/6f7f4f11ae34a852a1b62d1a86a151537a8a59a5.m3u8",
+      "sourceId": "k6r0ubr03g",
+      "type": "wistia",
+      "orderIdx": 324
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1066",
+      "title": "Add in the Middle of LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/f59830f276e4bc936f5cd6176f93a97b5ee1660c.m3u8",
+      "sourceId": "rn53jfc53u",
+      "type": "wistia",
+      "orderIdx": 325
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1067",
+      "title": "Size of a LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/5d7816edc7d1f4a5119f34c999a632882d3cdb77.m3u8",
+      "sourceId": "afutueot89",
+      "type": "wistia",
+      "orderIdx": 326
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1068",
+      "title": "Remove First in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/11f8d4160f4306513d11f418fcd22036d3a58cea.m3u8",
+      "sourceId": "fsrrerxnr3",
+      "type": "wistia",
+      "orderIdx": 327
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b1069",
+      "title": "Remove Last in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/1885428702fcb9b898a052b5345462bafddb4ab9.m3u8",
+      "sourceId": "bs3hdf4fb7",
+      "type": "wistia",
+      "orderIdx": 328
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106a",
+      "title": "Iterative Search",
+      "link": "https://embed-ssl.wistia.com/deliveries/050c625403aa92fce6b724efa1588c4b31be8c9b.m3u8",
+      "sourceId": "7afdvnzbh0",
+      "type": "wistia",
+      "orderIdx": 329
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106b",
+      "title": "Recursive Search",
+      "link": "https://embed-ssl.wistia.com/deliveries/6f3eebe994f17f75fee42a4c132633d4ae749c7b.m3u8",
+      "sourceId": "0gyp784sjk",
+      "type": "wistia",
+      "orderIdx": 330
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106c",
+      "title": "Reverse a Linked List",
+      "link": "https://embed-ssl.wistia.com/deliveries/0d226ca6a7618adabf0e23d1980253dc8b408ebc.m3u8",
+      "sourceId": "qih6bq7e8b",
+      "type": "wistia",
+      "orderIdx": 331
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106d",
+      "title": "Find and Remove Nth Node from End",
+      "link": "https://embed-ssl.wistia.com/deliveries/f6192b86a070341fc61771c7e7bad67ad8ea11fa.m3u8",
+      "sourceId": "h2jo4tmlwd",
+      "type": "wistia",
+      "orderIdx": 332
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106e",
+      "title": "Check if LL is Palindrome",
+      "link": "https://embed-ssl.wistia.com/deliveries/402a9c1baa4a60fa49d7a41ff7e42904954f829c.m3u8",
+      "sourceId": "c73f8vowol",
+      "type": "wistia",
+      "orderIdx": 333
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca0a3d0af7ee20b106f",
+      "title": "Check if LL is Palindrome (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/0469feaeac9205d8e3e73ecbb7db27223ed8b251.m3u8",
+      "sourceId": "u9zllv83re",
+      "type": "wistia",
+      "orderIdx": 334
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1070",
+      "title": "Detecting Cycle in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/d623254e8f483743409b22fbaceeb0f12ca9a862.m3u8",
+      "sourceId": "rj84twx43t",
+      "type": "wistia",
+      "orderIdx": 335
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1071",
+      "title": "Detecting Cycle Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/f8eef4cadf24e1e2efb4565b9dafec003ce2dd70.m3u8",
+      "sourceId": "2dk5rbjvct",
+      "type": "wistia",
+      "orderIdx": 336
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1072",
+      "title": "Removing Cycle in LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/871e689e164b0320a832cc40f1c0298d65fd0c7f.m3u8",
+      "sourceId": "w5jv799prc",
+      "type": "wistia",
+      "orderIdx": 337
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1073",
+      "title": "Removing\u00a0Cycle Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/f53061806560fcbe602b5aa4893784e1d952cbea.m3u8",
+      "sourceId": "e58z5dupr9",
+      "type": "wistia",
+      "orderIdx": 338
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1074",
+      "title": "Removing Cycle Explanation (Math)",
+      "link": "https://embed-ssl.wistia.com/deliveries/829d08827ee4e31169e8ff876f70ecfbe4c81134.m3u8",
+      "sourceId": "nlaljf2iz5",
+      "type": "wistia",
+      "orderIdx": 339
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1075",
+      "title": "Java Collections Framework",
+      "link": "https://embed-ssl.wistia.com/deliveries/6e6e1b2f833404820f016ccc12844aacf2cc17d3.m3u8",
+      "sourceId": "cmxf476rrl",
+      "type": "wistia",
+      "orderIdx": 340
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1076",
+      "title": "LL in Collections Framework",
+      "link": "https://embed-ssl.wistia.com/deliveries/f58cae952ef428c941c910c2558983c5ff490cbf.m3u8",
+      "sourceId": "jui45sil6n",
+      "type": "wistia",
+      "orderIdx": 341
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1077",
+      "title": "Merge Sort on LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/70b0117eb47bee548140a902a6c0c19fa549eea9.m3u8",
+      "sourceId": "7b69wqv3fk",
+      "type": "wistia",
+      "orderIdx": 342
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1078",
+      "title": "Merge Sort on LL (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/5fe77452aac0ae4e162b3d32e23c677f8e11f381.m3u8",
+      "sourceId": "vzwijyf93o",
+      "type": "wistia",
+      "orderIdx": 343
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1079",
+      "title": "Zig Zag Linked List ",
+      "link": "https://embed-ssl.wistia.com/deliveries/814c8b5203419e1619e62b3c4c7cf55f29f81c0b.m3u8",
+      "sourceId": "ggxfifvjcg",
+      "type": "wistia",
+      "orderIdx": 344
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b107a",
+      "title": "Zig Zag LL Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/245b5120bda10417d8dda9ce7d29274d26cf00a2.m3u8",
+      "sourceId": "tlfc2yfdhi",
+      "type": "wistia",
+      "orderIdx": 345
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b107b",
+      "title": "Doubly LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/c06b415f29d94f836f6a6a1448c9ea4a66a4686c.m3u8",
+      "sourceId": "1xv6su8usl",
+      "type": "wistia",
+      "orderIdx": 346
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b107c",
+      "title": "Reverse a Doubly LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/4869832fc427159e14fe222a1660e77d144fb5bc.m3u8",
+      "sourceId": "mtcmv9dlwo",
+      "type": "wistia",
+      "orderIdx": 347
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b107d",
+      "title": "Circular LL (Approach)",
+      "link": "https://embed-ssl.wistia.com/deliveries/85ff2a597937ac2733332e3bb6669c4b20cb4459.m3u8",
+      "sourceId": "nlbkmwrck7",
+      "type": "wistia",
+      "orderIdx": 348
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1081",
+      "title": "Stack Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/2efb2e7f9a0ebc52ef3890b2a10af93619fd232b.m3u8",
+      "sourceId": "yfq55v0y1v",
+      "type": "wistia",
+      "orderIdx": 349
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1082",
+      "title": "Stack using ArrayList",
+      "link": "https://embed-ssl.wistia.com/deliveries/9836b3f3670050cd6c2dec69e3b76e2457571958.m3u8",
+      "sourceId": "zhtuacbv53",
+      "type": "wistia",
+      "orderIdx": 350
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1083",
+      "title": "Stack using Linked List",
+      "link": "https://embed-ssl.wistia.com/deliveries/87b41f2bba9f8c710b7a07f4d8871393c6154626.m3u8",
+      "sourceId": "f2lzy1969u",
+      "type": "wistia",
+      "orderIdx": 351
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1084",
+      "title": "Stack using Collections Framework",
+      "link": "https://embed-ssl.wistia.com/deliveries/6283f163ddc0c56899d81fb46acdde2f73da6298.m3u8",
+      "sourceId": "rw7md2qftf",
+      "type": "wistia",
+      "orderIdx": 352
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1085",
+      "title": "Push at Bottom of Stack",
+      "link": "https://embed-ssl.wistia.com/deliveries/d2e98f320e98f1d3c1dac0f480e06b0a207723c7.m3u8",
+      "sourceId": "bfgoxt0aje",
+      "type": "wistia",
+      "orderIdx": 353
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1086",
+      "title": "Reverse a String using a Stack",
+      "link": "https://embed-ssl.wistia.com/deliveries/cf711cf3eff18fca3bb23f404a813ae5263e230c.m3u8",
+      "sourceId": "jhf22m553j",
+      "type": "wistia",
+      "orderIdx": 354
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1087",
+      "title": "Reverse a Stack",
+      "link": "https://embed-ssl.wistia.com/deliveries/d7e65845093514e2f19a0cbf60b9bc418034b1ea.m3u8",
+      "sourceId": "1q0vfqdter",
+      "type": "wistia",
+      "orderIdx": 355
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1088",
+      "title": "Stock Span Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/e213b4c29537e41f491d00e81b5dc59906f18172.m3u8",
+      "sourceId": "iboytzsnwn",
+      "type": "wistia",
+      "orderIdx": 356
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1089",
+      "title": "Next greater element",
+      "link": "https://embed-ssl.wistia.com/deliveries/6a2030b84162aa248176effe566c8102a0af3ee3.m3u8",
+      "sourceId": "lqgk2uqn28",
+      "type": "wistia",
+      "orderIdx": 357
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108a",
+      "title": "Next greater element Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/79fe1f542a4cce7f85100e832834931885badd1b.m3u8",
+      "sourceId": "2uisc35qvh",
+      "type": "wistia",
+      "orderIdx": 358
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108b",
+      "title": "Valid Parentheses",
+      "link": "https://embed-ssl.wistia.com/deliveries/d60cb482429de28ac4e57d1c14faccf0047e0757.m3u8",
+      "sourceId": "i9j2b8h5fj",
+      "type": "wistia",
+      "orderIdx": 359
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108c",
+      "title": "Valid Parentheses Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/d7368ee20714c23c47cbf00e2140ab14b207c64e.m3u8",
+      "sourceId": "qqta0g48n6",
+      "type": "wistia",
+      "orderIdx": 360
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108d",
+      "title": "Duplicate Parentheses",
+      "link": "https://embed-ssl.wistia.com/deliveries/e884b69edfa70dd642c8f863d7738d38d523a8e2.m3u8",
+      "sourceId": "16nvseojdu",
+      "type": "wistia",
+      "orderIdx": 361
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108e",
+      "title": "Duplicate Parentheses Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/4edac272ed2ab92753fbeaff6c416e01fd77f0b1.m3u8",
+      "sourceId": "qnhuvxxobq",
+      "type": "wistia",
+      "orderIdx": 362
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b108f",
+      "title": "Maximum Rectangular Area in Histogram",
+      "link": "https://embed-ssl.wistia.com/deliveries/056377a5faaff9428b917f6497dd19b9e316b35c.m3u8",
+      "sourceId": "vs0hhvxbmx",
+      "type": "wistia",
+      "orderIdx": 363
+    },
+    {
+      "id": "alpha-plus-7-java::69b2cca1a3d0af7ee20b1090",
+      "title": "Max Rectangular Area in Histogram (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/abc267517b6545dfeb73d63fe3b1471d79ecfe12.m3u8",
+      "sourceId": "gldlgkah47",
+      "type": "wistia",
+      "orderIdx": 364
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c74",
+      "title": "Introduction to Queues",
+      "link": "https://embed-ssl.wistia.com/deliveries/c9194a48afad60c613029444df718f60b3fdbaeb.m3u8",
+      "sourceId": "26negthcpo",
+      "type": "wistia",
+      "orderIdx": 365
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c75",
+      "title": "Queues using Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/4305dd0ac9a6e155b973e5823a648e9977da7059.m3u8",
+      "sourceId": "ib7hm0e9ol",
+      "type": "wistia",
+      "orderIdx": 366
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c76",
+      "title": "Circular Queue using Arrays",
+      "link": "https://embed-ssl.wistia.com/deliveries/e86bc9ef5b2d4dfada8a9212078dcf89ccd946d5.m3u8",
+      "sourceId": "ginh3t87yn",
+      "type": "wistia",
+      "orderIdx": 367
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c77",
+      "title": "Queue using LL",
+      "link": "https://embed-ssl.wistia.com/deliveries/59ea5093120743d324eab3b865ddc136fb2227aa.m3u8",
+      "sourceId": "a9ao7g5d2e",
+      "type": "wistia",
+      "orderIdx": 368
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c78",
+      "title": "Queue using JCF",
+      "link": "https://embed-ssl.wistia.com/deliveries/1fd85299686bf0b6eb2d1628b2ff3d4bd6dbac47.m3u8",
+      "sourceId": "m56ba1257v",
+      "type": "wistia",
+      "orderIdx": 369
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c79",
+      "title": "Queue using Two Stacks",
+      "link": "https://embed-ssl.wistia.com/deliveries/bcd0238cd828d4274d9942ddfab630214d391e14.m3u8",
+      "sourceId": "cscta15b3c",
+      "type": "wistia",
+      "orderIdx": 370
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7a",
+      "title": "Stack using 2 Queues",
+      "link": "https://embed-ssl.wistia.com/deliveries/8b394a5d3ca68d30b3dc9a7f0209ddbdc17bab90.m3u8",
+      "sourceId": "ppy6fpogfc",
+      "type": "wistia",
+      "orderIdx": 371
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7b",
+      "title": "First Non-Repeating Letter",
+      "link": "https://embed-ssl.wistia.com/deliveries/fe63e4ec9fbac0018176d3450343ae8bb2465e91.m3u8",
+      "sourceId": "bdmks4kyrm",
+      "type": "wistia",
+      "orderIdx": 372
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7c",
+      "title": "Interleave two halves of a Queue",
+      "link": "https://embed-ssl.wistia.com/deliveries/12c00ff01c83ba6e03cdaabc9dfaafcecdd394ca.m3u8",
+      "sourceId": "50t9kuzqxo",
+      "type": "wistia",
+      "orderIdx": 373
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7d",
+      "title": "Queue Reversal",
+      "link": "https://embed-ssl.wistia.com/deliveries/f967bba4ef341e7d0105e9e93098624e5e5e2a52.m3u8",
+      "sourceId": "au32f8jfjf",
+      "type": "wistia",
+      "orderIdx": 374
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7e",
+      "title": "Deque (Double Ended Queue)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ffe7219280dd67a67e17a59d86766b3e93406aef.m3u8",
+      "sourceId": "qmz7c0ruxl",
+      "type": "wistia",
+      "orderIdx": 375
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c7f",
+      "title": "Deque in JCF",
+      "link": "https://embed-ssl.wistia.com/deliveries/2dd73ceeef2ff238bfc4e605ce362a572d96e07e.m3u8",
+      "sourceId": "uyu57xcmxv",
+      "type": "wistia",
+      "orderIdx": 376
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c80",
+      "title": "Implement Stack using Deque",
+      "link": "https://embed-ssl.wistia.com/deliveries/cc0dfd58bf88ed86eeda3f4c09133a2269eac623.m3u8",
+      "sourceId": "gdaxj84jlc",
+      "type": "wistia",
+      "orderIdx": 377
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c81",
+      "title": "Implement Queue using Deque",
+      "link": "https://embed-ssl.wistia.com/deliveries/b0a9f9456582031e18d752a2aea152202565ab4d.m3u8",
+      "sourceId": "g3lt0b6sy4",
+      "type": "wistia",
+      "orderIdx": 378
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c84",
+      "title": "Introduction to Greedy",
+      "link": "https://embed-ssl.wistia.com/deliveries/0845806efacfa260c5cf223861b8faf8dd818a3c.m3u8",
+      "sourceId": "pt0oxgntqv",
+      "type": "wistia",
+      "orderIdx": 379
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c85",
+      "title": "Activity Selection",
+      "link": "https://embed-ssl.wistia.com/deliveries/afa487644c13232fc93317024d2ab990651424ea.m3u8",
+      "sourceId": "uw7fir1wk8",
+      "type": "wistia",
+      "orderIdx": 380
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c86",
+      "title": "Activity Selection Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/4a7d9208f08717ae99c47cf63c8ed506c90de79b.m3u8",
+      "sourceId": "41l3xrwoou",
+      "type": "wistia",
+      "orderIdx": 381
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c87",
+      "title": "Activity Selection Explanation",
+      "link": "https://embed-ssl.wistia.com/deliveries/e5a65b376d8ff4f564461276c1b5421760a8417d.m3u8",
+      "sourceId": "t8dvbufhgs",
+      "type": "wistia",
+      "orderIdx": 382
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c88",
+      "title": "Fractional Knapsack",
+      "link": "https://embed-ssl.wistia.com/deliveries/c714833ab1941a6ff35899aaa3436e803a09644d.m3u8",
+      "sourceId": "l63jl1th44",
+      "type": "wistia",
+      "orderIdx": 383
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c89",
+      "title": "Fractional Knapsack Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/fba9943be134d23e0b39b2ecca9b0e52755d774d.m3u8",
+      "sourceId": "i7g54c82kq",
+      "type": "wistia",
+      "orderIdx": 384
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8a",
+      "title": "Minimum Sum absolute difference pairs",
+      "link": "https://embed-ssl.wistia.com/deliveries/21796beb0e9b011b45362854c0019b1650005e82.m3u8",
+      "sourceId": "y6z7s9144n",
+      "type": "wistia",
+      "orderIdx": 385
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8b",
+      "title": "Maximum length chain of pairs",
+      "link": "https://embed-ssl.wistia.com/deliveries/78b74b46b28b529694bc7f9a7c18db304aeca51d.m3u8",
+      "sourceId": "mnxaqfzj7l",
+      "type": "wistia",
+      "orderIdx": 386
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8c",
+      "title": "Indian Coins",
+      "link": "https://embed-ssl.wistia.com/deliveries/2c58377297da81dc534a4880228b51daf710da2e.m3u8",
+      "sourceId": "v981fbjq5a",
+      "type": "wistia",
+      "orderIdx": 387
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8d",
+      "title": "Job Sequencing Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/804c546d2a73a312a7b042aaf728dfd395f1a28c.m3u8",
+      "sourceId": "0sev4t0nz0",
+      "type": "wistia",
+      "orderIdx": 388
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8e",
+      "title": "Chocola Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/658c26a74a2251103eceb249d5b7fcd0ead616bf.m3u8",
+      "sourceId": "3799t9qkpt",
+      "type": "wistia",
+      "orderIdx": 389
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c8f",
+      "title": "Chocola Problem Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/deef3967dd352818218f6267d2edff183cf2b841.m3u8",
+      "sourceId": "181ly46n1m",
+      "type": "wistia",
+      "orderIdx": 390
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c93",
+      "title": "Introduction to Binary Trees",
+      "link": "https://embed-ssl.wistia.com/deliveries/a8f4b7896bb48c4c14a6106745a0d43172fea532.m3u8",
+      "sourceId": "dokhwt7rrk",
+      "type": "wistia",
+      "orderIdx": 391
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c94",
+      "title": "Levels & Sub-trees in a Tree",
+      "link": "https://embed-ssl.wistia.com/deliveries/987a7f7bc1f883cc7b1ffc86fa50db3e6de55b74.m3u8",
+      "sourceId": "vzthmlfo5z",
+      "type": "wistia",
+      "orderIdx": 392
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c95",
+      "title": "Pop Quiz",
+      "link": "https://embed-ssl.wistia.com/deliveries/d8b0975aa17a3c4f0ec6a0db2e698a017211e09e.m3u8",
+      "sourceId": "3hl53l4c8o",
+      "type": "wistia",
+      "orderIdx": 393
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c96",
+      "title": "Build Tree Preorder",
+      "link": "https://embed-ssl.wistia.com/deliveries/ce61857d633216701fed0e809354f2a0a1930143.m3u8",
+      "sourceId": "qb2jhhoeo3",
+      "type": "wistia",
+      "orderIdx": 394
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c97",
+      "title": "Build Tree Preorder Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/f335a1edbc8b24937b9a1cacf90558d00d45fa24.m3u8",
+      "sourceId": "yfvhgpq12h",
+      "type": "wistia",
+      "orderIdx": 395
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c98",
+      "title": "Preorder Traversal",
+      "link": "https://embed-ssl.wistia.com/deliveries/f04ad9d62ea010c263f64cdac36d0a75fe1f8f10.m3u8",
+      "sourceId": "h8urmyqvbm",
+      "type": "wistia",
+      "orderIdx": 396
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c99",
+      "title": "Inorder Traversal",
+      "link": "https://embed-ssl.wistia.com/deliveries/d210e324bca319667ba01dc2693fd07a95741d8b.m3u8",
+      "sourceId": "ld6qc9exh4",
+      "type": "wistia",
+      "orderIdx": 397
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9a",
+      "title": "Postorder Traversal",
+      "link": "https://embed-ssl.wistia.com/deliveries/7cc658f1ad6fa5b7b4992ca239ef4a5975c5bcb3.m3u8",
+      "sourceId": "srvbd79jrz",
+      "type": "wistia",
+      "orderIdx": 398
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9b",
+      "title": "Level order Traversal",
+      "link": "https://embed-ssl.wistia.com/deliveries/e096f63fd1ece4f13280db4c93abfa7997e52a91.m3u8",
+      "sourceId": "nf9x1oaelx",
+      "type": "wistia",
+      "orderIdx": 399
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9c",
+      "title": "Height of a Tree",
+      "link": "https://embed-ssl.wistia.com/deliveries/657bd0f1feb94310a7caeff780ad2944a7f8670e.m3u8",
+      "sourceId": "lnvpc2gkwg",
+      "type": "wistia",
+      "orderIdx": 400
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9d",
+      "title": "Count of Nodes of a Tree",
+      "link": "https://embed-ssl.wistia.com/deliveries/66382d5017e90ffc1d4435a1ef258f9df8b24ae1.m3u8",
+      "sourceId": "ap1p0gq2us",
+      "type": "wistia",
+      "orderIdx": 401
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9e",
+      "title": "Sum of Nodes",
+      "link": "https://embed-ssl.wistia.com/deliveries/218d1b43f71657281ed359e905263734757772d2.m3u8",
+      "sourceId": "dul55usmxw",
+      "type": "wistia",
+      "orderIdx": 402
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045c9f",
+      "title": "Diameter of a Tree (Approach1)",
+      "link": "https://embed-ssl.wistia.com/deliveries/be097957ef806045adb149047147b041cc6211a3.m3u8",
+      "sourceId": "fzla6k0wrd",
+      "type": "wistia",
+      "orderIdx": 403
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca0",
+      "title": "Diameter of a Tree (Approach2)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f53ed8b3c847723e65e10f3ae80467a4d9c82900.m3u8",
+      "sourceId": "m3rllefwqo",
+      "type": "wistia",
+      "orderIdx": 404
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca1",
+      "title": "Subtree of another tree",
+      "link": "https://embed-ssl.wistia.com/deliveries/fc15cf16c609093d252addce3767a334ee63475f.m3u8",
+      "sourceId": "xzb9w1sfed",
+      "type": "wistia",
+      "orderIdx": 405
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca2",
+      "title": "Subtree of another tree Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/cd6f11de6092f1b9f351b2c2c8f8cb8d2fb55853.m3u8",
+      "sourceId": "vcyutq7pc2",
+      "type": "wistia",
+      "orderIdx": 406
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca3",
+      "title": "Top View of a Tree (Basics)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ecebdfd68a65f290180030f44214141a9c8a8e6c.m3u8",
+      "sourceId": "5eyo39jqjs",
+      "type": "wistia",
+      "orderIdx": 407
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca4",
+      "title": "Top View of a Tree (Approach)",
+      "link": "https://embed-ssl.wistia.com/deliveries/be2e815b04bbbe93f921d0281475d8385e472820.m3u8",
+      "sourceId": "lxiz2ezjjl",
+      "type": "wistia",
+      "orderIdx": 408
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca5",
+      "title": "Top View of a Tree (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/7a3ce953fc94be94225792bf661e27f772b6eeca.m3u8",
+      "sourceId": "eze7f9nyz1",
+      "type": "wistia",
+      "orderIdx": 409
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca6",
+      "title": "Kth Level",
+      "link": "https://embed-ssl.wistia.com/deliveries/0376a2986e90067ed7d9c7450e19553bdeed334f.m3u8",
+      "sourceId": "0w5jsc0pph",
+      "type": "wistia",
+      "orderIdx": 410
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca7",
+      "title": "Lowest Common Ancestor (Approach1)",
+      "link": "https://embed-ssl.wistia.com/deliveries/08f66fbc1c5d0787960ce3de3aa1bf8af5631265.m3u8",
+      "sourceId": "hztsctfgh2",
+      "type": "wistia",
+      "orderIdx": 411
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca8",
+      "title": "Lowest Common Ancestor (Approach2)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2dddebd8ea86ddbc11bedeb74aff5c131e1f415b.m3u8",
+      "sourceId": "9pwa3he6qj",
+      "type": "wistia",
+      "orderIdx": 412
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e75be54967cc045ca9",
+      "title": "Minimum Distance between 2 Nodes",
+      "link": "https://embed-ssl.wistia.com/deliveries/a4431cbce8979558821d5a87e9aa5e3ef1b7f25f.m3u8",
+      "sourceId": "qpma0zs8pv",
+      "type": "wistia",
+      "orderIdx": 413
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045caa",
+      "title": "Kth ancestor of Node",
+      "link": "https://embed-ssl.wistia.com/deliveries/eab726e8293ac55f36b9554fccd50d32d1db2795.m3u8",
+      "sourceId": "rrk8lggjgz",
+      "type": "wistia",
+      "orderIdx": 414
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cab",
+      "title": "Transform to Sum Tree",
+      "link": "https://embed-ssl.wistia.com/deliveries/bf687d0c9e986ee401eda5b55711d48c7b15b876.m3u8",
+      "sourceId": "i8hlwy17s7",
+      "type": "wistia",
+      "orderIdx": 415
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cae",
+      "title": "Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/1404a256dd3bae762889b9073210f13d4c502e05.m3u8",
+      "sourceId": "idwy0ia9ok",
+      "type": "wistia",
+      "orderIdx": 416
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045caf",
+      "title": "Concept of Search in BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/11eac8bcb89b6e870dcd680f432ef93175332477.m3u8",
+      "sourceId": "zx81fa7aoi",
+      "type": "wistia",
+      "orderIdx": 417
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb0",
+      "title": "Build a BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/eed715ee91ce6525d313515a21318a3abdb3c745.m3u8",
+      "sourceId": "clzknh56jr",
+      "type": "wistia",
+      "orderIdx": 418
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb1",
+      "title": "Search in a BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/2ffd0bd326601629460af7a58d162ec916cbd899.m3u8",
+      "sourceId": "9g6pkw0z3g",
+      "type": "wistia",
+      "orderIdx": 419
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb2",
+      "title": "Delete a Node",
+      "link": "https://embed-ssl.wistia.com/deliveries/d477df5c049a4a3c0a7caecf66cb8c7a0bdd46bb.m3u8",
+      "sourceId": "atu5d9msu6",
+      "type": "wistia",
+      "orderIdx": 420
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb3",
+      "title": "Print in Range",
+      "link": "https://embed-ssl.wistia.com/deliveries/7803a7b3d0c231e12f9e9c9b55fa6c5ed73c4bea.m3u8",
+      "sourceId": "67kwn7eb69",
+      "type": "wistia",
+      "orderIdx": 421
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb4",
+      "title": "Root to Leaf Path",
+      "link": "https://embed-ssl.wistia.com/deliveries/bdde710fba72b819771da3490e493249a5e3c69b.m3u8",
+      "sourceId": "rfzhskrzc7",
+      "type": "wistia",
+      "orderIdx": 422
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb5",
+      "title": "Validate BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/dd6c18f4683e46d1f7c2526c0ba0972775a00d23.m3u8",
+      "sourceId": "0q6qaa8hez",
+      "type": "wistia",
+      "orderIdx": 423
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb6",
+      "title": "Mirror a BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/4b0135e5604a3510422a77fe6274caf6e79d0b4c.m3u8",
+      "sourceId": "zmt95f1qqm",
+      "type": "wistia",
+      "orderIdx": 424
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb7",
+      "title": "Sorted Array to Balanced BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/a4f4421de5e2c22cb77d773588825dbab9664cbb.m3u8",
+      "sourceId": "pkb9t78ttj",
+      "type": "wistia",
+      "orderIdx": 425
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb8",
+      "title": "Convert BST to Balanced BST",
+      "link": "https://embed-ssl.wistia.com/deliveries/7e70b05c5f0e930fffc4ce44678b7e762c29b03a.m3u8",
+      "sourceId": "lirapcun3q",
+      "type": "wistia",
+      "orderIdx": 426
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cb9",
+      "title": "Size of Largest BST in BT",
+      "link": "https://embed-ssl.wistia.com/deliveries/8ca57fa1db45aedd1083d1a2c10df21d31caba3a.m3u8",
+      "sourceId": "6eoyewks8z",
+      "type": "wistia",
+      "orderIdx": 427
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cba",
+      "title": "Size of Largest BST in BT (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/4b7bc88ddbccc3a7e04cca9f3e35ce5778bd14a3.m3u8",
+      "sourceId": "6yrgwflxjp",
+      "type": "wistia",
+      "orderIdx": 428
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cbb",
+      "title": "Merge 2 BSTs",
+      "link": "https://embed-ssl.wistia.com/deliveries/94d0074f0639bd20aed3a30a7817ef06d8382668.m3u8",
+      "sourceId": "g2tkf2walu",
+      "type": "wistia",
+      "orderIdx": 429
+    },
+    {
+      "id": "alpha-plus-7-java::69c543e85be54967cc045cbc",
+      "title": "AVL Trees",
+      "link": "https://embed-ssl.wistia.com/deliveries/b5258cf071be8c21c5aa68c20b4a0e1f7c784339.m3u8",
+      "sourceId": "iq3wah85lt",
+      "type": "wistia",
+      "orderIdx": 430
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af4",
+      "title": "Introduction to Priority Queues",
+      "link": "https://embed-ssl.wistia.com/deliveries/06fd1853d4544dcaedfb58413b7606c5696fec94.m3u8",
+      "sourceId": "hvokiq7ddp",
+      "type": "wistia",
+      "orderIdx": 431
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af5",
+      "title": "PQ in JCF",
+      "link": "https://embed-ssl.wistia.com/deliveries/caa0df4ed51d80de3da03f2b61d45aa34e422c07.m3u8",
+      "sourceId": "jam6w88enm",
+      "type": "wistia",
+      "orderIdx": 432
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af6",
+      "title": "PQ for Objects",
+      "link": "https://embed-ssl.wistia.com/deliveries/e07be1bd9f54a2ac9bea4e8c169590d0cfc4994f.m3u8",
+      "sourceId": "cetdd6hh54",
+      "type": "wistia",
+      "orderIdx": 433
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af7",
+      "title": "Introduction to Heaps",
+      "link": "https://embed-ssl.wistia.com/deliveries/d58a03c2f19c5bfccbf223fd9bf1b7a398b17e85.m3u8",
+      "sourceId": "lghbi73o5x",
+      "type": "wistia",
+      "orderIdx": 434
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af8",
+      "title": "Heap Implementation (using CBT)",
+      "link": "https://embed-ssl.wistia.com/deliveries/7a5f216ca7be9d8404060d1c6e650014a346907d.m3u8",
+      "sourceId": "fk9ywycw12",
+      "type": "wistia",
+      "orderIdx": 435
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079af9",
+      "title": "Insert in Heap",
+      "link": "https://embed-ssl.wistia.com/deliveries/4e77eaa9720d04d0b68733b0926871314e2465dd.m3u8",
+      "sourceId": "y51ek315th",
+      "type": "wistia",
+      "orderIdx": 436
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079afa",
+      "title": "Peek from Heap",
+      "link": "https://embed-ssl.wistia.com/deliveries/d4a11ca92d1b42288e02a34be69b09293e7be20b.m3u8",
+      "sourceId": "shbas8dz1b",
+      "type": "wistia",
+      "orderIdx": 437
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079afb",
+      "title": "Remove from Heap",
+      "link": "https://embed-ssl.wistia.com/deliveries/d01e818026553f082b5f650b1cee027816d976f9.m3u8",
+      "sourceId": "vvfv4a20y6",
+      "type": "wistia",
+      "orderIdx": 438
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079afc",
+      "title": "Heap Sort",
+      "link": "https://embed-ssl.wistia.com/deliveries/12d58eebcede6808f50f34c795e4f3d121d71fef.m3u8",
+      "sourceId": "4ed5sijikm",
+      "type": "wistia",
+      "orderIdx": 439
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079afd",
+      "title": "Nearby Cars",
+      "link": "https://embed-ssl.wistia.com/deliveries/9c37d31dada66c33d5cf1d657125fe29483a7be3.m3u8",
+      "sourceId": "jemloczxb0",
+      "type": "wistia",
+      "orderIdx": 440
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079afe",
+      "title": "Connect N Ropes with Minimum Cost",
+      "link": "https://embed-ssl.wistia.com/deliveries/30818306031f3e5dc387174f1ffaf098d883ed8d.m3u8",
+      "sourceId": "dhrgqjj6me",
+      "type": "wistia",
+      "orderIdx": 441
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079aff",
+      "title": "Weakest Soldier",
+      "link": "https://embed-ssl.wistia.com/deliveries/7be8ed0774158150b2745e251fc0ff9b26e0b044.m3u8",
+      "sourceId": "436yyhexzk",
+      "type": "wistia",
+      "orderIdx": 442
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b00",
+      "title": "Sliding Window Maximum",
+      "link": "https://embed-ssl.wistia.com/deliveries/eb7b1d4e1843a033fa5dd50d34aa6328082d9c8c.m3u8",
+      "sourceId": "7qlg6wkthm",
+      "type": "wistia",
+      "orderIdx": 443
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b03",
+      "title": "Hashing Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/4ee69e6b401fe1b93d9912fbed0e6f9c07ed5080.m3u8",
+      "sourceId": "km934vqthc",
+      "type": "wistia",
+      "orderIdx": 444
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b04",
+      "title": "HashMap",
+      "link": "https://embed-ssl.wistia.com/deliveries/55a8206c7abe12e012c56ae6f17e21322b75c70c.m3u8",
+      "sourceId": "5eyft8f2tl",
+      "type": "wistia",
+      "orderIdx": 445
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b05",
+      "title": "HashMap Operations",
+      "link": "https://embed-ssl.wistia.com/deliveries/86652074a97d3ebf2f2c7f4706c31106eeeb3552.m3u8",
+      "sourceId": "wrcow5booe",
+      "type": "wistia",
+      "orderIdx": 446
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b06",
+      "title": "Iteration on HashMaps",
+      "link": "https://embed-ssl.wistia.com/deliveries/5e39b1c58fb29528fd591298888b91737a2e4217.m3u8",
+      "sourceId": "idjhfi4ie5",
+      "type": "wistia",
+      "orderIdx": 447
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b07",
+      "title": "HashMap Implementation",
+      "link": "https://embed-ssl.wistia.com/deliveries/f71da03f340f17ae8e2bac49542a03cbef453041.m3u8",
+      "sourceId": "sqb43cpeiz",
+      "type": "wistia",
+      "orderIdx": 448
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b09",
+      "title": "HashMap Implementation Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/56903129af33331ddd8bfdcc5da4e593dd02787d.m3u8",
+      "sourceId": "jxr3e9ysfq",
+      "type": "wistia",
+      "orderIdx": 449
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b0a",
+      "title": "Special Note",
+      "link": "https://embed-ssl.wistia.com/deliveries/a6894a0ca568da43eef5acb67aae77b2177babb8.m3u8",
+      "sourceId": "3kmr4rq3s5",
+      "type": "wistia",
+      "orderIdx": 450
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b0b",
+      "title": "LinkedHashMap",
+      "link": "https://embed-ssl.wistia.com/deliveries/c038a0350dbe6c4789b037f97061ff1c33cac264.m3u8",
+      "sourceId": "xfka6asz9g",
+      "type": "wistia",
+      "orderIdx": 451
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b0c",
+      "title": "TreeMap",
+      "link": "https://embed-ssl.wistia.com/deliveries/e979fc129a3f841b26d12c7c8c90152ad13efb04.m3u8",
+      "sourceId": "7313gp3rpg",
+      "type": "wistia",
+      "orderIdx": 452
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b0e",
+      "title": "Majority Element",
+      "link": "https://embed-ssl.wistia.com/deliveries/c18b5bdb62f0218d64fb54fbb487d8111a536b0e.m3u8",
+      "sourceId": "4dyk0kovam",
+      "type": "wistia",
+      "orderIdx": 453
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b0f",
+      "title": "Valid Anagram",
+      "link": "https://embed-ssl.wistia.com/deliveries/9f303dcdcf4882026bfddf7af7bc26fa2687f82a.m3u8",
+      "sourceId": "ibhwj9j9q7",
+      "type": "wistia",
+      "orderIdx": 454
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b10",
+      "title": "HashSet",
+      "link": "https://embed-ssl.wistia.com/deliveries/acdf2ff48224170a04be832e9e6666404076dcd7.m3u8",
+      "sourceId": "agzavr2t3k",
+      "type": "wistia",
+      "orderIdx": 455
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b11",
+      "title": "Iteration on HashSets",
+      "link": "https://embed-ssl.wistia.com/deliveries/1d0b7db71fba3231549b8131b79a4a50663a29d9.m3u8",
+      "sourceId": "k2n7fwfy1u",
+      "type": "wistia",
+      "orderIdx": 456
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b12",
+      "title": "LinkedHashSet",
+      "link": "https://embed-ssl.wistia.com/deliveries/f4e8c55fcf8e9237c6bf7d8c26e3f032d28211a9.m3u8",
+      "sourceId": "rhwdpxg0pp",
+      "type": "wistia",
+      "orderIdx": 457
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b13",
+      "title": "TreeSet",
+      "link": "https://embed-ssl.wistia.com/deliveries/cfc6dec278f60107da0de6300c7fdba13ab4df58.m3u8",
+      "sourceId": "btzyl7r3q7",
+      "type": "wistia",
+      "orderIdx": 458
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b14",
+      "title": "Count Distinct Elements",
+      "link": "https://embed-ssl.wistia.com/deliveries/7c2c85fb912439106b1715712b1109a25f326729.m3u8",
+      "sourceId": "c3u4qg9cc5",
+      "type": "wistia",
+      "orderIdx": 459
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b15",
+      "title": "Union & Intersection",
+      "link": "https://embed-ssl.wistia.com/deliveries/e80ac63386c69aa1b464a0b7f934c1ef4c657e16.m3u8",
+      "sourceId": "v1afv1b9te",
+      "type": "wistia",
+      "orderIdx": 460
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b16",
+      "title": "Find Itinerary for Tickets",
+      "link": "https://embed-ssl.wistia.com/deliveries/9c9a254026e665c64bc18d08697256705501d9e2.m3u8",
+      "sourceId": "s0oqgtjahq",
+      "type": "wistia",
+      "orderIdx": 461
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b17",
+      "title": "Largest Subarray with Sum 0",
+      "link": "https://embed-ssl.wistia.com/deliveries/12c13151db5cc9a4550295d946f7c63a4cbac818.m3u8",
+      "sourceId": "e8xn3u3oc4",
+      "type": "wistia",
+      "orderIdx": 462
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b18",
+      "title": "Subarray Sum Equal to K",
+      "link": "https://embed-ssl.wistia.com/deliveries/355dc62e7ab7c5d5b3e47cea993e3e009fd3e3a2.m3u8",
+      "sourceId": "6razm3v932",
+      "type": "wistia",
+      "orderIdx": 463
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b1b",
+      "title": "Tries Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/fe05d39575812195ab5e8e653ac660f6e70839c9.m3u8",
+      "sourceId": "aaj7y6swji",
+      "type": "wistia",
+      "orderIdx": 464
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b1c",
+      "title": "What is a Trie?",
+      "link": "https://embed-ssl.wistia.com/deliveries/48ac44321ba5f7e426c1c460cf1593fab84dbb49.m3u8",
+      "sourceId": "8qvrfmbkrg",
+      "type": "wistia",
+      "orderIdx": 465
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b1d",
+      "title": "Creating a Trie",
+      "link": "https://embed-ssl.wistia.com/deliveries/63aff77565a3ff216206b67f7100cd29c10b6df7.m3u8",
+      "sourceId": "3179w4y2oy",
+      "type": "wistia",
+      "orderIdx": 466
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b1e",
+      "title": "Insertion",
+      "link": "https://embed-ssl.wistia.com/deliveries/bff186cc6caa003adafcc60b466ccd54291ef87a.m3u8",
+      "sourceId": "jg5guvwu7o",
+      "type": "wistia",
+      "orderIdx": 467
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b1f",
+      "title": "Searching",
+      "link": "https://embed-ssl.wistia.com/deliveries/b6fecbb65aa43b0ec22f2d5b2e07e8348eeb2eb7.m3u8",
+      "sourceId": "bk5hk11rhc",
+      "type": "wistia",
+      "orderIdx": 468
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b20",
+      "title": "Word Break Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/69f3da852df0f07297dce92ca406e8e1cf9ddb06.m3u8",
+      "sourceId": "qsnbn7enjz",
+      "type": "wistia",
+      "orderIdx": 469
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b21",
+      "title": "Prefix Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/7fdcc87dd155bc22519beec5f3403e4440d44870.m3u8",
+      "sourceId": "3yr5e9yypv",
+      "type": "wistia",
+      "orderIdx": 470
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b22",
+      "title": "startsWith Problem",
+      "link": "https://embed-ssl.wistia.com/deliveries/48c70956755c2a459bc70eb74f3bf268419ace4d.m3u8",
+      "sourceId": "h39ftl5vma",
+      "type": "wistia",
+      "orderIdx": 471
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b23",
+      "title": "Unique Substrings",
+      "link": "https://embed-ssl.wistia.com/deliveries/09b5e9c980ab09f4f5b478a2ed39546698fa4891.m3u8",
+      "sourceId": "2l8f7w22ro",
+      "type": "wistia",
+      "orderIdx": 472
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b24",
+      "title": "Longest Word with all Prefixes",
+      "link": "https://embed-ssl.wistia.com/deliveries/2f102aa6966042548d7e5fed2e64465df39eee6b.m3u8",
+      "sourceId": "7304xbvm6i",
+      "type": "wistia",
+      "orderIdx": 473
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b27",
+      "title": "Introduction to Graphs",
+      "link": "https://embed-ssl.wistia.com/deliveries/946304a3c129be47658df6736127ce2a5778e6a5.m3u8",
+      "sourceId": "0w5bxp70k0",
+      "type": "wistia",
+      "orderIdx": 474
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b28",
+      "title": "Types of Graphs (Based on Edge)",
+      "link": "https://embed-ssl.wistia.com/deliveries/5276adb476fcfb6bc9afa8f99705d5105b2e970b.m3u8",
+      "sourceId": "27tfk99io1",
+      "type": "wistia",
+      "orderIdx": 475
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b29",
+      "title": "Graph Representations",
+      "link": "https://embed-ssl.wistia.com/deliveries/ab4a56725208702b7ca7d90bbf3f6a4e722febf6.m3u8",
+      "sourceId": "ugu9a4b66z",
+      "type": "wistia",
+      "orderIdx": 476
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2a",
+      "title": "Graph Applications",
+      "link": "https://embed-ssl.wistia.com/deliveries/9275d46b350d15647ef91e8d78cf162c3c887cad.m3u8",
+      "sourceId": "9d9jf067nf",
+      "type": "wistia",
+      "orderIdx": 477
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2b",
+      "title": "Creating a Graph (Adjacency List)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a01a4d72ca242ac4681b797dcd919a1157d1fd77.m3u8",
+      "sourceId": "3rokddt4mj",
+      "type": "wistia",
+      "orderIdx": 478
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2c",
+      "title": "BFS (Breadth First Search)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2f40136d5712d7a79f3d91c2e50e93e9e1943361.m3u8",
+      "sourceId": "2e3xcj3kp9",
+      "type": "wistia",
+      "orderIdx": 479
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2d",
+      "title": "DFS (Depth First Search)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ff0b8a852e3f29598e507a82b1a7873fe6bb5270.m3u8",
+      "sourceId": "8fn26j2b3a",
+      "type": "wistia",
+      "orderIdx": 480
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2e",
+      "title": "Has Path? (using DFS)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a292a2e63974e398498279efd88e07e54b76abcf.m3u8",
+      "sourceId": "f0aocbg7ks",
+      "type": "wistia",
+      "orderIdx": 481
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b2f",
+      "title": "Connected Components",
+      "link": "https://embed-ssl.wistia.com/deliveries/58ec88dc22e59b91189e9c3dd7b5a6e82b82de37.m3u8",
+      "sourceId": "t1xajlukye",
+      "type": "wistia",
+      "orderIdx": 482
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b30",
+      "title": "Cycle in Graphs",
+      "link": "https://embed-ssl.wistia.com/deliveries/b99068679aab39ec73efb1a901380f38579e7b3e.m3u8",
+      "sourceId": "l4msap2nzk",
+      "type": "wistia",
+      "orderIdx": 483
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b31",
+      "title": "Cycle Detection (Undirected Graph) - DFS",
+      "link": "https://embed-ssl.wistia.com/deliveries/f0219fd9134a98e09a77195fd7c7aff54f23d344.m3u8",
+      "sourceId": "pesiopsvzp",
+      "type": "wistia",
+      "orderIdx": 484
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b32",
+      "title": "Bipartite Graph",
+      "link": "https://embed-ssl.wistia.com/deliveries/50b1fbf8516d39f8164a7efe70e918818f3705b3.m3u8",
+      "sourceId": "50qwglnm1o",
+      "type": "wistia",
+      "orderIdx": 485
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b33",
+      "title": "Cycle Detection (Directed graph) - DFS",
+      "link": "https://embed-ssl.wistia.com/deliveries/1fb6ae102d78d495330ea6e1fa394c1b66e0b2a2.m3u8",
+      "sourceId": "llmy4v5p2u",
+      "type": "wistia",
+      "orderIdx": 486
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b34",
+      "title": "Extra Read",
+      "link": "https://embed-ssl.wistia.com/deliveries/950796fb21b90a69a379a3056a9aad2b4e3ea7e0.m3u8",
+      "sourceId": "mjqsmv8ayw",
+      "type": "wistia",
+      "orderIdx": 487
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd5d40a3f61c3079b35",
+      "title": "Topological Sorting (using DFS)",
+      "link": "https://embed-ssl.wistia.com/deliveries/dd176b62f477446d6bffefe8f4b7982310de46a0.m3u8",
+      "sourceId": "94r4x7yfuq",
+      "type": "wistia",
+      "orderIdx": 488
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b36",
+      "title": "Topological Sort using BFS (Kahn's Algorithm)",
+      "link": "https://embed-ssl.wistia.com/deliveries/e069d72921ee0772b42dd96528c5c5a3ca80ede4.m3u8",
+      "sourceId": "oapos514me",
+      "type": "wistia",
+      "orderIdx": 489
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b37",
+      "title": "Topological Sort using BFS (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/6073e6a5ed2c67deff6f822b8c248419088ee891.m3u8",
+      "sourceId": "a8elae1xoa",
+      "type": "wistia",
+      "orderIdx": 490
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b38",
+      "title": "All Paths from Source to Target",
+      "link": "https://embed-ssl.wistia.com/deliveries/f8100bf36bf8b6286e0a79ba17bc4e9fe8a682d2.m3u8",
+      "sourceId": "0i17sos4e3",
+      "type": "wistia",
+      "orderIdx": 491
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b39",
+      "title": "Dijkstra's Algorithm",
+      "link": "https://embed-ssl.wistia.com/deliveries/391f467134d0ad13095cfec0bbfc7597a638b164.m3u8",
+      "sourceId": "v15vpx66ry",
+      "type": "wistia",
+      "orderIdx": 492
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b3a",
+      "title": "Dijkstra's Algorithm (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2c7dc0bf852a72831ff33c1201991b0bfae4b814.m3u8",
+      "sourceId": "fb012xro1i",
+      "type": "wistia",
+      "orderIdx": 493
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b3d",
+      "title": "Bellman Ford Algorithm",
+      "link": "https://embed-ssl.wistia.com/deliveries/142e3f650a4978458ab019a880940464ef4ad259.m3u8",
+      "sourceId": "be2awt0nr8",
+      "type": "wistia",
+      "orderIdx": 494
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b3e",
+      "title": "Bellman Ford (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/59dc1675d398ad3aff3020a5d52783fe52e71a58.m3u8",
+      "sourceId": "y2jn3tzpdm",
+      "type": "wistia",
+      "orderIdx": 495
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b3f",
+      "title": "What is MST?",
+      "link": "https://embed-ssl.wistia.com/deliveries/2be168f46baefdbd2a898ecc9efe3c1b9ca76f04.m3u8",
+      "sourceId": "5e4psvxgjh",
+      "type": "wistia",
+      "orderIdx": 496
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b40",
+      "title": "Prim's Algorithm",
+      "link": "https://embed-ssl.wistia.com/deliveries/32b5a3f92797bc5d2f3d3a1e91596144cd792fe8.m3u8",
+      "sourceId": "gfkj1l7n98",
+      "type": "wistia",
+      "orderIdx": 497
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b41",
+      "title": "Prim's Code",
+      "link": "https://embed-ssl.wistia.com/deliveries/6a1c0ae00f6a56e7e271e65bb6e705dcf5bdd4ff.m3u8",
+      "sourceId": "smdqlhxlc0",
+      "type": "wistia",
+      "orderIdx": 498
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b42",
+      "title": "Cheapest Flights within K Stops",
+      "link": "https://embed-ssl.wistia.com/deliveries/0916d539eff71afd6f3f3219f571670e5bb79de9.m3u8",
+      "sourceId": "qq9qjedwrh",
+      "type": "wistia",
+      "orderIdx": 499
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b43",
+      "title": "Cheapest Flights within K Stops (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/89028983b356e3941ce79c1e3f7dab45cf74dbbc.m3u8",
+      "sourceId": "wbzp2thlcf",
+      "type": "wistia",
+      "orderIdx": 500
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b44",
+      "title": "Connecting Cities",
+      "link": "https://embed-ssl.wistia.com/deliveries/8df4bf2d299c7259200af342fd996695c99485cc.m3u8",
+      "sourceId": "3whf8xx7rj",
+      "type": "wistia",
+      "orderIdx": 501
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b45",
+      "title": "Connecting Cities (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/5f35098e55c0233a912a101ac83688ec6c1d938b.m3u8",
+      "sourceId": "w185ag94gw",
+      "type": "wistia",
+      "orderIdx": 502
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b46",
+      "title": "Disjoint Set Union",
+      "link": "https://embed-ssl.wistia.com/deliveries/c0b6ef4d77302de4deaaf7e9a92380fdd975f083.m3u8",
+      "sourceId": "af4qltyjhs",
+      "type": "wistia",
+      "orderIdx": 503
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b47",
+      "title": "Kruskal's Algorithm",
+      "link": "https://embed-ssl.wistia.com/deliveries/150bc98497087e8b4988408c5e58c8cbfa17b283.m3u8",
+      "sourceId": "82hq6izy7k",
+      "type": "wistia",
+      "orderIdx": 504
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b48",
+      "title": "Flood Fill Algorithm",
+      "link": "https://embed-ssl.wistia.com/deliveries/6baef25d57d5d25694ad475ad513e98a600266da.m3u8",
+      "sourceId": "dr1wngvmy9",
+      "type": "wistia",
+      "orderIdx": 505
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b4d",
+      "title": "Strongly Connected Components (Kosaraju's Algorithm)",
+      "link": "https://embed-ssl.wistia.com/deliveries/54a7508a2490c892f56993c268b5e41a1fa431ce.m3u8",
+      "sourceId": "r5bfstyapc",
+      "type": "wistia",
+      "orderIdx": 506
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b4e",
+      "title": "Bridge in Graph (Tarjan's Algorithm)",
+      "link": "https://embed-ssl.wistia.com/deliveries/4cf774a9cdf43d8601cea642463bae215f2eb147.m3u8",
+      "sourceId": "ifuzhed48f",
+      "type": "wistia",
+      "orderIdx": 507
+    },
+    {
+      "id": "alpha-plus-7-java::69dcfdd6d40a3f61c3079b4f",
+      "title": "Articulation Point (Tarjan's Algorithm)",
+      "link": "https://embed-ssl.wistia.com/deliveries/fcc272cdeaeac2fb07842343546cff89c300cb77.m3u8",
+      "sourceId": "6kvobhb3un",
+      "type": "wistia",
+      "orderIdx": 508
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b704",
+      "title": "Introduction to DP",
+      "link": "https://embed-ssl.wistia.com/deliveries/f5e69e80984072b16bca4bdbb91ab035ce9965bf.m3u8",
+      "sourceId": "xpt75q48sv",
+      "type": "wistia",
+      "orderIdx": 509
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b705",
+      "title": "What is DP? (Definition)",
+      "link": "https://embed-ssl.wistia.com/deliveries/28f801ee80574b72a1d25072e45cbeef09a5b2b4.m3u8",
+      "sourceId": "1tl5iylg1e",
+      "type": "wistia",
+      "orderIdx": 510
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b706",
+      "title": "Ways of DP",
+      "link": "https://embed-ssl.wistia.com/deliveries/1c2d30043cfdb323b10e18e4189e695de6729fc9.m3u8",
+      "sourceId": "n1ulxrxe55",
+      "type": "wistia",
+      "orderIdx": 511
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b707",
+      "title": "7 Important Concepts",
+      "link": "https://embed-ssl.wistia.com/deliveries/33a6ce22879b4613235071eb2352f9c7f7392549.m3u8",
+      "sourceId": "tcn9k6ajl5",
+      "type": "wistia",
+      "orderIdx": 512
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b708",
+      "title": "Climbing Stairs (Recursion)",
+      "link": "https://embed-ssl.wistia.com/deliveries/cc28de62c311fe9a5b8a5a5a87e0b05764e86432.m3u8",
+      "sourceId": "tjuwnu78d5",
+      "type": "wistia",
+      "orderIdx": 513
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b709",
+      "title": "Climbing Stairs (Memoization DP)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ba1bbd8ee616a6b8a22fb186eb4b6fc4a6a47a94.m3u8",
+      "sourceId": "bvz11nwwmf",
+      "type": "wistia",
+      "orderIdx": 514
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70a",
+      "title": "Climbing Stairs Variation",
+      "link": "https://embed-ssl.wistia.com/deliveries/e3eb1d1022fafe2d8bd9712e16365d2d8f05c146.m3u8",
+      "sourceId": "xn0zelhi3h",
+      "type": "wistia",
+      "orderIdx": 515
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70b",
+      "title": "Climbing Stairs (Tabulation DP)",
+      "link": "https://embed-ssl.wistia.com/deliveries/8476269792a8e7a55cc8cb594f080daaa1cd195c.m3u8",
+      "sourceId": "6lm0xf0jih",
+      "type": "wistia",
+      "orderIdx": 516
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70c",
+      "title": "Types of Knapsack problems",
+      "link": "https://embed-ssl.wistia.com/deliveries/88b2110046512ceabb87b4b6162992214715367e.m3u8",
+      "sourceId": "kdsd9a6tpc",
+      "type": "wistia",
+      "orderIdx": 517
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70d",
+      "title": "0-1 Knapsack (Recursion)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ca4b45d367e1b9eadbec004536b4a8c61f56c6d5.m3u8",
+      "sourceId": "og5yj1lezj",
+      "type": "wistia",
+      "orderIdx": 518
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70e",
+      "title": "0-1 Knapsack (Memoization)",
+      "link": "https://embed-ssl.wistia.com/deliveries/aa1b25efd1fba3f3db522aa8800e603bea252849.m3u8",
+      "sourceId": "jfec0ppp22",
+      "type": "wistia",
+      "orderIdx": 519
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b70f",
+      "title": "0-1 Knapsack (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/db79015f0ca97130b87fbfd88bc373c86e3a60d0.m3u8",
+      "sourceId": "s7r55tbjak",
+      "type": "wistia",
+      "orderIdx": 520
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b710",
+      "title": "Target Sum Subset (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/46a8c3e22637aef9b1a9f436803fd73a0154fb1a.m3u8",
+      "sourceId": "85qjbrana3",
+      "type": "wistia",
+      "orderIdx": 521
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b711",
+      "title": "Target Sum Subset (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/207c698ac09b2d98037c59ce3e511f33782d3a00.m3u8",
+      "sourceId": "u5y71epzud",
+      "type": "wistia",
+      "orderIdx": 522
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b712",
+      "title": "Unbounded Knapsack (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/21e0c4f6aca666f807a43a1e485bea2ceb17a31f.m3u8",
+      "sourceId": "1dqdf1syzr",
+      "type": "wistia",
+      "orderIdx": 523
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b713",
+      "title": "Coin Change (Live Class)",
+      "link": "https://embed-ssl.wistia.com/deliveries/bad6f7a7072d9b27192fe84cee0e82a9264e3f62.m3u8",
+      "sourceId": "jd4dfqq4yy",
+      "type": "wistia",
+      "orderIdx": 524
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b714",
+      "title": "Rod Cutting",
+      "link": "https://embed-ssl.wistia.com/deliveries/7d43feb2cb338d97061e4c116286a50a3f293df8.m3u8",
+      "sourceId": "knio8e51da",
+      "type": "wistia",
+      "orderIdx": 525
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b715",
+      "title": "Longest Common Subsequence (Recursion)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f787466c2ab04c84fa5e007f512a62abd9e5d56c.m3u8",
+      "sourceId": "kagrflifws",
+      "type": "wistia",
+      "orderIdx": 526
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b716",
+      "title": "LCS (Memoization)",
+      "link": "https://embed-ssl.wistia.com/deliveries/a85a799146ca06aba96dcc057d78689d40fb8bce.m3u8",
+      "sourceId": "apicp69489",
+      "type": "wistia",
+      "orderIdx": 527
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b717",
+      "title": "LCS (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/f37e27346e4213c343f8c88f2f01c9656066291a.m3u8",
+      "sourceId": "c5l744k7sh",
+      "type": "wistia",
+      "orderIdx": 528
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b718",
+      "title": "Longest Common Substring",
+      "link": "https://embed-ssl.wistia.com/deliveries/2e9b7967123e07dbd3f4d8e00275e48f73f92239.m3u8",
+      "sourceId": "vd6tb862hi",
+      "type": "wistia",
+      "orderIdx": 529
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b719",
+      "title": "Longest Increasing Subsequence",
+      "link": "https://embed-ssl.wistia.com/deliveries/cdeb3ce23bfe8898e5e51aba14904cdd151de17b.m3u8",
+      "sourceId": "4m05o5rswb",
+      "type": "wistia",
+      "orderIdx": 530
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71a",
+      "title": "Edit Distance (Explanation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ab379bb78c8f90ba4746286500aef185195fa08c.m3u8",
+      "sourceId": "3i2pjgcfhj",
+      "type": "wistia",
+      "orderIdx": 531
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71b",
+      "title": "Edit Distance (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/864a097aa8c2d5ed350df1524091f9cd3fc10891.m3u8",
+      "sourceId": "ql2ljpufb9",
+      "type": "wistia",
+      "orderIdx": 532
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71c",
+      "title": "String Conversion",
+      "link": "https://embed-ssl.wistia.com/deliveries/228c9f33cee62336bf5dbedf1a6e93b17062058e.m3u8",
+      "sourceId": "yc3utslssq",
+      "type": "wistia",
+      "orderIdx": 533
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71d",
+      "title": "Wildcard Matching - Hard (Explanation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/0a0f1826d607224ab3c6a4ec6b0a2cabc2f2719a.m3u8",
+      "sourceId": "awo0j1eky7",
+      "type": "wistia",
+      "orderIdx": 534
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71e",
+      "title": "Wildcard Matching (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/ece9bf21c647adf6b4a5a6f35c582ed9e4b000cb.m3u8",
+      "sourceId": "b1z8pvbx8k",
+      "type": "wistia",
+      "orderIdx": 535
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b71f",
+      "title": "Catalan's Number (Recursion + Memoization)",
+      "link": "https://embed-ssl.wistia.com/deliveries/4adf6b17a3c2a4bed97cc2c5cba3349a9d94cdde.m3u8",
+      "sourceId": "oi6qgi5t9g",
+      "type": "wistia",
+      "orderIdx": 536
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b720",
+      "title": "Catalan's Number (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/04c37124286daa7735f01497bf4d75a08b5be4f3.m3u8",
+      "sourceId": "kyzl4cipo5",
+      "type": "wistia",
+      "orderIdx": 537
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b721",
+      "title": "Count BSTs",
+      "link": "https://embed-ssl.wistia.com/deliveries/10763c88756042f44270aa3f3b1c1c8f912d3db2.m3u8",
+      "sourceId": "3vaaecrgds",
+      "type": "wistia",
+      "orderIdx": 538
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b722",
+      "title": "Mountain Ranges",
+      "link": "https://embed-ssl.wistia.com/deliveries/022a3de5a218d352862b2ebadca5ba91f9bbb7b3.m3u8",
+      "sourceId": "qylroeauyq",
+      "type": "wistia",
+      "orderIdx": 539
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b723",
+      "title": "Basics of Matrices (Math)",
+      "link": "https://embed-ssl.wistia.com/deliveries/dab9dbc56f6c98e4b83365037d14f02398209b12.m3u8",
+      "sourceId": "uqtpolcqc4",
+      "type": "wistia",
+      "orderIdx": 540
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b724",
+      "title": "Matrix Chain Multiplication (Recursion)",
+      "link": "https://embed-ssl.wistia.com/deliveries/c559999b4cfa8cc214f3a1709496b6b0aeb5381a.m3u8",
+      "sourceId": "ubc04b1zwh",
+      "type": "wistia",
+      "orderIdx": 541
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b725",
+      "title": "MCM (Memoization)",
+      "link": "https://embed-ssl.wistia.com/deliveries/2cf892571a40bdcda5b15883fd7244cabd2f52ca.m3u8",
+      "sourceId": "67wy651a4h",
+      "type": "wistia",
+      "orderIdx": 542
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b726",
+      "title": "MCM (Tabulation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/7baaeeaab2cfb3a89c60d699b7bd7b5f7ac25b5b.m3u8",
+      "sourceId": "2x0o6w5rsk",
+      "type": "wistia",
+      "orderIdx": 543
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b727",
+      "title": "Minimum Partitioning",
+      "link": "https://embed-ssl.wistia.com/deliveries/fcc786da566cce8159ceea16b0da476d84275a96.m3u8",
+      "sourceId": "cvby9tifk5",
+      "type": "wistia",
+      "orderIdx": 544
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b728",
+      "title": "Minimum Array Jumps (Explanation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/0aba1bc33822a5c5cd449b23b022638ed8eaf717.m3u8",
+      "sourceId": "xmourfhmd9",
+      "type": "wistia",
+      "orderIdx": 545
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b729",
+      "title": "Minimum Array Jumps (Code)",
+      "link": "https://embed-ssl.wistia.com/deliveries/653515b677edfaca9ebc1c6e850f2e1ed644d250.m3u8",
+      "sourceId": "rifbeoqc3q",
+      "type": "wistia",
+      "orderIdx": 546
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b72c",
+      "title": "Segment Trees Introduction",
+      "link": "https://embed-ssl.wistia.com/deliveries/5f4f13bfa8bbd317c814e0b1f780731da2c6e588.m3u8",
+      "sourceId": "7n7qztg1bz",
+      "type": "wistia",
+      "orderIdx": 547
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b72d",
+      "title": "Count & Meaning of Nodes",
+      "link": "https://embed-ssl.wistia.com/deliveries/d7e6a23e7f4cc3836aba1288b7f020dada17180f.m3u8",
+      "sourceId": "djna0m4lpo",
+      "type": "wistia",
+      "orderIdx": 548
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b72e",
+      "title": "Creation of ST",
+      "link": "https://embed-ssl.wistia.com/deliveries/9545c28861743a44679f340e104b21a42b55b711.m3u8",
+      "sourceId": "uuuu8jsx9x",
+      "type": "wistia",
+      "orderIdx": 549
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b72f",
+      "title": "Queries on ST",
+      "link": "https://embed-ssl.wistia.com/deliveries/5f16db18805709440b7c371bbf58c4141b7e104b.m3u8",
+      "sourceId": "oj85oureth",
+      "type": "wistia",
+      "orderIdx": 550
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b730",
+      "title": "Update on ST",
+      "link": "https://embed-ssl.wistia.com/deliveries/b0a26d6ff086dc9e3013224b4f407a9e7cc4aab0.m3u8",
+      "sourceId": "pl6qva4v7m",
+      "type": "wistia",
+      "orderIdx": 551
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b731",
+      "title": "Max/Min Segment Tree (Creation)",
+      "link": "https://embed-ssl.wistia.com/deliveries/703276b16c847cf66d87fd9d22296f21ff79e7d4.m3u8",
+      "sourceId": "2ivroeebje",
+      "type": "wistia",
+      "orderIdx": 552
+    },
+    {
+      "id": "alpha-plus-7-java::69f214a6ffefd318cb07b732",
+      "title": "Max/Min Segment Tree (Query/Update)",
+      "link": "https://embed-ssl.wistia.com/deliveries/e6cf33afa250a2790e8ac38bc3a5d75466baa717.m3u8",
+      "sourceId": "k6ou7mpesi",
+      "type": "wistia",
+      "orderIdx": 553
+    }
+  ],
+  "notes": [
+    {
+      "id": "alpha-plus-7-java::n0",
+      "title": "Operating System",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Operating System Notes.pdf",
+      "orderIdx": 0
+    },
+    {
+      "id": "alpha-plus-7-java::n1",
+      "title": "Computer Networking",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Computer Networks Notes.pdf",
+      "orderIdx": 1
+    },
+    {
+      "id": "alpha-plus-7-java::n2",
+      "title": "Database Management System",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/DBMS Notes.pdf",
+      "orderIdx": 2
+    },
+    {
+      "id": "alpha-plus-7-java::n3",
+      "title": "Object Oriented Programming",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/OOPS Notes.pdf",
+      "orderIdx": 3
+    },
+    {
+      "id": "alpha-plus-7-java::n4",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/DP Solutions.pdf",
+      "orderIdx": 4
+    },
+    {
+      "id": "alpha-plus-7-java::n5",
+      "title": "Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/DP Questions.pdf",
+      "orderIdx": 5
+    },
+    {
+      "id": "alpha-plus-7-java::n6",
+      "title": "Solutions for Practice Qs (Set2)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Graph-02 Solutions.pdf",
+      "orderIdx": 6
+    },
+    {
+      "id": "alpha-plus-7-java::n7",
+      "title": "Practice Qs (Set2)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Graoh-02 Questions.pdf",
+      "orderIdx": 7
+    },
+    {
+      "id": "alpha-plus-7-java::n8",
+      "title": "Floyd Warshall Algorithm (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Floyd Warshall Algorithm.pdf",
+      "orderIdx": 8
+    },
+    {
+      "id": "alpha-plus-7-java::n9",
+      "title": "Tarjan's Algorithm (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Articulation Point.pdf",
+      "orderIdx": 9
+    },
+    {
+      "id": "alpha-plus-7-java::n10",
+      "title": "Solutions for Practice Qs (Set1)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Graph-1 Solutions.pdf",
+      "orderIdx": 10
+    },
+    {
+      "id": "alpha-plus-7-java::n11",
+      "title": "Practice Qs (Set1)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Graph-1 Questions.pdf",
+      "orderIdx": 11
+    },
+    {
+      "id": "alpha-plus-7-java::n12",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Tries Solutions.pdf",
+      "orderIdx": 12
+    },
+    {
+      "id": "alpha-plus-7-java::n13",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Tries Questions.pdf",
+      "orderIdx": 13
+    },
+    {
+      "id": "alpha-plus-7-java::n14",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Hashing Solutions.pdf",
+      "orderIdx": 14
+    },
+    {
+      "id": "alpha-plus-7-java::n15",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Hashing Questions.pdf",
+      "orderIdx": 15
+    },
+    {
+      "id": "alpha-plus-7-java::n16",
+      "title": "Comparison Table",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Table.pdf",
+      "orderIdx": 16
+    },
+    {
+      "id": "alpha-plus-7-java::n17",
+      "title": "Update in Code",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Note.pdf",
+      "orderIdx": 17
+    },
+    {
+      "id": "alpha-plus-7-java::n18",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Heap Solutions.pdf",
+      "orderIdx": 18
+    },
+    {
+      "id": "alpha-plus-7-java::n19",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Heap Questions.pdf",
+      "orderIdx": 19
+    },
+    {
+      "id": "alpha-plus-7-java::n20",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/BST Solutions.pdf",
+      "orderIdx": 20
+    },
+    {
+      "id": "alpha-plus-7-java::n21",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/BST Questions (2).pdf",
+      "orderIdx": 21
+    },
+    {
+      "id": "alpha-plus-7-java::n22",
+      "title": "Red Black Trees (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Red Black Trees in Java.pdf",
+      "orderIdx": 22
+    },
+    {
+      "id": "alpha-plus-7-java::n23",
+      "title": "AVL Trees (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/AVL Trees in Java.pdf",
+      "orderIdx": 23
+    },
+    {
+      "id": "alpha-plus-7-java::n24",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Binary Tree Solutions.pdf",
+      "orderIdx": 24
+    },
+    {
+      "id": "alpha-plus-7-java::n25",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Binary Tree Questions.pdf",
+      "orderIdx": 25
+    },
+    {
+      "id": "alpha-plus-7-java::n26",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Greedy Solutions.pdf",
+      "orderIdx": 26
+    },
+    {
+      "id": "alpha-plus-7-java::n27",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Greedy Questions.pdf",
+      "orderIdx": 27
+    },
+    {
+      "id": "alpha-plus-7-java::n28",
+      "title": "Comparators in Java (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Comparators in Java.pdf",
+      "orderIdx": 28
+    },
+    {
+      "id": "alpha-plus-7-java::n29",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Queue Solutions.pdf",
+      "orderIdx": 29
+    },
+    {
+      "id": "alpha-plus-7-java::n30",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Queue Questions.pdf",
+      "orderIdx": 30
+    },
+    {
+      "id": "alpha-plus-7-java::n31",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Stack Solutions.pdf",
+      "orderIdx": 31
+    },
+    {
+      "id": "alpha-plus-7-java::n32",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Stack Questions.pdf",
+      "orderIdx": 32
+    },
+    {
+      "id": "alpha-plus-7-java::n33",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Linked List Solutions.pdf",
+      "orderIdx": 33
+    },
+    {
+      "id": "alpha-plus-7-java::n34",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Linked List Questions.pdf",
+      "orderIdx": 34
+    },
+    {
+      "id": "alpha-plus-7-java::n35",
+      "title": "Circular Linked List (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Circular LInked List.pdf",
+      "orderIdx": 35
+    },
+    {
+      "id": "alpha-plus-7-java::n36",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/ArrayList Solutions (1).pdf",
+      "orderIdx": 36
+    },
+    {
+      "id": "alpha-plus-7-java::n37",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/ArrayList Questions (1).pdf",
+      "orderIdx": 37
+    },
+    {
+      "id": "alpha-plus-7-java::n38",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/BACKTRACKING Solutions (2).pdf",
+      "orderIdx": 38
+    },
+    {
+      "id": "alpha-plus-7-java::n39",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/BACKTRACKING Questions.pdf",
+      "orderIdx": 39
+    },
+    {
+      "id": "alpha-plus-7-java::n40",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/TIME COMPLEXITY Solutions.pdf",
+      "orderIdx": 40
+    },
+    {
+      "id": "alpha-plus-7-java::n41",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/TIME COMPLEXITY Questions.pdf",
+      "orderIdx": 41
+    },
+    {
+      "id": "alpha-plus-7-java::n42",
+      "title": "Master's Theorem (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/3-Masters Theorem.pdf",
+      "orderIdx": 42
+    },
+    {
+      "id": "alpha-plus-7-java::n43",
+      "title": "Solutions to Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Divide & Conquer Solutions.pdf",
+      "orderIdx": 43
+    },
+    {
+      "id": "alpha-plus-7-java::n44",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Divide & Conquer Questions (1).pdf",
+      "orderIdx": 44
+    },
+    {
+      "id": "alpha-plus-7-java::n45",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Recursion (Basics) Solutions.pdf",
+      "orderIdx": 45
+    },
+    {
+      "id": "alpha-plus-7-java::n46",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Recursion (Basics) Questions.pdf",
+      "orderIdx": 46
+    },
+    {
+      "id": "alpha-plus-7-java::n47",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/OOPS Solutions.pdf",
+      "orderIdx": 47
+    },
+    {
+      "id": "alpha-plus-7-java::n48",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/OOPS Questions.pdf",
+      "orderIdx": 48
+    },
+    {
+      "id": "alpha-plus-7-java::n49",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Bit Manipulation Solutions.pdf",
+      "orderIdx": 49
+    },
+    {
+      "id": "alpha-plus-7-java::n50",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Bit Manipulation Questions.pdf",
+      "orderIdx": 50
+    },
+    {
+      "id": "alpha-plus-7-java::n51",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Strings Solutions.pdf",
+      "orderIdx": 51
+    },
+    {
+      "id": "alpha-plus-7-java::n52",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Strings Questions.pdf",
+      "orderIdx": 52
+    },
+    {
+      "id": "alpha-plus-7-java::n53",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/2D Arrays Solutions.pdf",
+      "orderIdx": 53
+    },
+    {
+      "id": "alpha-plus-7-java::n54",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/2D Arrays Questions.pdf",
+      "orderIdx": 54
+    },
+    {
+      "id": "alpha-plus-7-java::n55",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Basic Sorting Solutions.pdf",
+      "orderIdx": 55
+    },
+    {
+      "id": "alpha-plus-7-java::n56",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Basic Sorting Questions (1).pdf",
+      "orderIdx": 56
+    },
+    {
+      "id": "alpha-plus-7-java::n57",
+      "title": "Assignment Codes (Arrays)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Arrays - Solution (1).pdf",
+      "orderIdx": 57
+    },
+    {
+      "id": "alpha-plus-7-java::n58",
+      "title": "Assignment Questions (Arrays)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Arrays - Assignment_Type.pdf",
+      "orderIdx": 58
+    },
+    {
+      "id": "alpha-plus-7-java::n59",
+      "title": "Space & Time Complexity (Reading Material)",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Space & Time Complexity (1) (1).pdf",
+      "orderIdx": 59
+    },
+    {
+      "id": "alpha-plus-7-java::n60",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Functions Solutions.pdf",
+      "orderIdx": 60
+    },
+    {
+      "id": "alpha-plus-7-java::n61",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Functions Questions.pdf",
+      "orderIdx": 61
+    },
+    {
+      "id": "alpha-plus-7-java::n62",
+      "title": "Looking Forward - Advanced Patterns",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/2-Advanced Patterns Note.pdf",
+      "orderIdx": 62
+    },
+    {
+      "id": "alpha-plus-7-java::n63",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Loops Solutions.pdf",
+      "orderIdx": 63
+    },
+    {
+      "id": "alpha-plus-7-java::n64",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Loops Questions.pdf",
+      "orderIdx": 64
+    },
+    {
+      "id": "alpha-plus-7-java::n65",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Conditional Solutions.pdf",
+      "orderIdx": 65
+    },
+    {
+      "id": "alpha-plus-7-java::n66",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Conditional Questions.pdf",
+      "orderIdx": 66
+    },
+    {
+      "id": "alpha-plus-7-java::n67",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Operators Solutions.pdf",
+      "orderIdx": 67
+    },
+    {
+      "id": "alpha-plus-7-java::n68",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Operators Questions.pdf",
+      "orderIdx": 68
+    },
+    {
+      "id": "alpha-plus-7-java::n69",
+      "title": "Reading Material : Operator Precedence",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Operator Precedence_V1.1.pdf",
+      "orderIdx": 69
+    },
+    {
+      "id": "alpha-plus-7-java::n70",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Variables Solutions.pdf",
+      "orderIdx": 70
+    },
+    {
+      "id": "alpha-plus-7-java::n71",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Variables Questions (1).pdf",
+      "orderIdx": 71
+    },
+    {
+      "id": "alpha-plus-7-java::n72",
+      "title": "Solutions for Practice Qs",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Solution File (3).pdf",
+      "orderIdx": 72
+    },
+    {
+      "id": "alpha-plus-7-java::n73",
+      "title": "Practice Questions",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Question File (3).pdf",
+      "orderIdx": 73
+    },
+    {
+      "id": "alpha-plus-7-java::n74",
+      "title": "Installation Resources",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Installation Resources.pdf",
+      "orderIdx": 74
+    },
+    {
+      "id": "alpha-plus-7-java::n75",
+      "title": "Link to Orientation Session",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Orientation Session AlphaPlus7.pdf",
+      "orderIdx": 75
+    },
+    {
+      "id": "alpha-plus-7-java::n76",
+      "title": "Telegram Channel Link",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Telegram Link AlphaPlus7.pdf",
+      "orderIdx": 76
+    },
+    {
+      "id": "alpha-plus-7-java::n77",
+      "title": "Fill your details",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Welcome PDF AlphaPlus7.pdf",
+      "orderIdx": 77
+    },
+    {
+      "id": "alpha-plus-7-java::n78",
+      "title": "Curriculum",
+      "url": "https://api.asia-se1.learnworlds.com/unlock/file?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=rTqxPnL5qxDp3BJEzYctHMam4UPY9acm633VRZwo&file=pdf/Alpha Curriculum-2.pdf",
+      "orderIdx": 78
+    }
+  ]
+}
